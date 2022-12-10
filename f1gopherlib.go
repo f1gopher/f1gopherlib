@@ -17,12 +17,12 @@ package f1gopherlib
 
 import (
 	"errors"
-	"f1gopherlib/f1gopherlib/Messages"
-	"f1gopherlib/f1gopherlib/connection"
-	"f1gopherlib/f1gopherlib/f1log"
-	"f1gopherlib/f1gopherlib/flowControl"
-	"f1gopherlib/f1gopherlib/parser"
 	"fmt"
+	"github.com/f1gopher/f1gopherlib/Messages"
+	"github.com/f1gopher/f1gopherlib/connection"
+	"github.com/f1gopher/f1gopherlib/f1log"
+	"github.com/f1gopher/f1gopherlib/flowControl"
+	"github.com/f1gopher/f1gopherlib/parser"
 	"io"
 	"time"
 )

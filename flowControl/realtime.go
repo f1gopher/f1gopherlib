@@ -16,7 +16,7 @@
 package flowControl
 
 import (
-	"f1gopherlib/f1gopherlib/Messages"
+	"github.com/f1gopher/f1gopherlib/Messages"
 	"sync"
 	"time"
 )

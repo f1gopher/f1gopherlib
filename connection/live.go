@@ -17,8 +17,8 @@ package connection
 
 import (
 	"context"
-	"f1gopherlib/f1gopherlib/f1log"
 	"fmt"
+	"github.com/f1gopher/f1gopherlib/f1log"
 	"github.com/f1gopher/signalr/v2"
 	"golang.org/x/sync/errgroup"
 	"os"

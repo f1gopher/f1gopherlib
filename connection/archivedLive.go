@@ -17,7 +17,7 @@ package connection
 
 import (
 	"bufio"
-	"f1gopherlib/f1gopherlib/f1log"
+	"github.com/f1gopher/f1gopherlib/f1log"
 	"os"
 )
 

@@ -16,9 +16,9 @@
 package parser
 
 import (
-	"f1gopherlib/f1gopherlib/Messages"
-	"f1gopherlib/f1gopherlib/connection"
 	"fmt"
+	"github.com/f1gopher/f1gopherlib/Messages"
+	"github.com/f1gopher/f1gopherlib/connection"
 	"reflect"
 	"time"
 )
