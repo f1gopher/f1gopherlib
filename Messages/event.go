@@ -32,7 +32,7 @@ const (
 )
 
 func (s SessionType) String() string {
-	return [...]string{"Practice_1", "Practice_2", "Practice_3", "Qualifying", "Sprint", "Race", "Pre-Season"}[s]
+	return [...]string{"Practice 1", "Practice 2", "Practice 3", "Qualifying", "Sprint", "Race", "Pre-Season Test"}[s]
 }
 
 type EventType int

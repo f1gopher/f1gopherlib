@@ -91,6 +91,26 @@ func CreateRaceEvent(
 	urlName string,
 	timezone string) *RaceEvent {
 
+	var sessionName string
+	switch sessionType {
+	case Messages.Practice1Session:
+		sessionName = "Practice_1"
+	case Messages.Practice2Session:
+		sessionName = "Practice_2"
+	case Messages.Practice3Session:
+		sessionName = "Practice_3"
+	case Messages.QualifyingSession:
+		sessionName = "Qualifying"
+	case Messages.SprintSession:
+		sessionName = "Sprint"
+	case Messages.RaceSession:
+		sessionName = "Race"
+	case Messages.PreSeasonSession:
+		sessionName = "Test"
+	default:
+		panic("Unhandled session type: " + sessionType.String())
+	}
+
 	urlName = fmt.Sprintf(
 		"https://livetiming.formula1.com/static/%d/%d-%02d-%02d_%s_Grand_Prix/%d-%02d-%02d_%s/",
 		raceTime.Year(),
@@ -101,7 +121,7 @@ func CreateRaceEvent(
 		eventTime.Year(),
 		eventTime.Month(),
 		eventTime.Day(),
-		sessionType.String())
+		sessionName)
 
 	return &RaceEvent{
 		Country:   country,
@@ -142,7 +162,7 @@ func (r *RaceEvent) Url() string {
 	return r.urlName
 }
 
-func CreateLive(requestedData parser.DataSource, archive string, cache string) (error, F1GopherLib) {
+func CreateLive(requestedData parser.DataSource, archive string, cache string) (F1GopherLib, error) {
 
 	// TODO - validate path
 	// TODO - create archive folder
@@ -151,7 +171,7 @@ func CreateLive(requestedData parser.DataSource, archive string, cache string) (
 
 	// No event happening or about to happen so nothing we can do
 	if !exists {
-		return errors.New("No live event currently happening"), nil
+		return nil, errors.New("No live event currently happening")
 	}
 
 	f1Log.Infof("Creating live session for: %v", currentEvent.string())
@@ -176,12 +196,15 @@ func CreateLive(requestedData parser.DataSource, archive string, cache string) (
 	// Always start live paused
 	data.TogglePause()
 	if err != nil {
-		return err, nil
+		return nil, err
 	}
-	return nil, &data
+	return &data, nil
 }
 
-func CreateLiveReplay(requestedData parser.DataSource, replayFile string, event RaceEvent, cache string) (F1GopherLib, error) {
+func CreateDebugReplay(requestedData parser.DataSource, replayFile string) (F1GopherLib, error) {
+
+	// TODO - read event info from debug file
+	event := RaceEvent{}
 
 	f1Log.Infof("Creating live replay session for: %v", event.string())
 
@@ -199,7 +222,7 @@ func CreateLiveReplay(requestedData parser.DataSource, replayFile string, event 
 		timezone:            event.Timezone(),
 		sessionStart:        event.EventTime,
 	}
-	err := data.connectLiveReplay(requestedData, replayFile, event, cache)
+	err := data.connectDebugReplay(requestedData, replayFile, event)
 	if err != nil {
 		return nil, err
 	}
@@ -272,7 +295,7 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 	return nil
 }
 
-func (f *f1gopherlib) connectLiveReplay(requestedData parser.DataSource, replayFile string, event RaceEvent, cache string) error {
+func (f *f1gopherlib) connectDebugReplay(requestedData parser.DataSource, replayFile string, event RaceEvent) error {
 	f.connection = connection.CreateArchivedLive(f1Log, replayFile)
 	err, dataChannel := f.connection.Connect()
 
@@ -291,7 +314,8 @@ func (f *f1gopherlib) connectLiveReplay(requestedData parser.DataSource, replayF
 		f.eventTime,
 		f.radio)
 
-	assetStore := connection.CreateAssetStore(event.Url(), cache, f1Log)
+	// Don't use a cache for debug replays because we don't always know the event yet to give it a useful folder name
+	assetStore := connection.CreateAssetStore(event.Url(), "", f1Log)
 
 	f.dataHandler = parser.Create(requestedData, dataChannel, f.replayTiming, assetStore, event.Type, f1Log)
 

@@ -20,16 +20,28 @@ import (
 	"time"
 )
 
-var sessionHistory = [...]RaceEvent{{
-	Country:   "UAE",
-	RaceTime:  time.Date(2022, 11, 20, 13, 0, 0, 0, time.UTC),
-	EventTime: time.Date(2022, 11, 20, 13, 0, 0, 0, time.UTC),
-	Type:      Messages.RaceSession,
-	Name:      "Abu Dhabi Grand Prix",
-	timezone:  "Asia/Dubai",
-	TrackName: "Yas Marina Circuit",
-	urlName:   "https://livetiming.formula1.com/static/2022/2022-11-20_Abu_Dhabi_Grand_Prix/2022-11-20_Race/",
-},
+var sessionHistory = [...]RaceEvent{
+	// TODO - it is a 3 day test so need different type for each day
+	{
+		Country:   "Bahrain",
+		RaceTime:  time.Date(2023, 2, 23, 9, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 2, 23, 16, 0, 0, 0, time.UTC),
+		Type:      Messages.PreSeasonSession,
+		Name:      "Bahrain Grand Prix",
+		timezone:  "Asia/Bahrain",
+		TrackName: "Bahrain International Circuit",
+		urlName:   "https://livetiming.formula1.com/static/2023/2023-02-23_Bahrain_Testing/2023-02-23_Test/",
+	},
+	{
+		Country:   "UAE",
+		RaceTime:  time.Date(2022, 11, 20, 13, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2022, 11, 20, 13, 0, 0, 0, time.UTC),
+		Type:      Messages.RaceSession,
+		Name:      "Abu Dhabi Grand Prix",
+		timezone:  "Asia/Dubai",
+		TrackName: "Yas Marina Circuit",
+		urlName:   "https://livetiming.formula1.com/static/2022/2022-11-20_Abu_Dhabi_Grand_Prix/2022-11-20_Race/",
+	},
 	{
 		Country:   "UAE",
 		RaceTime:  time.Date(2022, 11, 20, 13, 0, 0, 0, time.UTC),

@@ -47,43 +47,24 @@ func RaceHistory() []RaceEvent {
 	return result
 }
 
-func NextSession() (RaceEvent, bool) {
+func HappeningSessions() (liveSession RaceEvent, nextSession RaceEvent, hasLiveSession bool, hasNextSession bool) {
 	all := sessionHistory
+	utcNow := time.Now().UTC()
 
 	for x := 0; x < len(all); x++ {
+		// If we are the same day as a session see if it is live
+		if all[x].EventTime.Year() == utcNow.Year() &&
+			all[x].EventTime.Month() == utcNow.Month() &&
+			all[x].EventTime.Day() == utcNow.Day() {
 
-		if all[x].EventTime.After(time.Now().In(time.UTC)) {
-			continue
-		}
-
-		// No next session
-		if x == 0 {
-			return RaceEvent{}, false
-		}
-
-		return all[x-1], true
-	}
-
-	return RaceEvent{}, false
-}
-
-func liveEvent() (event RaceEvent, exists bool) {
-	all := sessionHistory
-
-	// TODO - handle timezones
-	for x := 0; x < len(all); x++ {
-		if all[x].EventTime.Year() == time.Now().Year() &&
-			all[x].EventTime.Month() == time.Now().Month() &&
-			all[x].EventTime.Day() == time.Now().Day() {
-
-			// Start up to 45mins before thet start  of the event
-			if time.Now().After(all[x].EventTime.Add(-time.Minute * 45)) {
+			// Start up to 45mins before the start  of the event
+			if utcNow.After(all[x].EventTime.Add(-time.Minute * 45)) {
 
 				duringEvent := false
 				switch all[x].Type {
 				case Messages.Practice1Session, Messages.Practice2Session, Messages.Practice3Session:
 					// Usually 60 mins but tire tests are 90 so cover both since it won't overlap with anything else
-					duringEvent = time.Now().Before(all[x].EventTime.Add(time.Hour * 2))
+					duringEvent = utcNow.Before(all[x].EventTime.Add(time.Hour * 2))
 
 				case Messages.QualifyingSession, Messages.SprintSession, Messages.RaceSession:
 					// Last events in the day so just assume it's that event
@@ -94,11 +75,26 @@ func liveEvent() (event RaceEvent, exists bool) {
 				}
 
 				if duringEvent {
-					return all[x], true
+					if x == 0 {
+						return all[x], RaceEvent{}, true, false
+					}
+
+					return all[x], all[x-1], true, true
 				}
 			}
+		} else if utcNow.Before(all[x].EventTime) {
+			// If this is the first session that is after now then nothing is live and this is the next session
+			return RaceEvent{}, all[x], false, true
+		} else {
+			// No live or upcoming sessions
+			break
 		}
 	}
 
-	return RaceEvent{}, false
+	return RaceEvent{}, RaceEvent{}, false, false
+}
+
+func liveEvent() (event RaceEvent, exists bool) {
+	live, _, exists, _ := HappeningSessions()
+	return live, exists
 }
