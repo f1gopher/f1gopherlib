@@ -38,7 +38,7 @@ type assets struct {
 func CreateAssetStore(url string, cache string, log *f1log.F1GopherLibLog) AssetStore {
 
 	if len(cache) > 0 {
-		cache = filepath.Join("./cache", strings.Replace(url, "https://livetiming.formula1.com/static/", "", 1))
+		cache = filepath.Join(cache, strings.Replace(url, "https://livetiming.formula1.com/static/", "", 1))
 	}
 
 	return &assets{
