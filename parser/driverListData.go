@@ -49,7 +49,7 @@ func (p *Parser) parseDriverList(dat map[string]interface{}, timestamp time.Time
 			teamName, _ := record["TeamName"].(string)
 			teamHexColour, _ := record["TeamColour"].(string)
 			teamColor := color.RGBA{A: 0xFF}
-			_, err := fmt.Sscanf(teamHexColour, "#%02x%02x%02x", &teamColor.R, &teamColor.G, &teamColor.B)
+			_, err := fmt.Sscanf(teamHexColour, "%02x%02x%02x", &teamColor.R, &teamColor.G, &teamColor.B)
 			if err != nil {
 				p.ParseErrorf(connection.DriverListFile, timestamp, "Unable to parse team color: '%s', %v", teamColor, err)
 
