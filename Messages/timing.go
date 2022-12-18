@@ -16,6 +16,7 @@
 package Messages
 
 import (
+	"image/color"
 	"time"
 )
 
@@ -79,7 +80,8 @@ type Timing struct {
 	ShortName string
 	Number    int
 	Team      string
-	Color     string
+	HexColor  string
+	Color     color.Color
 
 	TimeDiffToFastest       time.Duration
 	TimeDiffToPositionAhead time.Duration

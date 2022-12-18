@@ -16,7 +16,10 @@
 package parser
 
 import (
+	"fmt"
 	"github.com/f1gopher/f1gopherlib/Messages"
+	"github.com/f1gopher/f1gopherlib/connection"
+	"image/color"
 	"strconv"
 	"time"
 )
@@ -44,7 +47,17 @@ func (p *Parser) parseDriverList(dat map[string]interface{}, timestamp time.Time
 			fullName, _ := record["FullName"].(string)
 			shortName, _ := record["Tla"].(string)
 			teamName, _ := record["TeamName"].(string)
-			teamColour, _ := record["TeamColour"].(string)
+			teamHexColour, _ := record["TeamColour"].(string)
+			teamColor := color.RGBA{A: 0xFF}
+			_, err := fmt.Sscanf(teamHexColour, "#%02x%02x%02x", &teamColor.R, &teamColor.G, &teamColor.B)
+			if err != nil {
+				p.ParseErrorf(connection.DriverListFile, timestamp, "Unable to parse team color: '%s', %v", teamColor, err)
+
+				// Fallback to default colors
+				teamColor.R = 0xFF
+				teamColor.G = 0xFF
+				teamColor.B = 0xFF
+			}
 
 			current = Messages.Timing{
 				Number:    number,
@@ -52,7 +65,8 @@ func (p *Parser) parseDriverList(dat map[string]interface{}, timestamp time.Time
 				Name:      fullName,
 				ShortName: shortName,
 				Team:      teamName,
-				Color:     "#" + teamColour,
+				HexColor:  "#" + teamHexColour,
+				Color:     teamColor,
 			}
 		}
 
