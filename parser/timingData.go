@@ -233,14 +233,14 @@ func (p *Parser) parseTimingData(dat map[string]interface{}, timestamp time.Time
 
 			switch sectors.(type) {
 			case map[string]interface{}:
-				for key, value := range sectors.(map[string]interface{}) {
-					p.processSectorTimes(key, value, &currentDriver, timestamp)
+				for key, value2 := range sectors.(map[string]interface{}) {
+					p.processSectorTimes(key, value2, &currentDriver, timestamp)
 				}
 
 			case []interface{}:
 
-				for key, value := range sectors.([]interface{}) {
-					p.processSectorTimes(string(key), value, &currentDriver, timestamp)
+				for key, value2 := range sectors.([]interface{}) {
+					p.processSectorTimes(string(key), value2, &currentDriver, timestamp)
 				}
 
 			default:
@@ -412,75 +412,34 @@ func (p *Parser) parseTimingData(dat map[string]interface{}, timestamp time.Time
 
 func (p *Parser) processSectorTimes(key string, value interface{}, driver *Messages.Timing, timestamp time.Time) {
 
-	//for key, value := range data {
-
 	segments, exists := value.(map[string]interface{})["Segments"]
 	if exists {
+		segmentState := Messages.None
 
 		if reflect.TypeOf(segments).Kind() == reflect.Slice {
-			segmentState := Messages.None
 			for x, info := range segments.([]interface{}) {
-
-				abc := info.(map[string]interface{})
-
-				status := int(abc["Status"].(float64))
-
-				if status != 0 {
-					switch status {
-					case 2048:
-						segmentState = Messages.YellowSegment
-					case 2049:
-						segmentState = Messages.GreenSegment
-					case 2050:
-						segmentState = Messages.InvalidSegment
-					case 2051:
-						segmentState = Messages.PurpleSegment
-					case 2052:
-						segmentState = Messages.RedSegment
-					case 2064:
-						segmentState = Messages.PitlaneSegment
-					case 2065:
-						segmentState = Messages.Mystery2
-					case 2066:
-						segmentState = Messages.Mystery3
-					case 2068:
-						segmentState = Messages.Mystery
-					default:
-						p.ParseErrorf(connection.TimingDataFile, timestamp, "Unhandled segment state value: %d", status)
-					}
-
-					currentSegment := x
-
-					switch key {
-					case "0":
-						// When we start a new lap clear the previous
-						if currentSegment == 0 || currentSegment == 1 {
-							for y := currentSegment; y < len(driver.Segment); y++ {
-								driver.Segment[y] = Messages.None
-							}
-						}
-
-						driver.Segment[currentSegment] = segmentState
-					case "1":
-						driver.Segment[p.eventState.Sector1Segments+currentSegment] = segmentState
-					case "2":
-						driver.Segment[p.eventState.Sector1Segments+p.eventState.Sector2Segments+currentSegment] = segmentState
-					}
-				}
+				currentSegment := x
+				segmentState = p.calcSegment(key, info, timestamp, currentSegment, driver)
 			}
 
-			// Sometimes it is none when we are on track so leave location as is
-			if segmentState == Messages.None && (driver.Location != Messages.OutLap && driver.Location != Messages.OnTrack) {
-				driver.Location = Messages.Pitlane
-			} else if segmentState == Messages.PitlaneSegment {
-				driver.Location = Messages.Pitlane
+		} else if reflect.TypeOf(segments).Kind() == reflect.Map {
+			for x, info := range segments.(map[string]interface{}) {
+				currentSegment, _ := strconv.Atoi(x)
+				segmentState = p.calcSegment(key, info, timestamp, currentSegment, driver)
+			}
+		}
+
+		// Sometimes it is none when we are on track so leave location as is
+		if segmentState == Messages.None && (driver.Location != Messages.OutLap && driver.Location != Messages.OnTrack) {
+			driver.Location = Messages.Pitlane
+		} else if segmentState == Messages.PitlaneSegment {
+			driver.Location = Messages.Pitlane
+		} else {
+			// Sometimes we get the first segment as pits on the formation lap
+			if driver.Segment[0] == Messages.PitlaneSegment && driver.Segment[1] == Messages.PitlaneSegment {
+				driver.Location = Messages.OutLap
 			} else {
-				// Sometimes we get the first segment as pits on the formation lap
-				if driver.Segment[0] == Messages.PitlaneSegment && driver.Segment[1] == Messages.PitlaneSegment {
-					driver.Location = Messages.OutLap
-				} else {
-					driver.Location = Messages.OnTrack
-				}
+				driver.Location = Messages.OnTrack
 			}
 		}
 	}
@@ -542,5 +501,58 @@ func (p *Parser) processSectorTimes(key string, value interface{}, driver *Messa
 			driver.Sector3PersonalFastest = isFastest.(bool)
 		}
 	}
-	//}
+}
+
+func (p *Parser) calcSegment(
+	key string,
+	info interface{},
+	timestamp time.Time,
+	currentSegment int,
+	driver *Messages.Timing) Messages.SegmentType {
+
+	segmentState := Messages.None
+	abc := info.(map[string]interface{})
+	status := int(abc["Status"].(float64))
+
+	if status != 0 {
+		switch status {
+		case 2048:
+			segmentState = Messages.YellowSegment
+		case 2049:
+			segmentState = Messages.GreenSegment
+		case 2050:
+			segmentState = Messages.InvalidSegment
+		case 2051:
+			segmentState = Messages.PurpleSegment
+		case 2052:
+			segmentState = Messages.RedSegment
+		case 2064:
+			segmentState = Messages.PitlaneSegment
+		case 2065:
+			segmentState = Messages.Mystery2
+		case 2066:
+			segmentState = Messages.Mystery3
+		case 2068:
+			segmentState = Messages.Mystery
+		default:
+			p.ParseErrorf(connection.TimingDataFile, timestamp, "Unhandled segment state value: %d", status)
+		}
+
+		switch key {
+		case "0":
+			// When we start a new lap clear the previous
+			if currentSegment == 0 || currentSegment == 1 {
+				for y := currentSegment; y < len(driver.Segment); y++ {
+					driver.Segment[y] = Messages.None
+				}
+			}
+
+			driver.Segment[currentSegment] = segmentState
+		case "1":
+			driver.Segment[p.eventState.Sector1Segments+currentSegment] = segmentState
+		case "2":
+			driver.Segment[p.eventState.Sector1Segments+p.eventState.Sector2Segments+currentSegment] = segmentState
+		}
+	}
+	return segmentState
 }
