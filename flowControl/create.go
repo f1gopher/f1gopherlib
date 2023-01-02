@@ -16,7 +16,9 @@
 package flowControl
 
 import (
+	"context"
 	"github.com/f1gopher/f1gopherlib/Messages"
+	"sync"
 	"time"
 )
 
@@ -46,6 +48,8 @@ const (
 )
 
 func CreateFlowControl(
+	ctx context.Context,
+	wg *sync.WaitGroup,
 	flowType FlowType,
 	outputWeather chan<- Messages.Weather,
 	outputRaceControlMessages chan<- Messages.RaceControlMessage,
@@ -59,6 +63,8 @@ func CreateFlowControl(
 	switch flowType {
 	case Realtime:
 		return &realtime{
+			ctx:                       ctx,
+			wg:                        wg,
 			outputWeather:             outputWeather,
 			outputRaceControlMessages: outputRaceControlMessages,
 			outputTimingMessages:      outputTimingMessages,

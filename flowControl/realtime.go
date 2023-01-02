@@ -16,6 +16,7 @@
 package flowControl
 
 import (
+	"context"
 	"github.com/f1gopher/f1gopherlib/Messages"
 	"sync"
 	"time"
@@ -59,226 +60,237 @@ type realtime struct {
 
 	sessionStart  time.Time
 	sessionLength time.Duration
+
+	ctx context.Context
+	wg  *sync.WaitGroup
 }
 
 func (f *realtime) Run() {
-	for {
-		if f.isPaused {
-			time.Sleep(time.Millisecond * 1000)
-			continue
-		}
+	f.wg.Add(1)
+	defer f.wg.Done()
+	ticker := time.NewTicker(1000 * time.Millisecond)
 
-		if f.skipToStart {
+	for {
+		select {
+		case <-f.ctx.Done():
+			ticker.Stop()
+			return
+
+		case <-ticker.C:
+			if f.isPaused {
+				continue
+			}
+
+			if f.skipToStart {
+				f.eventLock.Lock()
+				if len(f.event) > 0 {
+					needToStopAndStart := f.event[0].Status == Messages.Started
+
+					for x := range f.event {
+						if f.event[x].Timestamp.IsZero() {
+							continue
+						}
+
+						if f.event[x].Status == Messages.Started && !needToStopAndStart {
+							f.currentTime = f.event[x].Timestamp
+							break
+						}
+
+						if f.event[x].Status != Messages.Started {
+							needToStopAndStart = false
+						}
+					}
+
+					// We want to skip any radio messages when we jump forward in time
+					f.radioLock.Lock()
+					for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
+						f.radio = f.radio[1:]
+					}
+					f.radioLock.Unlock()
+				}
+				f.eventLock.Unlock()
+
+				f.skipToStart = false
+			}
+
 			f.eventLock.Lock()
 			if len(f.event) > 0 {
-				needToStopAndStart := f.event[0].Status == Messages.Started
 
-				for x := range f.event {
-					if f.event[x].Timestamp.IsZero() {
-						continue
-					}
-
-					if f.event[x].Status == Messages.Started && !needToStopAndStart {
-						f.currentTime = f.event[x].Timestamp
-						break
-					}
-
-					if f.event[x].Status != Messages.Started {
-						needToStopAndStart = false
-					}
+				if f.currentTime.IsZero() && !f.event[0].Timestamp.IsZero() {
+					f.currentTime = f.event[0].Timestamp
+					f.clockStopped = f.event[0].ClockStopped
 				}
 
-				// We want to skip any radio messages when we jump forward in time
-				f.radioLock.Lock()
-				for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
-					f.radio = f.radio[1:]
+				increment := f.incrementLapCount
+
+				if increment > 0 {
+					// TODO - thread safe
+					f.incrementLapCount = f.incrementLapCount - increment
+					targetLap := f.currentLap + increment
+					var incrementTime time.Time
+
+					for len(f.event) > 0 && f.currentLap < targetLap {
+						select {
+						case f.outputEvent <- f.event[0]:
+							f.currentLap = f.event[0].CurrentLap
+							f.currentStatus = f.event[0].Status
+							incrementTime = f.event[0].Timestamp
+
+							f.sessionStart = f.event[0].SessionStartTime
+							f.sessionLength = f.event[0].RemainingTime
+							f.clockStopped = f.event[0].ClockStopped
+
+						default:
+							// Data loss
+						}
+
+						f.event = f.event[1:]
+					}
+
+					f.currentTime = incrementTime
+
+					// We want to skip any radio messages when we jump forward in time
+					f.radioLock.Lock()
+					for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
+						f.radio = f.radio[1:]
+					}
+					f.radioLock.Unlock()
+
+				} else {
+					for len(f.event) > 0 && (f.event[0].Timestamp.Before(f.currentTime) || f.event[0].Timestamp.Equal(f.currentTime)) {
+						select {
+						case f.outputEvent <- f.event[0]:
+							f.currentLap = f.event[0].CurrentLap
+							f.currentStatus = f.event[0].Status
+
+							f.sessionStart = f.event[0].SessionStartTime
+							f.sessionLength = f.event[0].RemainingTime
+							f.clockStopped = f.event[0].ClockStopped
+
+						default:
+							// Data loss
+						}
+
+						f.event = f.event[1:]
+					}
 				}
-				f.radioLock.Unlock()
 			}
 			f.eventLock.Unlock()
 
-			f.skipToStart = false
-		}
-
-		f.eventLock.Lock()
-		if len(f.event) > 0 {
-
-			if f.currentTime.IsZero() && !f.event[0].Timestamp.IsZero() {
-				f.currentTime = f.event[0].Timestamp
-				f.clockStopped = f.event[0].ClockStopped
-			}
-
-			increment := f.incrementLapCount
-
-			if increment > 0 {
-				// TODO - thread safe
-				f.incrementLapCount = f.incrementLapCount - increment
-				targetLap := f.currentLap + increment
-				var incrementTime time.Time
-
-				for len(f.event) > 0 && f.currentLap < targetLap {
+			f.raceControlLock.Lock()
+			if len(f.raceControl) > 0 {
+				for len(f.raceControl) > 0 && (f.raceControl[0].Timestamp.Before(f.currentTime) || f.raceControl[0].Timestamp.Equal(f.currentTime)) {
 					select {
-					case f.outputEvent <- f.event[0]:
-						f.currentLap = f.event[0].CurrentLap
-						f.currentStatus = f.event[0].Status
-						incrementTime = f.event[0].Timestamp
-
-						f.sessionStart = f.event[0].SessionStartTime
-						f.sessionLength = f.event[0].RemainingTime
-						f.clockStopped = f.event[0].ClockStopped
-
+					case f.outputRaceControlMessages <- f.raceControl[0]:
 					default:
 						// Data loss
 					}
 
-					f.event = f.event[1:]
+					f.raceControl = f.raceControl[1:]
 				}
+			}
+			f.raceControlLock.Unlock()
 
-				f.currentTime = incrementTime
-
-				// We want to skip any radio messages when we jump forward in time
-				f.radioLock.Lock()
-				for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
-					f.radio = f.radio[1:]
-				}
-				f.radioLock.Unlock()
-
-			} else {
-				for len(f.event) > 0 && (f.event[0].Timestamp.Before(f.currentTime) || f.event[0].Timestamp.Equal(f.currentTime)) {
+			f.weatherLock.Lock()
+			if len(f.weather) > 0 {
+				for len(f.weather) > 0 && (f.weather[0].Timestamp.Before(f.currentTime) || f.weather[0].Timestamp.Equal(f.currentTime)) {
 					select {
-					case f.outputEvent <- f.event[0]:
-						f.currentLap = f.event[0].CurrentLap
-						f.currentStatus = f.event[0].Status
-
-						f.sessionStart = f.event[0].SessionStartTime
-						f.sessionLength = f.event[0].RemainingTime
-						f.clockStopped = f.event[0].ClockStopped
-
+					case f.outputWeather <- f.weather[0]:
 					default:
 						// Data loss
 					}
 
-					f.event = f.event[1:]
+					f.weather = f.weather[1:]
 				}
 			}
-		}
-		f.eventLock.Unlock()
+			f.weatherLock.Unlock()
 
-		f.raceControlLock.Lock()
-		if len(f.raceControl) > 0 {
-			for len(f.raceControl) > 0 && (f.raceControl[0].Timestamp.Before(f.currentTime) || f.raceControl[0].Timestamp.Equal(f.currentTime)) {
-				select {
-				case f.outputRaceControlMessages <- f.raceControl[0]:
-				default:
-					// Data loss
+			f.timingLock.Lock()
+			if len(f.timing) > 0 {
+				for len(f.timing) > 0 && (f.timing[0].Timestamp.Before(f.currentTime) || f.timing[0].Timestamp.Equal(f.currentTime)) {
+					select {
+					case f.outputTimingMessages <- f.timing[0]:
+					default:
+						// Data loss
+					}
+
+					f.timing = f.timing[1:]
 				}
-
-				f.raceControl = f.raceControl[1:]
 			}
-		}
-		f.raceControlLock.Unlock()
+			f.timingLock.Unlock()
 
-		f.weatherLock.Lock()
-		if len(f.weather) > 0 {
-			for len(f.weather) > 0 && (f.weather[0].Timestamp.Before(f.currentTime) || f.weather[0].Timestamp.Equal(f.currentTime)) {
-				select {
-				case f.outputWeather <- f.weather[0]:
-				default:
-					// Data loss
+			f.telemetryLock.Lock()
+			if len(f.telemetry) > 0 {
+				for len(f.telemetry) > 0 && (f.telemetry[0].Timestamp.Before(f.currentTime) || f.telemetry[0].Timestamp.Equal(f.currentTime)) {
+					select {
+					case f.outputTelemetry <- f.telemetry[0]:
+					default:
+						// Data loss
+					}
+
+					f.telemetry = f.telemetry[1:]
 				}
-
-				f.weather = f.weather[1:]
 			}
-		}
-		f.weatherLock.Unlock()
+			f.telemetryLock.Unlock()
 
-		f.timingLock.Lock()
-		if len(f.timing) > 0 {
-			for len(f.timing) > 0 && (f.timing[0].Timestamp.Before(f.currentTime) || f.timing[0].Timestamp.Equal(f.currentTime)) {
-				select {
-				case f.outputTimingMessages <- f.timing[0]:
-				default:
-					// Data loss
+			f.locationLock.Lock()
+			if len(f.location) > 0 {
+				for len(f.location) > 0 && (f.location[0].Timestamp.Before(f.currentTime) || f.location[0].Timestamp.Equal(f.currentTime)) {
+					select {
+					case f.outputLocation <- f.location[0]:
+					default:
+						// Data loss
+					}
+
+					f.location = f.location[1:]
 				}
-
-				f.timing = f.timing[1:]
 			}
-		}
-		f.timingLock.Unlock()
+			f.locationLock.Unlock()
 
-		f.telemetryLock.Lock()
-		if len(f.telemetry) > 0 {
-			for len(f.telemetry) > 0 && (f.telemetry[0].Timestamp.Before(f.currentTime) || f.telemetry[0].Timestamp.Equal(f.currentTime)) {
-				select {
-				case f.outputTelemetry <- f.telemetry[0]:
-				default:
-					// Data loss
-				}
-
-				f.telemetry = f.telemetry[1:]
-			}
-		}
-		f.telemetryLock.Unlock()
-
-		f.locationLock.Lock()
-		if len(f.location) > 0 {
-			for len(f.location) > 0 && (f.location[0].Timestamp.Before(f.currentTime) || f.location[0].Timestamp.Equal(f.currentTime)) {
-				select {
-				case f.outputLocation <- f.location[0]:
-				default:
-					// Data loss
-				}
-
-				f.location = f.location[1:]
-			}
-		}
-		f.locationLock.Unlock()
-
-		f.radioLock.Lock()
-		if len(f.radio) > 0 {
-			for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
-				select {
-				case f.outputRadio <- f.radio[0]:
-				default:
-					// Data loss
-				}
-
-				f.radio = f.radio[1:]
-			}
-		}
-		f.radioLock.Unlock()
-
-		if !f.currentTime.IsZero() {
-			increment := f.incrementTime
-			if increment > 0 {
-				f.currentTime = f.currentTime.Add(increment)
-
-				// TODO - do thread safe
-				f.incrementTime = f.incrementTime - increment
-
-				// We want to skip any radio messages when we jump forward in time
-				f.radioLock.Lock()
+			f.radioLock.Lock()
+			if len(f.radio) > 0 {
 				for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
+					select {
+					case f.outputRadio <- f.radio[0]:
+					default:
+						// Data loss
+					}
+
 					f.radio = f.radio[1:]
 				}
-				f.radioLock.Unlock()
 			}
+			f.radioLock.Unlock()
 
-			if !f.sessionStart.IsZero() && !f.clockStopped {
-				f.remainingTime = f.sessionLength - f.currentTime.Sub(f.sessionStart)
+			if !f.currentTime.IsZero() {
+				increment := f.incrementTime
+				if increment > 0 {
+					f.currentTime = f.currentTime.Add(increment)
 
-				// Things keep happening after the time has run out so just stop at 0
-				if f.remainingTime < 0 {
-					f.remainingTime = 0
+					// TODO - do thread safe
+					f.incrementTime = f.incrementTime - increment
+
+					// We want to skip any radio messages when we jump forward in time
+					f.radioLock.Lock()
+					for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
+						f.radio = f.radio[1:]
+					}
+					f.radioLock.Unlock()
 				}
+
+				if !f.sessionStart.IsZero() && !f.clockStopped {
+					f.remainingTime = f.sessionLength - f.currentTime.Sub(f.sessionStart)
+
+					// Things keep happening after the time has run out so just stop at 0
+					if f.remainingTime < 0 {
+						f.remainingTime = 0
+					}
+				}
+
+				f.outputEventTime <- Messages.EventTime{Timestamp: f.currentTime, Remaining: f.remainingTime}
+
+				f.currentTime = f.currentTime.Add(time.Millisecond * 1000)
 			}
-
-			f.outputEventTime <- Messages.EventTime{Timestamp: f.currentTime, Remaining: f.remainingTime}
-
-			f.currentTime = f.currentTime.Add(time.Millisecond * 1000)
 		}
-
-		time.Sleep(time.Millisecond * 1000)
 	}
 }
 

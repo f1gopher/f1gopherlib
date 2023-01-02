@@ -16,6 +16,7 @@
 package f1gopherlib
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"github.com/f1gopher/f1gopherlib/Messages"
@@ -25,6 +26,7 @@ import (
 	"github.com/f1gopher/f1gopherlib/parser"
 	"io"
 	"path/filepath"
+	"sync"
 	"time"
 )
 
@@ -49,6 +51,8 @@ type F1GopherLib interface {
 	SkipToSessionStart()
 	TogglePause()
 	IsPaused() bool
+
+	Close()
 }
 
 type f1gopherlib struct {
@@ -72,6 +76,10 @@ type f1gopherlib struct {
 	location            chan Messages.Location
 	eventTime           chan Messages.EventTime
 	radio               chan Messages.Radio
+
+	ctxShutdown context.CancelFunc
+	ctx         context.Context
+	wg          sync.WaitGroup
 }
 
 const channelSize = 100000
@@ -194,6 +202,8 @@ func CreateLive(requestedData parser.DataSource, archive string, cache string) (
 		sessionStart: currentEvent.EventTime,
 		track:        currentEvent.TrackName,
 	}
+	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
+
 	err := data.connectLive(requestedData, archive, currentEvent, cache)
 	// Always start live paused
 	data.TogglePause()
@@ -228,6 +238,8 @@ func CreateDebugReplay(
 		sessionStart:        event.EventTime,
 		track:               event.TrackName,
 	}
+	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
+
 	err := data.connectDebugReplay(requestedData, replayFile, event, dataFlow)
 	if err != nil {
 		return nil, err
@@ -258,6 +270,7 @@ func CreateReplay(
 		sessionStart:        event.EventTime,
 		track:               event.TrackName,
 	}
+	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
 	err := data.connectReplay(requestedData, event, cache, dataFlow)
 	if err != nil {
@@ -271,10 +284,10 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 	cache = f.cachePath(cache, event)
 
 	if len(archiveFile) == 0 {
-		f.connection = connection.CreateLive(f1Log)
+		f.connection = connection.CreateLive(f.ctx, &f.wg, f1Log)
 	} else {
 		var connErr error
-		f.connection, connErr = connection.CreateArchivingLive(archiveFile)
+		f.connection, connErr = connection.CreateArchivingLive(f.ctx, archiveFile)
 		if connErr != nil {
 			return connErr
 		}
@@ -286,6 +299,8 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 	}
 
 	f.replayTiming = flowControl.CreateFlowControl(
+		f.ctx,
+		&f.wg,
 		flowControl.Realtime,
 		f.weather,
 		f.raceControlMessages,
@@ -298,7 +313,16 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 
 	assetStore := connection.CreateAssetStore(event.Url(), cache, f1Log)
 
-	dataHandler := parser.Create(requestedData, dataChannel, f.replayTiming, assetStore, Messages.RaceSession, f1Log)
+	dataHandler := parser.Create(
+		f.ctx,
+		&f.wg,
+		requestedData,
+		dataChannel,
+		f.replayTiming,
+		assetStore,
+		Messages.RaceSession,
+		f1Log)
+
 	go dataHandler.Process()
 	go f.replayTiming.Run()
 
@@ -311,7 +335,7 @@ func (f *f1gopherlib) connectDebugReplay(
 	event RaceEvent,
 	dataFlow flowControl.FlowType) error {
 
-	f.connection = connection.CreateArchivedLive(f1Log, replayFile)
+	f.connection = connection.CreateArchivedLive(f.ctx, &f.wg, f1Log, replayFile)
 	err, dataChannel := f.connection.Connect()
 
 	if err != nil {
@@ -319,6 +343,8 @@ func (f *f1gopherlib) connectDebugReplay(
 	}
 
 	f.replayTiming = flowControl.CreateFlowControl(
+		f.ctx,
+		&f.wg,
 		dataFlow,
 		f.weather,
 		f.raceControlMessages,
@@ -332,7 +358,15 @@ func (f *f1gopherlib) connectDebugReplay(
 	// Don't use a cache for debug replays because we don't always know the event yet to give it a useful folder name
 	assetStore := connection.CreateAssetStore(event.Url(), "", f1Log)
 
-	f.dataHandler = parser.Create(requestedData, dataChannel, f.replayTiming, assetStore, event.Type, f1Log)
+	f.dataHandler = parser.Create(
+		f.ctx,
+		&f.wg,
+		requestedData,
+		dataChannel,
+		f.replayTiming,
+		assetStore,
+		event.Type,
+		f1Log)
 
 	go f.dataHandler.Process()
 	go f.replayTiming.Run()
@@ -349,7 +383,7 @@ func (f *f1gopherlib) connectReplay(
 	url := event.Url()
 	cache = f.cachePath(cache, event)
 
-	f.connection = connection.CreateReplay(f1Log, url, event.Type, event.RaceTime.Year(), cache)
+	f.connection = connection.CreateReplay(f.ctx, &f.wg, f1Log, url, event.Type, event.RaceTime.Year(), cache)
 	err, dataChannel := f.connection.Connect()
 
 	if err != nil {
@@ -357,6 +391,8 @@ func (f *f1gopherlib) connectReplay(
 	}
 
 	f.replayTiming = flowControl.CreateFlowControl(
+		f.ctx,
+		&f.wg,
 		dataFlow,
 		f.weather,
 		f.raceControlMessages,
@@ -369,7 +405,15 @@ func (f *f1gopherlib) connectReplay(
 
 	assetStore := connection.CreateAssetStore(event.Url(), cache, f1Log)
 
-	f.dataHandler = parser.Create(requestedData, dataChannel, f.replayTiming, assetStore, event.Type, f1Log)
+	f.dataHandler = parser.Create(
+		f.ctx,
+		&f.wg,
+		requestedData,
+		dataChannel,
+		f.replayTiming,
+		assetStore,
+		event.Type,
+		f1Log)
 
 	go f.dataHandler.Process()
 	go f.replayTiming.Run()
@@ -454,4 +498,24 @@ func (f *f1gopherlib) TogglePause() {
 
 func (f *f1gopherlib) IsPaused() bool {
 	return f.replayTiming.IsPaused()
+}
+
+func (f *f1gopherlib) Close() {
+	f.name = ""
+	f.track = ""
+
+	f.ctxShutdown()
+	f.wg.Wait()
+
+	f.connection = nil
+	f.dataHandler = nil
+
+	close(f.weather)
+	close(f.raceControlMessages)
+	close(f.timing)
+	close(f.event)
+	close(f.telemetry)
+	close(f.location)
+	close(f.eventTime)
+	close(f.radio)
 }

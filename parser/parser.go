@@ -18,6 +18,7 @@ package parser
 import (
 	"bytes"
 	"compress/gzip"
+	"context"
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
@@ -27,6 +28,7 @@ import (
 	"github.com/f1gopher/f1gopherlib/flowControl"
 	"io"
 	"strings"
+	"sync"
 	"time"
 )
 
@@ -57,9 +59,14 @@ type Parser struct {
 	session Messages.SessionType
 
 	log *f1log.F1GopherLibLog
+
+	ctx context.Context
+	wg  *sync.WaitGroup
 }
 
 func Create(
+	ctx context.Context,
+	wg *sync.WaitGroup,
 	requestedData DataSource,
 	incoming <-chan connection.Payload,
 	output flowControl.Flow,
@@ -68,6 +75,8 @@ func Create(
 	log *f1log.F1GopherLibLog) *Parser {
 
 	abc := Parser{
+		ctx:           ctx,
+		wg:            wg,
 		requestedData: requestedData,
 		incoming:      incoming,
 		output:        output,
@@ -89,8 +98,14 @@ func (p *Parser) ParseTimeError(file string, timestamp time.Time, field string, 
 }
 
 func (p *Parser) Process() {
+	p.wg.Add(1)
+	defer p.wg.Done()
+
 	for {
 		select {
+		case <-p.ctx.Done():
+			return
+
 		case msg := <-p.incoming:
 			switch msg.Name {
 			case connection.EndOfDataFile:

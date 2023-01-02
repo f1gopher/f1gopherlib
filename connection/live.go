@@ -22,6 +22,7 @@ import (
 	"github.com/f1gopher/signalr/v2"
 	"golang.org/x/sync/errgroup"
 	"os"
+	"sync"
 	"time"
 )
 
@@ -29,27 +30,31 @@ type live struct {
 	log     *f1log.F1GopherLibLog
 	archive *os.File
 	ctx     context.Context
+	wg      *sync.WaitGroup
 	c2      *signalr.Conn
 	client  *signalr.Client
 
 	dataFeed chan Payload
 }
 
-func CreateLive(log *f1log.F1GopherLibLog) *live {
+func CreateLive(ctx context.Context, wg *sync.WaitGroup, log *f1log.F1GopherLibLog) *live {
 	return &live{
+		ctx:      ctx,
+		wg:       wg,
 		log:      log,
 		dataFeed: make(chan Payload, 1000),
 		archive:  nil,
 	}
 }
 
-func CreateArchivingLive(archiveFile string) (*live, error) {
+func CreateArchivingLive(ctx context.Context, archiveFile string) (*live, error) {
 	archive, err := os.Create(fmt.Sprintf("%s_%d.txt", archiveFile, time.Now().UnixMilli()))
 	if err != nil {
 		return nil, err
 	}
 
 	return &live{
+		ctx:      ctx,
 		dataFeed: make(chan Payload, 1000),
 		archive:  archive,
 	}, nil
@@ -57,7 +62,6 @@ func CreateArchivingLive(archiveFile string) (*live, error) {
 
 func (l *live) Connect() (error, <-chan Payload) {
 	var err error
-	l.ctx = context.Background()
 
 	// Prepare a SignalR client.
 	l.c2, err = signalr.Dial(
@@ -75,6 +79,8 @@ func (l *live) Connect() (error, <-chan Payload) {
 	errg, ctx := errgroup.WithContext(l.ctx)
 	errg.Go(func() error { return l.client.Run(ctx) })
 	errg.Go(func() error {
+		l.wg.Add(1)
+		defer l.wg.Done()
 
 		stream, err1 := l.client.Callback(ctx, "feed")
 		if err1 != nil {

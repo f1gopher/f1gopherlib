@@ -17,6 +17,7 @@ package connection
 
 import (
 	"bufio"
+	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -27,6 +28,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 	"time"
 )
 
@@ -47,12 +49,25 @@ type replay struct {
 	eventYear int
 
 	dataFiles []fileInfo
+
+	ctx context.Context
+	wg  *sync.WaitGroup
 }
 
 const NotFoundResponse = "<?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message></Error>"
 
-func CreateReplay(log *f1log.F1GopherLibLog, url string, session Messages.SessionType, eventYear int, cache string) *replay {
+func CreateReplay(
+	ctx context.Context,
+	wg *sync.WaitGroup,
+	log *f1log.F1GopherLibLog,
+	url string,
+	session Messages.SessionType,
+	eventYear int,
+	cache string) *replay {
+
 	return &replay{
+		ctx:       ctx,
+		wg:        wg,
 		log:       log,
 		dataFeed:  make(chan Payload, 100000),
 		eventUrl:  url,
@@ -102,9 +117,17 @@ func (r *replay) readEntries() {
 	currentTime := sessionStartTime
 
 	hasData := true
+	r.wg.Add(1)
+	defer r.wg.Done()
 
 	for hasData {
 		hasData = false
+
+		select {
+		case <-r.ctx.Done():
+			return
+		default:
+		}
 
 		for x := range r.dataFiles {
 
