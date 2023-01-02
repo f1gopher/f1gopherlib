@@ -16,11 +16,11 @@
 package test
 
 import (
-	"f1gopherlib/f1gopherlib"
-	"f1gopherlib/f1gopherlib/Messages"
-	"f1gopherlib/f1gopherlib/connection"
-	"f1gopherlib/f1gopherlib/f1log"
-	"f1gopherlib/f1gopherlib/parser"
+	"github.com/f1gopher/f1gopherlib"
+	"github.com/f1gopher/f1gopherlib/Messages"
+	"github.com/f1gopher/f1gopherlib/connection"
+	"github.com/f1gopher/f1gopherlib/f1log"
+	"github.com/f1gopher/f1gopherlib/parser"
 	"os"
 	"path/filepath"
 	"strings"

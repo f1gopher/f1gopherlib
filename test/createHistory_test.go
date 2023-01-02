@@ -17,9 +17,9 @@ package test
 
 import (
 	"encoding/json"
-	"f1gopherlib/f1gopherlib"
-	"f1gopherlib/f1gopherlib/Messages"
 	"fmt"
+	"github.com/f1gopher/f1gopherlib"
+	"github.com/f1gopher/f1gopherlib/Messages"
 	"github.com/zsefvlol/timezonemapper"
 	"io"
 	"net/http"

@@ -58,6 +58,7 @@ func (p *Parser) parseSessionStatusData(dat map[string]interface{}, timestamp ti
 			for x := range info.Segment {
 				info.Segment[x] = Messages.None
 			}
+			info.Location = Messages.NoLocation
 
 			p.driverTimes[driverNum] = info
 

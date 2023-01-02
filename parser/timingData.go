@@ -41,10 +41,6 @@ func (p *Parser) parseTimingData(dat map[string]interface{}, timestamp time.Time
 	for driverNumber, data := range lines.(map[string]interface{}) {
 		record := data.(map[string]interface{})
 
-		//if driverNumber == "1" {
-		//	fmt.Println(record)
-		//}
-
 		currentDriver, exists := p.driverTimes[driverNumber]
 		if !exists {
 			continue
@@ -190,6 +186,9 @@ func (p *Parser) parseTimingData(dat map[string]interface{}, timestamp time.Time
 		value, exists = record["NumberOfLaps"].(float64)
 		if exists {
 			currentDriver.Lap = int(value.(float64))
+			if currentDriver.Location == Messages.OutLap {
+				currentDriver.Location = Messages.OnTrack
+			}
 		}
 
 		sectors, exists := record["Sectors"]
@@ -263,21 +262,23 @@ func (p *Parser) parseTimingData(dat map[string]interface{}, timestamp time.Time
 			}
 		}
 
-		inPit, exists := record["InPit"]
-		if exists && inPit.(bool) {
-			currentDriver.Location = Messages.Pitlane
-		}
-
-		boolValue, exists := record["PitOut"]
-		if exists && boolValue.(bool) {
-			currentDriver.Location = Messages.PitOut
-		}
-
-		// TODO - we can do this earlier if we look at the segments and update then
-		// If we were Pit Out but now aren't then out lap
-		if exists && !boolValue.(bool) && currentDriver.Location == Messages.PitOut {
-			currentDriver.Location = Messages.OutLap
-		}
+		// We use the segments to work out when we are in the pitlane
+		//
+		//inPit, exists := record["InPit"]
+		//if exists && inPit.(bool) {
+		//		currentDriver.Location = Messages.Pitlane
+		//}
+		//
+		//boolValue, exists := record["PitOut"]
+		//if exists && boolValue.(bool) {
+		//		currentDriver.Location = Messages.PitOut
+		//}
+		//
+		//// TODO - we can do this earlier if we look at the segments and update then
+		//// If we were Pit Out but now aren't then out lap
+		//if exists && !boolValue.(bool) && currentDriver.Location == Messages.PitOut {
+		//		currentDriver.Location = Messages.OutLap
+		//}
 
 		bestLapTime, exists := record["BestLapTime"].(map[string]interface{})
 		if exists {
@@ -415,31 +416,27 @@ func (p *Parser) processSectorTimes(key string, value interface{}, driver *Messa
 	segments, exists := value.(map[string]interface{})["Segments"]
 	if exists {
 		segmentState := Messages.None
+		currentSegmentIndex := 0
+		useSegmentChange := true
 
 		if reflect.TypeOf(segments).Kind() == reflect.Slice {
 			for x, info := range segments.([]interface{}) {
-				currentSegment := x
-				segmentState = p.calcSegment(key, info, timestamp, currentSegment, driver)
+				currentSegmentIndex = x
+				segmentState, useSegmentChange = p.calcSegment(key, info, timestamp, currentSegmentIndex, driver)
+
+				if useSegmentChange {
+					p.updateLocation(driver, segmentState)
+				}
 			}
 
 		} else if reflect.TypeOf(segments).Kind() == reflect.Map {
 			for x, info := range segments.(map[string]interface{}) {
-				currentSegment, _ := strconv.Atoi(x)
-				segmentState = p.calcSegment(key, info, timestamp, currentSegment, driver)
-			}
-		}
+				currentSegmentIndex, _ = strconv.Atoi(x)
+				segmentState, useSegmentChange = p.calcSegment(key, info, timestamp, currentSegmentIndex, driver)
 
-		// Sometimes it is none when we are on track so leave location as is
-		if segmentState == Messages.None && (driver.Location != Messages.OutLap && driver.Location != Messages.OnTrack) {
-			driver.Location = Messages.Pitlane
-		} else if segmentState == Messages.PitlaneSegment {
-			driver.Location = Messages.Pitlane
-		} else {
-			// Sometimes we get the first segment as pits on the formation lap
-			if driver.Segment[0] == Messages.PitlaneSegment && driver.Segment[1] == Messages.PitlaneSegment {
-				driver.Location = Messages.OutLap
-			} else {
-				driver.Location = Messages.OnTrack
+				if useSegmentChange {
+					p.updateLocation(driver, segmentState)
+				}
 			}
 		}
 	}
@@ -503,16 +500,40 @@ func (p *Parser) processSectorTimes(key string, value interface{}, driver *Messa
 	}
 }
 
+func (p *Parser) updateLocation(driver *Messages.Timing, segmentState Messages.SegmentType) {
+
+	// Sometimes it is none when we are on track so leave location as is
+	if segmentState == Messages.None && (driver.Location != Messages.OutLap && driver.Location != Messages.OnTrack) {
+		driver.Location = Messages.Pitlane
+	} else if segmentState == Messages.PitlaneSegment {
+		driver.Location = Messages.Pitlane
+	} else {
+		if driver.Segment[0] == Messages.PitlaneSegment || driver.Segment[1] == Messages.PitlaneSegment {
+			driver.Location = Messages.OutLap
+		} else {
+			driver.Location = Messages.OnTrack
+		}
+	}
+}
+
 func (p *Parser) calcSegment(
 	key string,
 	info interface{},
 	timestamp time.Time,
 	currentSegment int,
-	driver *Messages.Timing) Messages.SegmentType {
+	driver *Messages.Timing) (Messages.SegmentType, bool) {
 
 	segmentState := Messages.None
 	abc := info.(map[string]interface{})
 	status := int(abc["Status"].(float64))
+	useSegmentChange := false
+
+	segmentIndex := currentSegment
+	if key == "1" {
+		segmentIndex = p.eventState.Sector1Segments + currentSegment
+	} else if key == "2" {
+		segmentIndex = p.eventState.Sector1Segments + p.eventState.Sector2Segments + currentSegment
+	}
 
 	if status != 0 {
 		switch status {
@@ -538,21 +559,43 @@ func (p *Parser) calcSegment(
 			p.ParseErrorf(connection.TimingDataFile, timestamp, "Unhandled segment state value: %d", status)
 		}
 
+		useSegmentChange = segmentIndex >= driver.PreviousSegmentIndex ||
+			// if previous was sector 3 and new one is sector 1
+			(driver.PreviousSegmentIndex > (p.eventState.Sector1Segments+p.eventState.Sector2Segments) &&
+				segmentIndex < p.eventState.Sector1Segments)
+
 		switch key {
 		case "0":
-			// When we start a new lap clear the previous
-			if currentSegment == 0 || currentSegment == 1 {
-				for y := currentSegment; y < len(driver.Segment); y++ {
+			// If the last segment was in the third sector then we have started a new lap so clear everything
+			if driver.PreviousSegmentIndex > (p.eventState.Sector1Segments + p.eventState.Sector2Segments) {
+				for y := 0; y < len(driver.Segment); y++ {
 					driver.Segment[y] = Messages.None
 				}
 			}
 
-			driver.Segment[currentSegment] = segmentState
+			driver.Segment[segmentIndex] = segmentState
+			if segmentIndex > driver.PreviousSegmentIndex ||
+				driver.PreviousSegmentIndex > (p.eventState.Sector1Segments+p.eventState.Sector2Segments) {
+				driver.PreviousSegmentIndex = segmentIndex
+			}
+
 		case "1":
-			driver.Segment[p.eventState.Sector1Segments+currentSegment] = segmentState
+			driver.Segment[segmentIndex] = segmentState
+
+			if segmentIndex > driver.PreviousSegmentIndex {
+				driver.PreviousSegmentIndex = segmentIndex
+			}
 		case "2":
-			driver.Segment[p.eventState.Sector1Segments+p.eventState.Sector2Segments+currentSegment] = segmentState
+			// If we get late data and we have already started a new lap then ignore
+			if !(driver.PreviousSegmentIndex < p.eventState.Sector1Segments) {
+				driver.Segment[segmentIndex] = segmentState
+
+				if segmentIndex > driver.PreviousSegmentIndex {
+					driver.PreviousSegmentIndex = segmentIndex
+				}
+			}
 		}
 	}
-	return segmentState
+
+	return segmentState, useSegmentChange
 }

@@ -88,10 +88,6 @@ func (p *Parser) ParseTimeError(file string, timestamp time.Time, field string, 
 	p.log.Errorf("%s - %v: Unable to parse time for '%s': %v", file, timestamp, field, err)
 }
 
-func (p *Parser) SelectData(requestedData DataSource) {
-	p.requestedData = requestedData
-}
-
 func (p *Parser) Process() {
 	for {
 		select {

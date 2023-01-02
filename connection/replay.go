@@ -276,10 +276,10 @@ func (r *replay) raceTime(value string, sessionStart time.Time) (time.Time, erro
 func (r *replay) get(url string) *bufio.Scanner {
 
 	if len(r.cache) > 0 {
-		dataPath := strings.Replace(url, "https://livetiming.formula1.com/static/", "", 1)
+		fileName := filepath.Base(url)
 
 		// If file matching url doesn't exist then retrieve
-		cachedFile := filepath.Join(r.cache, dataPath)
+		cachedFile := filepath.Join(r.cache, fileName)
 		cachedFile, _ = filepath.Abs(cachedFile)
 		f, err := os.Open(cachedFile)
 

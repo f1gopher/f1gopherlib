@@ -87,6 +87,7 @@ type Timing struct {
 	TimeDiffToPositionAhead time.Duration
 	GapToLeader             time.Duration
 
+	PreviousSegmentIndex   int
 	Segment                [MaxSegments]SegmentType
 	Sector1                time.Duration
 	Sector1PersonalFastest bool
