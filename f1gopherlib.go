@@ -36,6 +36,7 @@ type F1GopherLib interface {
 	CircuitTimezone() *time.Location
 	SessionStart() time.Time
 	Track() string
+	TrackYear() int
 
 	Weather() <-chan Messages.Weather
 	RaceControlMessages() <-chan Messages.RaceControlMessage
@@ -63,6 +64,7 @@ type f1gopherlib struct {
 	timezone     *time.Location
 	sessionStart time.Time
 	track        string
+	trackYear    int
 
 	connection   connection.Connection
 	dataHandler  *parser.Parser
@@ -97,6 +99,7 @@ func CreateRaceEvent(
 	sessionType Messages.SessionType,
 	name string,
 	track string,
+	trackYearCreated int,
 	urlName string,
 	timezone string) *RaceEvent {
 
@@ -133,25 +136,27 @@ func CreateRaceEvent(
 		sessionName)
 
 	return &RaceEvent{
-		Country:   country,
-		RaceTime:  raceTime,
-		EventTime: eventTime,
-		Type:      sessionType,
-		Name:      name,
-		timezone:  timezone,
-		TrackName: track,
-		urlName:   urlName,
+		Country:          country,
+		RaceTime:         raceTime,
+		EventTime:        eventTime,
+		Type:             sessionType,
+		Name:             name,
+		timezone:         timezone,
+		TrackName:        track,
+		TrackYearCreated: trackYearCreated,
+		urlName:          urlName,
 	}
 }
 
 type RaceEvent struct {
-	Country   string
-	RaceTime  time.Time
-	EventTime time.Time
-	Type      Messages.SessionType
-	Name      string
-	timezone  string
-	TrackName string
+	Country          string
+	RaceTime         time.Time
+	EventTime        time.Time
+	Type             Messages.SessionType
+	Name             string
+	timezone         string
+	TrackName        string
+	TrackYearCreated int
 
 	// TODO - add duration
 
@@ -201,6 +206,7 @@ func CreateLive(requestedData parser.DataSource, archive string, cache string) (
 		timezone:     currentEvent.Timezone(),
 		sessionStart: currentEvent.EventTime,
 		track:        currentEvent.TrackName,
+		trackYear:    currentEvent.TrackYearCreated,
 	}
 	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
@@ -237,6 +243,7 @@ func CreateDebugReplay(
 		timezone:            event.Timezone(),
 		sessionStart:        event.EventTime,
 		track:               event.TrackName,
+		trackYear:           event.TrackYearCreated,
 	}
 	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
@@ -269,6 +276,7 @@ func CreateReplay(
 		timezone:            event.Timezone(),
 		sessionStart:        event.EventTime,
 		track:               event.TrackName,
+		trackYear:           event.TrackYearCreated,
 	}
 	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
@@ -443,6 +451,10 @@ func (f *f1gopherlib) SessionStart() time.Time {
 
 func (f *f1gopherlib) Track() string {
 	return f.track
+}
+
+func (f *f1gopherlib) TrackYear() int {
+	return f.trackYear
 }
 
 func (f *f1gopherlib) Weather() <-chan Messages.Weather {

@@ -40,7 +40,7 @@ func TestReplay(t *testing.T) {
 
 		t.Logf("Testing: %d %d - %s %s...", x, session.RaceTime.Year(), session.Country, session.Type.String())
 
-		replay := connection.CreateReplay(log, session.Url(), session.Type, session.RaceTime.Year(), "")
+		replay := connection.CreateReplay(nil, nil, log, session.Url(), session.Type, session.RaceTime.Year(), "")
 		err, payload := replay.Connect()
 
 		if err != nil {
@@ -53,7 +53,7 @@ func TestReplay(t *testing.T) {
 			filepath.Join("./cache", strings.Replace(session.Url(), "https://livetiming.formula1.com/static/", "", 1)),
 			log)
 
-		p := parser.Create(parser.EventTime|parser.Event|parser.RaceControl|parser.Weather|parser.Timing|parser.Telemetry|parser.Location|parser.TeamRadio,
+		p := parser.Create(nil, nil, parser.EventTime|parser.Event|parser.RaceControl|parser.Weather|parser.Timing|parser.Telemetry|parser.Location|parser.TeamRadio,
 			payload,
 			dummy,
 			assetStore,

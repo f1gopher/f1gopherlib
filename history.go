@@ -82,12 +82,14 @@ func HappeningSessions() (liveSession RaceEvent, nextSession RaceEvent, hasLiveS
 					return all[x], all[x-1], true, true
 				}
 			}
-		} else if utcNow.Before(all[x].EventTime) {
-			// If this is the first session that is after now then nothing is live and this is the next session
-			return RaceEvent{}, all[x], false, true
-		} else {
-			// No live or upcoming sessions
-			break
+		} else if all[x].EventTime.Before(utcNow) {
+			if x == 0 {
+				// No live or upcoming sessions
+				break
+			}
+
+			// If this is the first session before now then the next session is the one that came before it
+			return RaceEvent{}, all[x-1], false, true
 		}
 	}
 
