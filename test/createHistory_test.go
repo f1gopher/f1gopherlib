@@ -204,6 +204,8 @@ func buildHistory() []f1gopherlib.RaceEvent {
 				trackCreatedYear = 2022
 			} else if race.Circuit.CircuitName == "Yas Marina Circuit" && raceDate.Year() >= 2021 {
 				trackCreatedYear = 2021
+			} else if race.Circuit.CircuitName == "Jeddah Corniche Circuit" && raceDate.Year() == 2021 {
+				trackCreatedYear = 2021
 			} else if race.Circuit.CircuitName == "Jeddah Corniche Circuit" && raceDate.Year() >= 2022 {
 				trackCreatedYear = 2022
 			} else if race.Circuit.CircuitName == "Jeddah Corniche Circuit" && raceDate.Year() >= 2023 {
@@ -226,6 +228,8 @@ func buildHistory() []f1gopherlib.RaceEvent {
 				trackCreatedYear = 2022
 			} else if race.Circuit.CircuitName == "Las Vegas Strip Street Circuit" {
 				trackCreatedYear = 2023
+			} else if race.Circuit.CircuitName == "Losail International Circuit" {
+				trackCreatedYear = 2021
 			}
 
 			// Some events only have race times

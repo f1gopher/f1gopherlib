@@ -303,7 +303,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-08_Race/",
 	},
 	{
@@ -314,7 +314,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-07_Sprint/",
 	},
 	{
@@ -325,7 +325,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-07_Practice_2/",
 	},
 	{
@@ -336,7 +336,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-06_Qualifying/",
 	},
 	{
@@ -347,7 +347,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-06_Practice_1/",
 	},
 	{
@@ -2558,7 +2558,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Saudi Arabian Grand Prix",
 		timezone:  "Asia/Riyadh",
 		TrackName: "Jeddah Corniche Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-05_Race/",
 	},
 	{
@@ -2569,7 +2569,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Saudi Arabian Grand Prix",
 		timezone:  "Asia/Riyadh",
 		TrackName: "Jeddah Corniche Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-04_Qualifying/",
 	},
 	{
@@ -2580,7 +2580,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Saudi Arabian Grand Prix",
 		timezone:  "Asia/Riyadh",
 		TrackName: "Jeddah Corniche Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-04_Practice_3/",
 	},
 	{
@@ -2591,7 +2591,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Saudi Arabian Grand Prix",
 		timezone:  "Asia/Riyadh",
 		TrackName: "Jeddah Corniche Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-03_Practice_2/",
 	},
 	{
@@ -2602,7 +2602,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Saudi Arabian Grand Prix",
 		timezone:  "Asia/Riyadh",
 		TrackName: "Jeddah Corniche Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-03_Practice_1/",
 	},
 	{
@@ -2613,7 +2613,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-21_Race/",
 	},
 	{
@@ -2624,7 +2624,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-20_Qualifying/",
 	},
 	{
@@ -2635,7 +2635,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-20_Practice_3/",
 	},
 	{
@@ -2646,7 +2646,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-19_Practice_2/",
 	},
 	{
@@ -2657,7 +2657,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
 		TrackName: "Losail International Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-19_Practice_1/",
 	},
 	{
