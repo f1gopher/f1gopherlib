@@ -81,7 +81,7 @@ type Timing struct {
 	Number    int
 	Team      string
 	HexColor  string
-	Color     color.Color
+	Color     color.RGBA
 
 	TimeDiffToFastest       time.Duration
 	TimeDiffToPositionAhead time.Duration
