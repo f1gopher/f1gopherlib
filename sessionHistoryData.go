@@ -83,7 +83,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2023,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-18_Race/",
 	},
 	{
@@ -94,7 +94,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2023,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-17_Qualifying/",
 	},
 	{
@@ -105,7 +105,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2023,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-17_Practice_3/",
 	},
 	{
@@ -116,7 +116,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2023,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-16_Practice_2/",
 	},
 	{
@@ -127,7 +127,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2023,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-16_Practice_1/",
 	},
 	{
@@ -523,7 +523,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-27_Race/",
 	},
 	{
@@ -534,7 +534,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-26_Qualifying/",
 	},
 	{
@@ -545,7 +545,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-26_Practice_3/",
 	},
 	{
@@ -556,7 +556,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-25_Practice_2/",
 	},
 	{
@@ -567,7 +567,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-25_Practice_1/",
 	},
 	{
@@ -963,7 +963,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-21_Race/",
 	},
 	{
@@ -974,7 +974,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-20_Qualifying/",
 	},
 	{
@@ -985,7 +985,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-20_Practice_3/",
 	},
 	{
@@ -996,7 +996,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-19_Practice_2/",
 	},
 	{
@@ -1007,7 +1007,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-19_Practice_1/",
 	},
 	{
@@ -1018,7 +1018,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-07_Race/",
 	},
 	{
@@ -1029,7 +1029,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-06_Qualifying/",
 	},
 	{
@@ -1040,7 +1040,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-06_Practice_3/",
 	},
 	{
@@ -1051,7 +1051,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-05_Practice_2/",
 	},
 	{
@@ -1062,7 +1062,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-05_Practice_1/",
 	},
 	{
@@ -1678,7 +1678,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-04_Race/",
 	},
 	{
@@ -1689,7 +1689,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-03_Qualifying/",
 	},
 	{
@@ -1700,7 +1700,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-03_Practice_3/",
 	},
 	{
@@ -1711,7 +1711,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-02_Practice_2/",
 	},
 	{
@@ -1722,7 +1722,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-02_Practice_1/",
 	},
 	{
@@ -2228,7 +2228,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-08_Race/",
 	},
 	{
@@ -2239,7 +2239,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-07_Qualifying/",
 	},
 	{
@@ -2250,7 +2250,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-07_Practice_3/",
 	},
 	{
@@ -2261,7 +2261,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-06_Practice_2/",
 	},
 	{
@@ -2272,7 +2272,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
 		TrackName: "Miami International Autodrome",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2022,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-06_Practice_1/",
 	},
 	{
@@ -2283,7 +2283,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-24_Race/",
 	},
 	{
@@ -2294,7 +2294,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-23_Sprint/",
 	},
 	{
@@ -2305,7 +2305,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-23_Practice_2/",
 	},
 	{
@@ -2316,7 +2316,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-22_Qualifying/",
 	},
 	{
@@ -2327,7 +2327,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-22_Practice_1/",
 	},
 	{
@@ -2833,7 +2833,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-10_Race/",
 	},
 	{
@@ -2844,7 +2844,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-09_Qualifying/",
 	},
 	{
@@ -2855,7 +2855,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-09_Practice_3/",
 	},
 	{
@@ -2866,7 +2866,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-08_Practice_2/",
 	},
 	{
@@ -2877,7 +2877,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-08_Practice_1/",
 	},
 	{
@@ -2998,7 +2998,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-05_Race/",
 	},
 	{
@@ -3009,7 +3009,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-04_Qualifying/",
 	},
 	{
@@ -3020,7 +3020,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-04_Practice_3/",
 	},
 	{
@@ -3031,7 +3031,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-03_Practice_2/",
 	},
 	{
@@ -3042,7 +3042,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
 		TrackName: "Circuit Park Zandvoort",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2021,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-03_Practice_1/",
 	},
 	{
@@ -3548,7 +3548,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-05-02_Race/",
 	},
 	{
@@ -3559,7 +3559,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-05-01_Qualifying/",
 	},
 	{
@@ -3570,7 +3570,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-05-01_Practice_3/",
 	},
 	{
@@ -3581,7 +3581,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-04-30_Practice_2/",
 	},
 	{
@@ -3592,7 +3592,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-04-30_Practice_1/",
 	},
 	{
@@ -3603,7 +3603,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-18_Race/",
 	},
 	{
@@ -3614,7 +3614,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-17_Qualifying/",
 	},
 	{
@@ -3625,7 +3625,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-17_Practice_3/",
 	},
 	{
@@ -3636,7 +3636,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-16_Practice_2/",
 	},
 	{
@@ -3647,7 +3647,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-16_Practice_1/",
 	},
 	{
@@ -3767,8 +3767,8 @@ var sessionHistory = [...]RaceEvent{	{
 		Type:      Messages.RaceSession,
 		Name:      "Sakhir Grand Prix",
 		timezone:  "Asia/Bahrain",
-		TrackName: "Bahrain International Circuit",
-		TrackYearCreated: 2018,
+		TrackName: "Bahrain International Circuit - Outer Track",
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/",
 	},
 	{
@@ -3778,8 +3778,8 @@ var sessionHistory = [...]RaceEvent{	{
 		Type:      Messages.QualifyingSession,
 		Name:      "Sakhir Grand Prix",
 		timezone:  "Asia/Bahrain",
-		TrackName: "Bahrain International Circuit",
-		TrackYearCreated: 2018,
+		TrackName: "Bahrain International Circuit - Outer Track",
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-05_Qualifying/",
 	},
 	{
@@ -3789,8 +3789,8 @@ var sessionHistory = [...]RaceEvent{	{
 		Type:      Messages.Practice3Session,
 		Name:      "Sakhir Grand Prix",
 		timezone:  "Asia/Bahrain",
-		TrackName: "Bahrain International Circuit",
-		TrackYearCreated: 2018,
+		TrackName: "Bahrain International Circuit - Outer Track",
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-05_Practice_3/",
 	},
 	{
@@ -3800,8 +3800,8 @@ var sessionHistory = [...]RaceEvent{	{
 		Type:      Messages.Practice2Session,
 		Name:      "Sakhir Grand Prix",
 		timezone:  "Asia/Bahrain",
-		TrackName: "Bahrain International Circuit",
-		TrackYearCreated: 2018,
+		TrackName: "Bahrain International Circuit - Outer Track",
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-04_Practice_2/",
 	},
 	{
@@ -3811,8 +3811,8 @@ var sessionHistory = [...]RaceEvent{	{
 		Type:      Messages.Practice1Session,
 		Name:      "Sakhir Grand Prix",
 		timezone:  "Asia/Bahrain",
-		TrackName: "Bahrain International Circuit",
-		TrackYearCreated: 2018,
+		TrackName: "Bahrain International Circuit - Outer Track",
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-04_Practice_1/",
 	},
 	{
@@ -3878,7 +3878,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-15_Race/",
 	},
 	{
@@ -3889,7 +3889,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-14_Qualifying/",
 	},
 	{
@@ -3900,7 +3900,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-14_Practice_3/",
 	},
 	{
@@ -3911,7 +3911,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-13_Practice_2/",
 	},
 	{
@@ -3922,7 +3922,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Turkish Grand Prix",
 		timezone:  "Europe/Istanbul",
 		TrackName: "Istanbul Park",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-13_Practice_1/",
 	},
 	{
@@ -3933,7 +3933,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/",
 	},
 	{
@@ -3944,7 +3944,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-10-31_Qualifying/",
 	},
 	{
@@ -3955,7 +3955,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-10-31_Practice_1/",
 	},
 	{
@@ -3966,7 +3966,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/",
 	},
 	{
@@ -3977,7 +3977,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-24_Qualifying/",
 	},
 	{
@@ -3988,7 +3988,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-24_Practice_3/",
 	},
 	{
@@ -3999,7 +3999,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-23_Practice_2/",
 	},
 	{
@@ -4010,7 +4010,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Portuguese Grand Prix",
 		timezone:  "Europe/Lisbon",
 		TrackName: "Autódromo Internacional do Algarve",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-23_Practice_1/",
 	},
 	{
@@ -4131,7 +4131,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Tuscan Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Internazionale del Mugello",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-13_Race/",
 	},
 	{
@@ -4142,7 +4142,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Tuscan Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Internazionale del Mugello",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-12_Qualifying/",
 	},
 	{
@@ -4153,7 +4153,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Tuscan Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Internazionale del Mugello",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-12_Practice_3/",
 	},
 	{
@@ -4164,7 +4164,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Tuscan Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Internazionale del Mugello",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-11_Practice_2/",
 	},
 	{
@@ -4175,7 +4175,7 @@ var sessionHistory = [...]RaceEvent{	{
 		Name:      "Tuscan Grand Prix",
 		timezone:  "Europe/Rome",
 		TrackName: "Autodromo Internazionale del Mugello",
-		TrackYearCreated: 2018,
+		TrackYearCreated: 2020,
 		urlName:   "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-11_Practice_1/",
 	},
 	{

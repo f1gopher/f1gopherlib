@@ -40,7 +40,22 @@ func TestCreateHistory(t *testing.T) {
 	}
 	defer output.Close()
 
-	output.WriteString(`package f1gopherlib
+	output.WriteString(`// F1GopherLib - Copyright (C) 2022 f1gopher
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+package f1gopherlib
 
 import (
 	"github.com/f1gopher/f1gopherlib/Messages"
@@ -177,6 +192,11 @@ func buildHistory() []f1gopherlib.RaceEvent {
 			qualifyingTime, err := time.Parse("2006-01-02T15:04:05Z", race.Qualifying.Date+"T"+race.Qualifying.Time)
 			sprintTime, err := time.Parse("2006-01-02T15:04:05Z", race.Sprint.Date+"T"+race.Sprint.Time)
 
+			// Correct for different layout at the same track
+			if race.RaceName == "Sakhir Grand Prix" && raceDate.Year() == 2020 {
+				race.Circuit.CircuitName = "Bahrain International Circuit - Outer Track"
+			}
+
 			// Include the year the track was created/last changed so we know which map to use if the track has changed
 			// over time. For tracks that have changed use the change data
 			trackCreatedYear := defaultTrackCreatedYear
@@ -190,6 +210,22 @@ func buildHistory() []f1gopherlib.RaceEvent {
 				trackCreatedYear = 2023
 			} else if race.Circuit.CircuitName == "Circuit de Spa-Francorchamps" && raceDate.Year() >= 2022 {
 				trackCreatedYear = 2022
+			} else if race.Circuit.CircuitName == "Autodromo Internazionale del Mugello" {
+				trackCreatedYear = 2020
+			} else if race.Circuit.CircuitName == "Autódromo Internacional do Algarve" {
+				trackCreatedYear = 2020
+			} else if race.Circuit.CircuitName == "Autodromo Enzo e Dino Ferrari" {
+				trackCreatedYear = 2020
+			} else if race.Circuit.CircuitName == "Istanbul Park" {
+				trackCreatedYear = 2020
+			} else if race.Circuit.CircuitName == "Bahrain International Circuit - Outer Track" && race.RaceName == "Sakhir Grand Prix" {
+				trackCreatedYear = 2020
+			} else if race.Circuit.CircuitName == "Circuit Park Zandvoort" {
+				trackCreatedYear = 2021
+			} else if race.Circuit.CircuitName == "Miami International Autodrome" {
+				trackCreatedYear = 2022
+			} else if race.Circuit.CircuitName == "Las Vegas Strip Street Circuit" {
+				trackCreatedYear = 2023
 			}
 
 			// Some events only have race times
