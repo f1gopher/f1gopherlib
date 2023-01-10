@@ -94,6 +94,8 @@ func (f *realtime) Run() {
 
 						if f.event[x].Status == Messages.Started && !needToStopAndStart {
 							f.currentTime = f.event[x].Timestamp
+							// Only reset the skip if we we able to skip otherwise we are still waiting for enough data
+							f.skipToStart = false
 							break
 						}
 
@@ -110,8 +112,6 @@ func (f *realtime) Run() {
 					f.radioLock.Unlock()
 				}
 				f.eventLock.Unlock()
-
-				f.skipToStart = false
 			}
 
 			if counter == 3 {
