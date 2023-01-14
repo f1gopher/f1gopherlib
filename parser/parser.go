@@ -43,6 +43,7 @@ const (
 	Telemetry
 	Location
 	TeamRadio
+	Drivers
 )
 
 type Parser struct {
@@ -56,7 +57,8 @@ type Parser struct {
 
 	assets connection.AssetStore
 
-	session Messages.SessionType
+	session  Messages.SessionType
+	timezone *time.Location
 
 	log *f1log.F1GopherLibLog
 
@@ -72,7 +74,8 @@ func Create(
 	output flowControl.Flow,
 	assets connection.AssetStore,
 	session Messages.SessionType,
-	log *f1log.F1GopherLibLog) *Parser {
+	log *f1log.F1GopherLibLog,
+	timezone *time.Location) *Parser {
 
 	abc := Parser{
 		ctx:           ctx,
@@ -83,6 +86,7 @@ func Create(
 		driverTimes:   make(map[string]Messages.Timing),
 		assets:        assets,
 		session:       session,
+		timezone:      timezone,
 		log:           log,
 	}
 
@@ -311,7 +315,11 @@ func (p *Parser) handleMessage(name string, dat map[string]interface{}, timestam
 		}
 
 	case connection.DriverListFile:
-		p.parseDriverList(dat, timestamp)
+		outgoing := p.parseDriverList(dat, timestamp)
+		if p.requestedData&Drivers == Drivers && outgoing != nil {
+			// Is always only one record
+			p.output.AddDrivers(outgoing[0])
+		}
 
 	case connection.ExtrapolatedClockFile:
 		outgoing, err := p.parseExtrapolatedClockData(dat, timestamp)

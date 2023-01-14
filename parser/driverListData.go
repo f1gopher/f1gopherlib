@@ -24,7 +24,8 @@ import (
 	"time"
 )
 
-func (p *Parser) parseDriverList(dat map[string]interface{}, timestamp time.Time) {
+func (p *Parser) parseDriverList(dat map[string]interface{}, timestamp time.Time) []Messages.Drivers {
+	var driver []Messages.Drivers = nil
 
 	for driverNum, info := range dat {
 		if driverNum == "_kf" {
@@ -68,8 +69,29 @@ func (p *Parser) parseDriverList(dat map[string]interface{}, timestamp time.Time
 				HexColor:  "#" + teamHexColour,
 				Color:     teamColor,
 			}
+
+			if driver == nil {
+				driver = []Messages.Drivers{
+					{
+						Timestamp: timestamp,
+						Drivers:   nil,
+					},
+				}
+			}
+
+			driver[0].Drivers = append(driver[0].Drivers, Messages.DriverInfo{
+				StartPosition: current.Position,
+				Name:          current.Name,
+				ShortName:     current.ShortName,
+				Number:        current.Number,
+				Team:          current.Team,
+				HexColor:      current.HexColor,
+				Color:         current.Color,
+			})
 		}
 
 		p.driverTimes[driverNum] = current
 	}
+
+	return driver
 }

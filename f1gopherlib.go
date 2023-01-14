@@ -46,6 +46,7 @@ type F1GopherLib interface {
 	Location() <-chan Messages.Location
 	Time() <-chan Messages.EventTime
 	Radio() <-chan Messages.Radio
+	Drivers() <-chan Messages.Drivers
 
 	IncrementLap()
 	IncrementTime(duration time.Duration)
@@ -78,13 +79,22 @@ type f1gopherlib struct {
 	location            chan Messages.Location
 	eventTime           chan Messages.EventTime
 	radio               chan Messages.Radio
+	drivers             chan Messages.Drivers
 
 	ctxShutdown context.CancelFunc
 	ctx         context.Context
 	wg          sync.WaitGroup
 }
 
-const channelSize = 100000
+const weatherChannelSize = 100
+const rcmChannelSize = 100
+const timingChannelSize = 100000
+const eventChannelSize = 100
+const telemetryChannelSize = 100000
+const locationChannelSize = 100000
+const eventTimeChannelSize = 100
+const radioChannelSize = 100
+const driversChannelSize = 100
 
 var f1Log = f1log.CreateLog()
 
@@ -191,14 +201,15 @@ func CreateLive(requestedData parser.DataSource, archive string, cache string) (
 	f1Log.Infof("Creating live session for: %v", currentEvent.string())
 
 	data := f1gopherlib{
-		weather:             make(chan Messages.Weather, channelSize),
-		raceControlMessages: make(chan Messages.RaceControlMessage, channelSize),
-		timing:              make(chan Messages.Timing, channelSize),
-		event:               make(chan Messages.Event, channelSize),
-		telemetry:           make(chan Messages.Telemetry, channelSize),
-		location:            make(chan Messages.Location, channelSize),
-		eventTime:           make(chan Messages.EventTime, channelSize),
-		radio:               make(chan Messages.Radio, channelSize),
+		weather:             make(chan Messages.Weather, weatherChannelSize),
+		raceControlMessages: make(chan Messages.RaceControlMessage, rcmChannelSize),
+		timing:              make(chan Messages.Timing, timingChannelSize),
+		event:               make(chan Messages.Event, eventChannelSize),
+		telemetry:           make(chan Messages.Telemetry, telemetryChannelSize),
+		location:            make(chan Messages.Location, locationChannelSize),
+		eventTime:           make(chan Messages.EventTime, eventTimeChannelSize),
+		radio:               make(chan Messages.Radio, radioChannelSize),
+		drivers:             make(chan Messages.Drivers, driversChannelSize),
 
 		archive:      archive,
 		session:      currentEvent.Type,
@@ -230,14 +241,15 @@ func CreateDebugReplay(
 	f1Log.Infof("Creating live replay session for: %v", event.string())
 
 	data := f1gopherlib{
-		weather:             make(chan Messages.Weather, channelSize),
-		raceControlMessages: make(chan Messages.RaceControlMessage, channelSize),
-		timing:              make(chan Messages.Timing, channelSize),
-		event:               make(chan Messages.Event, channelSize),
-		telemetry:           make(chan Messages.Telemetry, channelSize),
-		location:            make(chan Messages.Location, channelSize),
-		eventTime:           make(chan Messages.EventTime, channelSize),
-		radio:               make(chan Messages.Radio, channelSize),
+		weather:             make(chan Messages.Weather, weatherChannelSize),
+		raceControlMessages: make(chan Messages.RaceControlMessage, rcmChannelSize),
+		timing:              make(chan Messages.Timing, timingChannelSize),
+		event:               make(chan Messages.Event, eventChannelSize),
+		telemetry:           make(chan Messages.Telemetry, telemetryChannelSize),
+		location:            make(chan Messages.Location, locationChannelSize),
+		eventTime:           make(chan Messages.EventTime, eventTimeChannelSize),
+		radio:               make(chan Messages.Radio, radioChannelSize),
+		drivers:             make(chan Messages.Drivers, driversChannelSize),
 		session:             event.Type,
 		name:                event.Name,
 		timezone:            event.Timezone(),
@@ -263,14 +275,15 @@ func CreateReplay(
 	f1Log.Infof("Creating replay session for: %v", event.string())
 
 	data := f1gopherlib{
-		weather:             make(chan Messages.Weather, channelSize),
-		raceControlMessages: make(chan Messages.RaceControlMessage, channelSize),
-		timing:              make(chan Messages.Timing, channelSize),
-		event:               make(chan Messages.Event, channelSize),
-		telemetry:           make(chan Messages.Telemetry, channelSize),
-		location:            make(chan Messages.Location, channelSize),
-		eventTime:           make(chan Messages.EventTime, channelSize),
-		radio:               make(chan Messages.Radio, channelSize),
+		weather:             make(chan Messages.Weather, weatherChannelSize),
+		raceControlMessages: make(chan Messages.RaceControlMessage, rcmChannelSize),
+		timing:              make(chan Messages.Timing, timingChannelSize),
+		event:               make(chan Messages.Event, eventChannelSize),
+		telemetry:           make(chan Messages.Telemetry, telemetryChannelSize),
+		location:            make(chan Messages.Location, locationChannelSize),
+		eventTime:           make(chan Messages.EventTime, eventTimeChannelSize),
+		radio:               make(chan Messages.Radio, radioChannelSize),
+		drivers:             make(chan Messages.Drivers, driversChannelSize),
 		session:             event.Type,
 		name:                event.Name,
 		timezone:            event.Timezone(),
@@ -317,7 +330,8 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 		f.telemetry,
 		f.location,
 		f.eventTime,
-		f.radio)
+		f.radio,
+		f.drivers)
 
 	assetStore := connection.CreateAssetStore(event.Url(), cache, f1Log)
 
@@ -329,7 +343,8 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 		f.replayTiming,
 		assetStore,
 		Messages.RaceSession,
-		f1Log)
+		f1Log,
+		event.Timezone())
 
 	go dataHandler.Process()
 	go f.replayTiming.Run()
@@ -361,7 +376,8 @@ func (f *f1gopherlib) connectDebugReplay(
 		f.telemetry,
 		f.location,
 		f.eventTime,
-		f.radio)
+		f.radio,
+		f.drivers)
 
 	// Don't use a cache for debug replays because we don't always know the event yet to give it a useful folder name
 	assetStore := connection.CreateAssetStore(event.Url(), "", f1Log)
@@ -374,7 +390,8 @@ func (f *f1gopherlib) connectDebugReplay(
 		f.replayTiming,
 		assetStore,
 		event.Type,
-		f1Log)
+		f1Log,
+		event.Timezone())
 
 	go f.dataHandler.Process()
 	go f.replayTiming.Run()
@@ -409,7 +426,8 @@ func (f *f1gopherlib) connectReplay(
 		f.telemetry,
 		f.location,
 		f.eventTime,
-		f.radio)
+		f.radio,
+		f.drivers)
 
 	assetStore := connection.CreateAssetStore(event.Url(), cache, f1Log)
 
@@ -421,7 +439,8 @@ func (f *f1gopherlib) connectReplay(
 		f.replayTiming,
 		assetStore,
 		event.Type,
-		f1Log)
+		f1Log,
+		event.Timezone())
 
 	go f.dataHandler.Process()
 	go f.replayTiming.Run()
@@ -489,6 +508,10 @@ func (f *f1gopherlib) Radio() <-chan Messages.Radio {
 	return f.radio
 }
 
+func (f *f1gopherlib) Drivers() <-chan Messages.Drivers {
+	return f.drivers
+}
+
 func (f *f1gopherlib) IncrementLap() {
 	// Only makes sense for races
 	if f.session == Messages.RaceSession || f.session == Messages.SprintSession {
@@ -530,4 +553,5 @@ func (f *f1gopherlib) Close() {
 	close(f.location)
 	close(f.eventTime)
 	close(f.radio)
+	close(f.drivers)
 }

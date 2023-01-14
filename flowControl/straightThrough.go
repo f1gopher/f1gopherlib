@@ -29,8 +29,7 @@ type straightThrough struct {
 	outputLocation            chan<- Messages.Location
 	outputEventTime           chan<- Messages.EventTime
 	outputRadio               chan<- Messages.Radio
-
-	weather []Messages.Weather
+	outputDrivers             chan<- Messages.Drivers
 
 	isPaused bool
 }
@@ -67,6 +66,10 @@ func (f *straightThrough) AddLocation(location Messages.Location) {
 
 func (f *straightThrough) AddRadio(radio Messages.Radio) {
 	f.outputRadio <- radio
+}
+
+func (f *straightThrough) AddDrivers(drivers Messages.Drivers) {
+	f.outputDrivers <- drivers
 }
 
 func (f *straightThrough) IncrementLap() {}

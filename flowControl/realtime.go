@@ -31,6 +31,7 @@ type realtime struct {
 	outputLocation            chan<- Messages.Location
 	outputEventTime           chan<- Messages.EventTime
 	outputRadio               chan<- Messages.Radio
+	outputDrivers             chan<- Messages.Drivers
 
 	weatherLock     sync.Mutex
 	weather         []Messages.Weather
@@ -46,6 +47,8 @@ type realtime struct {
 	location        []Messages.Location
 	radioLock       sync.Mutex
 	radio           []Messages.Radio
+	driversLock     sync.Mutex
+	drivers         []Messages.Drivers
 
 	currentTime   time.Time
 	currentLap    int
@@ -250,6 +253,20 @@ func (f *realtime) Run() {
 					}
 				}
 				f.radioLock.Unlock()
+
+				f.driversLock.Lock()
+				if len(f.drivers) > 0 {
+					// Send the driver list immediately so that users know who the drivers are before other data comes
+					// through.
+					select {
+					case f.outputDrivers <- f.drivers[0]:
+					default:
+						// Data loss
+					}
+
+					f.drivers = f.drivers[1:]
+				}
+				f.driversLock.Unlock()
 			} else {
 				counter++
 			}
@@ -341,6 +358,12 @@ func (f *realtime) AddRadio(radio Messages.Radio) {
 	f.radioLock.Lock()
 	defer f.radioLock.Unlock()
 	f.radio = append(f.radio, radio)
+}
+
+func (f *realtime) AddDrivers(drivers Messages.Drivers) {
+	f.driversLock.Lock()
+	defer f.driversLock.Unlock()
+	f.drivers = append(f.drivers, drivers)
 }
 
 func (f *realtime) IncrementLap() {

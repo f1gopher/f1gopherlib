@@ -32,6 +32,7 @@ type Flow interface {
 	AddTelemetry(timing Messages.Telemetry)
 	AddLocation(timing Messages.Location)
 	AddRadio(timing Messages.Radio)
+	AddDrivers(driver Messages.Drivers)
 
 	IncrementLap()
 	IncrementTime(duration time.Duration)
@@ -58,7 +59,8 @@ func CreateFlowControl(
 	outputTelemetry chan<- Messages.Telemetry,
 	outputLocation chan<- Messages.Location,
 	outputEventTime chan<- Messages.EventTime,
-	outputRadio chan<- Messages.Radio) Flow {
+	outputRadio chan<- Messages.Radio,
+	outputDrivers chan<- Messages.Drivers) Flow {
 
 	switch flowType {
 	case Realtime:
@@ -73,7 +75,7 @@ func CreateFlowControl(
 			outputLocation:            outputLocation,
 			outputEventTime:           outputEventTime,
 			outputRadio:               outputRadio,
-			weather:                   make([]Messages.Weather, 0),
+			outputDrivers:             outputDrivers,
 		}
 
 	case StraightThrough:
@@ -86,7 +88,7 @@ func CreateFlowControl(
 			outputLocation:            outputLocation,
 			outputEventTime:           outputEventTime,
 			outputRadio:               outputRadio,
-			weather:                   make([]Messages.Weather, 0),
+			outputDrivers:             outputDrivers,
 		}
 
 	default:

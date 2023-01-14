@@ -35,27 +35,28 @@ func (p *Parser) parseCarData(dat map[string]interface{}, timestamp time.Time) (
 		if err != nil {
 			p.ParseTimeError(connection.CarDataFile, timestamp, "Utc", err)
 		}
+		localTimestamp := utcTimestamp.In(p.timezone)
 
 		for driverId, car := range record.(map[string]interface{})["Cars"].(map[string]interface{}) {
 			driverNum, _ := strconv.Atoi(driverId)
 
 			t := Messages.Telemetry{
-				Timestamp:    utcTimestamp,
+				Timestamp:    localTimestamp,
 				DriverNumber: driverNum,
 			}
 
 			for id, channel := range car.(map[string]interface{})["Channels"].(map[string]interface{}) {
 				switch id {
 				case "0": // RPM
-					t.RPM = channel.(float64)
+					t.RPM = int16(channel.(float64))
 				case "2": // Speed
-					t.Speed = channel.(float64)
+					t.Speed = float32(channel.(float64))
 				case "3": // Gear
-					t.Gear = channel.(float64)
+					t.Gear = byte(channel.(float64))
 				case "4": // Throttle
-					t.Throttle = channel.(float64)
+					t.Throttle = float32(channel.(float64))
 				case "5": // Brake
-					t.Brake = channel.(float64)
+					t.Brake = float32(channel.(float64))
 				case "45": // DRS
 					driverInfo, _ := p.driverTimes[driverId]
 

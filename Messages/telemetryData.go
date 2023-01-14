@@ -23,10 +23,10 @@ type Telemetry struct {
 	Timestamp    time.Time
 	DriverNumber int
 
-	RPM      float64
-	Speed    float64
-	Gear     float64
-	Throttle float64
-	Brake    float64
+	RPM      int16
+	Speed    float32
+	Gear     byte
+	Throttle float32
+	Brake    float32
 	DRS      bool
 }
