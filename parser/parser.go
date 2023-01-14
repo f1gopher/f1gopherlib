@@ -66,6 +66,14 @@ type Parser struct {
 	wg  *sync.WaitGroup
 }
 
+// Hardcoded shortcut for:
+//
+//	var buf bytes.Buffer
+//	zw := gzip.NewWriter(&buf)
+//	zw.Write([]byte("Welcome to CodeBeautify"))
+//	zw.Close()
+var decompressHelper = [...]byte{31, 139, 8, 0, 0, 0, 0, 0, 0, 255, 10, 79, 205, 73, 206, 207, 77, 85, 40, 201, 87, 112, 206, 79, 73, 117, 74, 77, 44, 45, 201, 76, 171, 4, 4, 0, 0, 255, 255, 98, 9, 198, 39, 23, 0, 0, 0}
+
 func Create(
 	ctx context.Context,
 	wg *sync.WaitGroup,
@@ -339,15 +347,10 @@ func (p *Parser) handleMessage(name string, dat map[string]interface{}, timestam
 }
 
 func (p *Parser) decompressData(data []byte) (map[string]interface{}, error) {
-	var buf bytes.Buffer
-	zw := gzip.NewWriter(&buf)
-	zw.Write([]byte("Welcome to CodeBeautify"))
-	zw.Close()
-
 	b64 := base64.NewDecoder(base64.StdEncoding, bytes.NewReader(data))
 
 	stuff, err := io.ReadAll(b64)
-	stuff = append(buf.Bytes()[:10], stuff...)
+	stuff = append(decompressHelper[:10], stuff...) //buf.Bytes()[:10], stuff...)
 
 	zr, err := gzip.NewReader(bytes.NewBuffer(stuff))
 	if err != nil {
