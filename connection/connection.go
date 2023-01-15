@@ -15,6 +15,10 @@
 
 package connection
 
+import (
+	"time"
+)
+
 type Payload struct {
 	Name      string
 	Data      []byte
@@ -23,4 +27,6 @@ type Payload struct {
 
 type Connection interface {
 	Connect() (error, <-chan Payload)
+
+	IncrementTime(amount time.Duration)
 }

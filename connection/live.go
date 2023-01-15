@@ -145,3 +145,6 @@ func (l *live) Connect() (error, <-chan Payload) {
 
 	return nil, l.dataFeed
 }
+
+// Can't do anything because this is live data
+func (l *live) IncrementTime(amount time.Duration) {}

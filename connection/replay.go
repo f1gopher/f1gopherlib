@@ -52,6 +52,9 @@ type replay struct {
 
 	ctx context.Context
 	wg  *sync.WaitGroup
+
+	currentTime     time.Time
+	currentTimeLock sync.Mutex
 }
 
 const NotFoundResponse = "<?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message></Error>"
@@ -104,6 +107,13 @@ func (r *replay) Connect() (error, <-chan Payload) {
 	return nil, r.dataFeed
 }
 
+func (r *replay) IncrementTime(amount time.Duration) {
+	r.currentTimeLock.Lock()
+	defer r.currentTimeLock.Unlock()
+
+	r.currentTime = r.currentTime.Add(amount)
+}
+
 func (r *replay) readEntries() {
 
 	sessionStartTime, err := r.findSessionStartTime()
@@ -114,11 +124,34 @@ func (r *replay) readEntries() {
 		return
 	}
 
-	currentTime := sessionStartTime
+	// Read ahead 5 mins of data
+	r.currentTime = sessionStartTime.Add(time.Minute * 5)
 
 	hasData := true
 	r.wg.Add(1)
 	defer r.wg.Done()
+
+	// Read drivers list and
+	for x := range r.dataFiles {
+		if r.dataFiles[x].name == DriverListFile {
+
+			r.dataFiles[x].data.Scan()
+			line := r.dataFiles[x].data.Text()
+
+			r.dataFiles[x].nextLineTime, r.dataFiles[x].nextLine, err = r.uncompressedDataTime(line, sessionStartTime)
+			if err != nil {
+				continue
+			}
+
+			r.dataFeed <- Payload{
+				Name:      r.dataFiles[x].name,
+				Data:      []byte(r.dataFiles[x].nextLine),
+				Timestamp: r.dataFiles[x].nextLineTime.Format("2006-01-02T15:04:05.999Z"),
+			}
+
+			break
+		}
+	}
 
 	for hasData {
 		hasData = false
@@ -128,6 +161,10 @@ func (r *replay) readEntries() {
 			return
 		default:
 		}
+
+		r.currentTimeLock.Lock()
+		currentTime := r.currentTime
+		r.currentTimeLock.Unlock()
 
 		for x := range r.dataFiles {
 
@@ -152,7 +189,13 @@ func (r *replay) readEntries() {
 			}
 		}
 
+		time.Sleep(time.Second)
 		currentTime = currentTime.Add(time.Second)
+		r.currentTimeLock.Lock()
+		if currentTime.After(r.currentTime) {
+			r.currentTime = currentTime
+		}
+		r.currentTimeLock.Unlock()
 	}
 
 	r.dataFeed <- Payload{

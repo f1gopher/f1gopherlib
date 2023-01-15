@@ -21,6 +21,7 @@ import (
 	"github.com/f1gopher/f1gopherlib/f1log"
 	"os"
 	"sync"
+	"time"
 )
 
 type archivedLive struct {
@@ -97,3 +98,5 @@ func (a *archivedLive) readEntries() {
 		}
 	}
 }
+
+func (a *archivedLive) IncrementTime(amount time.Duration) {}

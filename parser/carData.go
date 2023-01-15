@@ -81,6 +81,11 @@ func (p *Parser) parseCarData(dat map[string]interface{}, timestamp time.Time) (
 				}
 			}
 
+			// Don't send telemetry data is the car is turned off to improve performance
+			if t.RPM == 0 {
+				continue
+			}
+
 			result = append(result, t)
 		}
 	}

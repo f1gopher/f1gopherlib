@@ -86,13 +86,15 @@ type f1gopherlib struct {
 	wg          sync.WaitGroup
 }
 
+// TODO - do we ned different sizes for straight through and realtime flow control? Straight through will need
+// bigger buffers but realtime only needs to hold abotu 5 mins of data
 const weatherChannelSize = 100
 const rcmChannelSize = 100
 const timingChannelSize = 100000
-const eventChannelSize = 100
+const eventChannelSize = 1000
 const telemetryChannelSize = 100000
 const locationChannelSize = 100000
-const eventTimeChannelSize = 100
+const eventTimeChannelSize = 10
 const radioChannelSize = 100
 const driversChannelSize = 100
 
@@ -520,6 +522,7 @@ func (f *f1gopherlib) IncrementLap() {
 }
 
 func (f *f1gopherlib) IncrementTime(duration time.Duration) {
+	f.connection.IncrementTime(duration)
 	f.replayTiming.IncrementTime(duration)
 }
 
