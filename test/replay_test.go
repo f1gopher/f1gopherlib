@@ -58,7 +58,8 @@ func TestReplay(t *testing.T) {
 			dummy,
 			assetStore,
 			session.Type,
-			log)
+			log,
+			time.UTC)
 
 		p.Process()
 	}
@@ -75,6 +76,7 @@ func (d *dummyFlowControl) AddEvent(timing Messages.Event)                      
 func (d *dummyFlowControl) AddTelemetry(timing Messages.Telemetry)                        {}
 func (d *dummyFlowControl) AddLocation(timing Messages.Location)                          {}
 func (d *dummyFlowControl) AddRadio(timing Messages.Radio)                                {}
+func (d *dummyFlowControl) AddDrivers(driver Messages.Drivers)                            {}
 func (d *dummyFlowControl) IncrementLap()                                                 {}
 func (d *dummyFlowControl) IncrementTime(duration time.Duration)                          {}
 func (d *dummyFlowControl) SkipToSessionStart()                                           {}

@@ -40,7 +40,7 @@ func TestCreateHistory(t *testing.T) {
 	}
 	defer output.Close()
 
-	output.WriteString(`// F1GopherLib - Copyright (C) 2022 f1gopher
+	output.WriteString(`// F1GopherLib - Copyright (C) 2023 f1gopher
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
