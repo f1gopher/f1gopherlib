@@ -1,6 +1,6 @@
 module github.com/f1gopher/f1gopherlib
 
-go 1.19
+go 1.20
 
 require (
 	github.com/f1gopher/signalr/v2 v2.0.0-20221210121059-1985aaf5fb97
