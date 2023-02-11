@@ -48,6 +48,8 @@ type F1GopherLib interface {
 	Radio() <-chan Messages.Radio
 	Drivers() <-chan Messages.Drivers
 
+	SelectTelemetrySources(drivers []int)
+
 	IncrementLap()
 	IncrementTime(duration time.Duration)
 	SkipToSessionStart()
@@ -512,6 +514,10 @@ func (f *f1gopherlib) Radio() <-chan Messages.Radio {
 
 func (f *f1gopherlib) Drivers() <-chan Messages.Drivers {
 	return f.drivers
+}
+
+func (f *f1gopherlib) SelectTelemetrySources(drivers []int) {
+	f.dataHandler.SelectTelemetrySources(drivers)
 }
 
 func (f *f1gopherlib) IncrementLap() {

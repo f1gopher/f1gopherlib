@@ -64,6 +64,9 @@ type Parser struct {
 
 	ctx context.Context
 	wg  *sync.WaitGroup
+
+	sendTelemetryFor  map[int]bool
+	sendTelemetryLock sync.Mutex
 }
 
 // Hardcoded shortcut for:
@@ -86,16 +89,17 @@ func Create(
 	timezone *time.Location) *Parser {
 
 	abc := Parser{
-		ctx:           ctx,
-		wg:            wg,
-		requestedData: requestedData,
-		incoming:      incoming,
-		output:        output,
-		driverTimes:   make(map[string]Messages.Timing),
-		assets:        assets,
-		session:       session,
-		timezone:      timezone,
-		log:           log,
+		ctx:              ctx,
+		wg:               wg,
+		requestedData:    requestedData,
+		incoming:         incoming,
+		output:           output,
+		driverTimes:      make(map[string]Messages.Timing),
+		assets:           assets,
+		session:          session,
+		timezone:         timezone,
+		log:              log,
+		sendTelemetryFor: nil,
 	}
 
 	return &abc
@@ -107,6 +111,24 @@ func (p *Parser) ParseErrorf(file string, timestamp time.Time, msg string, a ...
 
 func (p *Parser) ParseTimeError(file string, timestamp time.Time, field string, err error) {
 	p.log.Errorf("%s - %v: Unable to parse time for '%s': %v", file, timestamp, field, err)
+}
+
+func (p *Parser) SelectTelemetrySources(drivers []int) {
+	if drivers == nil {
+		p.sendTelemetryLock.Lock()
+		defer p.sendTelemetryLock.Unlock()
+		p.sendTelemetryFor = nil
+		return
+	}
+
+	tmp := make(map[int]bool)
+	for _, driver := range drivers {
+		tmp[driver] = true
+	}
+
+	p.sendTelemetryLock.Lock()
+	defer p.sendTelemetryLock.Unlock()
+	p.sendTelemetryFor = tmp
 }
 
 func (p *Parser) Process() {

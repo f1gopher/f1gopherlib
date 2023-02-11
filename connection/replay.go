@@ -124,8 +124,7 @@ func (r *replay) readEntries() {
 		return
 	}
 
-	// Read ahead 5 mins of data
-	r.currentTime = sessionStartTime.Add(time.Minute * 5)
+	r.currentTime = sessionStartTime
 
 	hasData := true
 	r.wg.Add(1)

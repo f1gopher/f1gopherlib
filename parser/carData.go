@@ -86,7 +86,13 @@ func (p *Parser) parseCarData(dat map[string]interface{}, timestamp time.Time) (
 				continue
 			}
 
-			result = append(result, t)
+			// Only send the telemetry info if has been requested for this driver
+			p.sendTelemetryLock.Lock()
+			_, sendTelemetry := p.sendTelemetryFor[driverNum]
+			p.sendTelemetryLock.Unlock()
+			if sendTelemetry {
+				result = append(result, t)
+			}
 		}
 	}
 
