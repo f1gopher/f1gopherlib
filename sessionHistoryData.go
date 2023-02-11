@@ -1,4 +1,4 @@
-// F1GopherLib - Copyright (C) 2022 f1gopher
+// F1GopherLib - Copyright (C) 2023 f1gopher
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -45,7 +45,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "UAE",
 		RaceTime:  time.Date(2023, 11, 26, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 25, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 25, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Abu Dhabi Grand Prix",
 		timezone:  "Asia/Dubai",
@@ -67,7 +67,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "UAE",
 		RaceTime:  time.Date(2023, 11, 26, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 24, 10, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 24, 9, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Abu Dhabi Grand Prix",
 		timezone:  "Asia/Dubai",
@@ -77,63 +77,63 @@ var sessionHistory = [...]RaceEvent{	{
 	},
 	{
 		Country:   "United States",
-		RaceTime:  time.Date(2023, 11, 18, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 18, 13, 0, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 19, 6, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 19, 6, 0, 0, 0, time.UTC),
 		Type:      Messages.RaceSession,
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
 		TrackYearCreated: 2023,
-		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-18_Race/",
+		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-19_Race/",
 	},
 	{
 		Country:   "United States",
-		RaceTime:  time.Date(2023, 11, 18, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 17, 14, 0, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 19, 6, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 18, 8, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
 		TrackYearCreated: 2023,
-		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-17_Qualifying/",
+		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-18_Qualifying/",
 	},
 	{
 		Country:   "United States",
-		RaceTime:  time.Date(2023, 11, 18, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 17, 11, 0, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 19, 6, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 18, 4, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
 		TrackYearCreated: 2023,
-		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-17_Practice_3/",
+		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-18_Practice_3/",
 	},
 	{
 		Country:   "United States",
-		RaceTime:  time.Date(2023, 11, 18, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 16, 15, 0, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 19, 6, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 17, 8, 0, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
 		TrackYearCreated: 2023,
-		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-16_Practice_2/",
+		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-17_Practice_2/",
 	},
 	{
 		Country:   "United States",
-		RaceTime:  time.Date(2023, 11, 18, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 16, 12, 0, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 19, 6, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 17, 4, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Las Vegas Grand Prix",
 		timezone:  "America/Los_Angeles",
 		TrackName: "Las Vegas Strip Street Circuit",
 		TrackYearCreated: 2023,
-		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-18_Las_Vegas_Grand_Prix/2023-11-16_Practice_1/",
+		urlName:   "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-17_Practice_1/",
 	},
 	{
 		Country:   "Brazil",
-		RaceTime:  time.Date(2023, 11, 5, 18, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 5, 18, 0, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 5, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 5, 17, 0, 0, 0, time.UTC),
 		Type:      Messages.RaceSession,
 		Name:      "São Paulo Grand Prix",
 		timezone:  "America/Sao_Paulo",
@@ -143,8 +143,8 @@ var sessionHistory = [...]RaceEvent{	{
 	},
 	{
 		Country:   "Brazil",
-		RaceTime:  time.Date(2023, 11, 5, 18, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 4, 19, 30, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 5, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 4, 18, 30, 0, 0, time.UTC),
 		Type:      Messages.SprintSession,
 		Name:      "São Paulo Grand Prix",
 		timezone:  "America/Sao_Paulo",
@@ -154,8 +154,8 @@ var sessionHistory = [...]RaceEvent{	{
 	},
 	{
 		Country:   "Brazil",
-		RaceTime:  time.Date(2023, 11, 5, 18, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 4, 15, 30, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 5, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 4, 14, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "São Paulo Grand Prix",
 		timezone:  "America/Sao_Paulo",
@@ -165,8 +165,8 @@ var sessionHistory = [...]RaceEvent{	{
 	},
 	{
 		Country:   "Brazil",
-		RaceTime:  time.Date(2023, 11, 5, 18, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 3, 19, 0, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 5, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 3, 18, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "São Paulo Grand Prix",
 		timezone:  "America/Sao_Paulo",
@@ -176,8 +176,8 @@ var sessionHistory = [...]RaceEvent{	{
 	},
 	{
 		Country:   "Brazil",
-		RaceTime:  time.Date(2023, 11, 5, 18, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 11, 3, 15, 30, 0, 0, time.UTC),
+		RaceTime:  time.Date(2023, 11, 5, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 11, 3, 14, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "São Paulo Grand Prix",
 		timezone:  "America/Sao_Paulo",
@@ -199,7 +199,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Mexico",
 		RaceTime:  time.Date(2023, 10, 29, 20, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 28, 20, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 28, 21, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "Mexico City Grand Prix",
 		timezone:  "America/Mexico_City",
@@ -210,7 +210,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Mexico",
 		RaceTime:  time.Date(2023, 10, 29, 20, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 28, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 28, 17, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Mexico City Grand Prix",
 		timezone:  "America/Mexico_City",
@@ -221,7 +221,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Mexico",
 		RaceTime:  time.Date(2023, 10, 29, 20, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 27, 21, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 27, 22, 0, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "Mexico City Grand Prix",
 		timezone:  "America/Mexico_City",
@@ -232,7 +232,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Mexico",
 		RaceTime:  time.Date(2023, 10, 29, 20, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 27, 18, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 27, 18, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Mexico City Grand Prix",
 		timezone:  "America/Mexico_City",
@@ -265,7 +265,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "USA",
 		RaceTime:  time.Date(2023, 10, 22, 19, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 21, 19, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 21, 18, 0, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "United States Grand Prix",
 		timezone:  "America/Chicago",
@@ -276,7 +276,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "USA",
 		RaceTime:  time.Date(2023, 10, 22, 19, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 20, 22, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 20, 21, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "United States Grand Prix",
 		timezone:  "America/Chicago",
@@ -287,7 +287,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "USA",
 		RaceTime:  time.Date(2023, 10, 22, 19, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 20, 19, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 20, 17, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "United States Grand Prix",
 		timezone:  "America/Chicago",
@@ -309,7 +309,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Qatar",
 		RaceTime:  time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 7, 14, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 7, 14, 30, 0, 0, time.UTC),
 		Type:      Messages.SprintSession,
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
@@ -320,7 +320,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Qatar",
 		RaceTime:  time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 10, 7, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 10, 7, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "Qatar Grand Prix",
 		timezone:  "Asia/Qatar",
@@ -375,7 +375,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Japan",
 		RaceTime:  time.Date(2023, 9, 24, 5, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 9, 23, 3, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 9, 23, 2, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Japanese Grand Prix",
 		timezone:  "Asia/Tokyo",
@@ -397,7 +397,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Japan",
 		RaceTime:  time.Date(2023, 9, 24, 5, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 9, 22, 3, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 9, 22, 2, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Japanese Grand Prix",
 		timezone:  "Asia/Tokyo",
@@ -430,7 +430,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Singapore",
 		RaceTime:  time.Date(2023, 9, 17, 12, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 9, 16, 10, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 9, 16, 9, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Singapore Grand Prix",
 		timezone:  "Asia/Singapore",
@@ -452,7 +452,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Singapore",
 		RaceTime:  time.Date(2023, 9, 17, 12, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 9, 15, 10, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 9, 15, 9, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Singapore Grand Prix",
 		timezone:  "Asia/Singapore",
@@ -485,7 +485,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Italy",
 		RaceTime:  time.Date(2023, 9, 3, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 9, 2, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 9, 2, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Italian Grand Prix",
 		timezone:  "Europe/Rome",
@@ -507,7 +507,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Italy",
 		RaceTime:  time.Date(2023, 9, 3, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 9, 1, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 9, 1, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Italian Grand Prix",
 		timezone:  "Europe/Rome",
@@ -540,7 +540,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Netherlands",
 		RaceTime:  time.Date(2023, 8, 27, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 8, 26, 10, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 8, 26, 9, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Dutch Grand Prix",
 		timezone:  "Europe/Amsterdam",
@@ -584,7 +584,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Belgium",
 		RaceTime:  time.Date(2023, 7, 30, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 7, 29, 14, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 7, 29, 14, 30, 0, 0, time.UTC),
 		Type:      Messages.SprintSession,
 		Name:      "Belgian Grand Prix",
 		timezone:  "Europe/Brussels",
@@ -595,7 +595,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Belgium",
 		RaceTime:  time.Date(2023, 7, 30, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 7, 29, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 7, 29, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "Belgian Grand Prix",
 		timezone:  "Europe/Brussels",
@@ -617,7 +617,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Belgium",
 		RaceTime:  time.Date(2023, 7, 30, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 7, 28, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 7, 28, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Belgian Grand Prix",
 		timezone:  "Europe/Brussels",
@@ -650,7 +650,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Hungary",
 		RaceTime:  time.Date(2023, 7, 23, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 7, 22, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 7, 22, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Hungarian Grand Prix",
 		timezone:  "Europe/Budapest",
@@ -672,7 +672,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Hungary",
 		RaceTime:  time.Date(2023, 7, 23, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 7, 21, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 7, 21, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Hungarian Grand Prix",
 		timezone:  "Europe/Budapest",
@@ -705,7 +705,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "UK",
 		RaceTime:  time.Date(2023, 7, 9, 14, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 7, 8, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 7, 8, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "British Grand Prix",
 		timezone:  "Europe/London",
@@ -727,7 +727,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "UK",
 		RaceTime:  time.Date(2023, 7, 9, 14, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 7, 7, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 7, 7, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "British Grand Prix",
 		timezone:  "Europe/London",
@@ -815,7 +815,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Canada",
 		RaceTime:  time.Date(2023, 6, 18, 18, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 6, 17, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 6, 17, 16, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Canadian Grand Prix",
 		timezone:  "America/Toronto",
@@ -837,7 +837,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Canada",
 		RaceTime:  time.Date(2023, 6, 18, 18, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 6, 16, 18, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 6, 16, 17, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Canadian Grand Prix",
 		timezone:  "America/Toronto",
@@ -870,7 +870,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Spain",
 		RaceTime:  time.Date(2023, 6, 4, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 6, 3, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 6, 3, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Spanish Grand Prix",
 		timezone:  "Europe/Madrid",
@@ -892,7 +892,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Spain",
 		RaceTime:  time.Date(2023, 6, 4, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 6, 2, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 6, 2, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Spanish Grand Prix",
 		timezone:  "Europe/Madrid",
@@ -925,7 +925,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Monaco",
 		RaceTime:  time.Date(2023, 5, 28, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 5, 27, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 5, 27, 10, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Monaco Grand Prix",
 		timezone:  "Europe/Monaco",
@@ -947,7 +947,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Monaco",
 		RaceTime:  time.Date(2023, 5, 28, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 5, 26, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 5, 26, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Monaco Grand Prix",
 		timezone:  "Europe/Monaco",
@@ -969,7 +969,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Italy",
 		RaceTime:  time.Date(2023, 5, 21, 13, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 5, 20, 14, 30, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 5, 20, 14, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "Emilia Romagna Grand Prix",
 		timezone:  "Europe/Rome",
@@ -1024,7 +1024,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "USA",
 		RaceTime:  time.Date(2023, 5, 7, 19, 30, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 5, 6, 21, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 5, 6, 20, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
@@ -1035,7 +1035,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "USA",
 		RaceTime:  time.Date(2023, 5, 7, 19, 30, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 5, 6, 17, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 5, 6, 16, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
@@ -1046,7 +1046,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "USA",
 		RaceTime:  time.Date(2023, 5, 7, 19, 30, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 5, 5, 21, 30, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 5, 5, 21, 0, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
@@ -1057,7 +1057,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "USA",
 		RaceTime:  time.Date(2023, 5, 7, 19, 30, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 5, 5, 18, 30, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 5, 5, 17, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Miami Grand Prix",
 		timezone:  "America/New_York",
@@ -1079,7 +1079,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Azerbaijan",
 		RaceTime:  time.Date(2023, 4, 30, 11, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 4, 29, 14, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 4, 29, 13, 30, 0, 0, time.UTC),
 		Type:      Messages.SprintSession,
 		Name:      "Azerbaijan Grand Prix",
 		timezone:  "Asia/Baku",
@@ -1090,7 +1090,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Azerbaijan",
 		RaceTime:  time.Date(2023, 4, 30, 11, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 4, 29, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 4, 29, 9, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "Azerbaijan Grand Prix",
 		timezone:  "Asia/Baku",
@@ -1101,7 +1101,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Azerbaijan",
 		RaceTime:  time.Date(2023, 4, 30, 11, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 4, 28, 14, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 4, 28, 13, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "Azerbaijan Grand Prix",
 		timezone:  "Asia/Baku",
@@ -1112,7 +1112,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Azerbaijan",
 		RaceTime:  time.Date(2023, 4, 30, 11, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 4, 28, 11, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 4, 28, 9, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Azerbaijan Grand Prix",
 		timezone:  "Asia/Baku",
@@ -1134,7 +1134,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Australia",
 		RaceTime:  time.Date(2023, 4, 2, 5, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 4, 1, 6, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 4, 1, 5, 0, 0, 0, time.UTC),
 		Type:      Messages.QualifyingSession,
 		Name:      "Australian Grand Prix",
 		timezone:  "Australia/Melbourne",
@@ -1145,7 +1145,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Australia",
 		RaceTime:  time.Date(2023, 4, 2, 5, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 4, 1, 3, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 4, 1, 1, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Australian Grand Prix",
 		timezone:  "Australia/Melbourne",
@@ -1156,7 +1156,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Australia",
 		RaceTime:  time.Date(2023, 4, 2, 5, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 3, 31, 6, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 3, 31, 5, 0, 0, 0, time.UTC),
 		Type:      Messages.Practice2Session,
 		Name:      "Australian Grand Prix",
 		timezone:  "Australia/Melbourne",
@@ -1167,7 +1167,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Australia",
 		RaceTime:  time.Date(2023, 4, 2, 5, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 3, 31, 3, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 3, 31, 1, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Australian Grand Prix",
 		timezone:  "Australia/Melbourne",
@@ -1200,7 +1200,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Saudi Arabia",
 		RaceTime:  time.Date(2023, 3, 19, 17, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 3, 18, 14, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 3, 18, 13, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Saudi Arabian Grand Prix",
 		timezone:  "Asia/Riyadh",
@@ -1222,7 +1222,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Saudi Arabia",
 		RaceTime:  time.Date(2023, 3, 19, 17, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 3, 17, 14, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 3, 17, 13, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Saudi Arabian Grand Prix",
 		timezone:  "Asia/Riyadh",
@@ -1255,7 +1255,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Bahrain",
 		RaceTime:  time.Date(2023, 3, 5, 15, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 3, 4, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 3, 4, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice3Session,
 		Name:      "Bahrain Grand Prix",
 		timezone:  "Asia/Bahrain",
@@ -1277,7 +1277,7 @@ var sessionHistory = [...]RaceEvent{	{
 	{
 		Country:   "Bahrain",
 		RaceTime:  time.Date(2023, 3, 5, 15, 0, 0, 0, time.UTC),
-		EventTime: time.Date(2023, 3, 3, 12, 0, 0, 0, time.UTC),
+		EventTime: time.Date(2023, 3, 3, 11, 30, 0, 0, time.UTC),
 		Type:      Messages.Practice1Session,
 		Name:      "Bahrain Grand Prix",
 		timezone:  "Asia/Bahrain",
