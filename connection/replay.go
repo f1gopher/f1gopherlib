@@ -153,49 +153,53 @@ func (r *replay) readEntries() {
 		}
 	}
 
+	ticker := time.NewTicker(time.Second)
 	for hasData {
-		hasData = false
-
 		select {
 		case <-r.ctx.Done():
+			ticker.Stop()
 			return
+
+		case <-ticker.C:
+			r.currentTimeLock.Lock()
+			currentTime := r.currentTime
+			r.currentTimeLock.Unlock()
+
+			hasData = false
+
+			for x := range r.dataFiles {
+
+				if strings.HasSuffix(r.dataFiles[x].name, ".z") {
+					hasData = r.sim(
+						r.dataFiles[x].data,
+						currentTime,
+						&r.dataFiles[x].nextLineTime,
+						&r.dataFiles[x].nextLine,
+						sessionStartTime,
+						r.compressedDataTime,
+						r.dataFiles[x].name) || hasData
+				} else {
+					hasData = r.sim(
+						r.dataFiles[x].data,
+						currentTime,
+						&r.dataFiles[x].nextLineTime,
+						&r.dataFiles[x].nextLine,
+						sessionStartTime,
+						r.uncompressedDataTime,
+						r.dataFiles[x].name) || hasData
+				}
+			}
+
+			currentTime = currentTime.Add(time.Second)
+			r.currentTimeLock.Lock()
+			// The user can increment the time independantly of us so check we are actually incrementing
+			if currentTime.After(r.currentTime) {
+				r.currentTime = currentTime
+			}
+			r.currentTimeLock.Unlock()
+
 		default:
 		}
-
-		r.currentTimeLock.Lock()
-		currentTime := r.currentTime
-		r.currentTimeLock.Unlock()
-
-		for x := range r.dataFiles {
-
-			if strings.HasSuffix(r.dataFiles[x].name, ".z") {
-				hasData = r.sim(
-					r.dataFiles[x].data,
-					currentTime,
-					&r.dataFiles[x].nextLineTime,
-					&r.dataFiles[x].nextLine,
-					sessionStartTime,
-					r.compressedDataTime,
-					r.dataFiles[x].name) || hasData
-			} else {
-				hasData = r.sim(
-					r.dataFiles[x].data,
-					currentTime,
-					&r.dataFiles[x].nextLineTime,
-					&r.dataFiles[x].nextLine,
-					sessionStartTime,
-					r.uncompressedDataTime,
-					r.dataFiles[x].name) || hasData
-			}
-		}
-
-		time.Sleep(time.Second)
-		currentTime = currentTime.Add(time.Second)
-		r.currentTimeLock.Lock()
-		if currentTime.After(r.currentTime) {
-			r.currentTime = currentTime
-		}
-		r.currentTimeLock.Unlock()
 	}
 
 	r.dataFeed <- Payload{
