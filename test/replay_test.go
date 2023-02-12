@@ -79,7 +79,7 @@ func (d *dummyFlowControl) AddRadio(timing Messages.Radio)                      
 func (d *dummyFlowControl) AddDrivers(driver Messages.Drivers)                            {}
 func (d *dummyFlowControl) IncrementLap()                                                 {}
 func (d *dummyFlowControl) IncrementTime(duration time.Duration)                          {}
-func (d *dummyFlowControl) SkipToSessionStart()                                           {}
+func (d *dummyFlowControl) SkipToSessionStart(start time.Time)                            {}
 func (d *dummyFlowControl) TogglePause()                                                  {}
 func (d *dummyFlowControl) IsPaused() bool                                                { return false }
 func (d *dummyFlowControl) IncrementDelay(delay time.Duration)                            {}

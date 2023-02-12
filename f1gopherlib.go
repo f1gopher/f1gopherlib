@@ -92,7 +92,7 @@ type f1gopherlib struct {
 // bigger buffers but realtime only needs to hold abotu 5 mins of data
 const weatherChannelSize = 100
 const rcmChannelSize = 100
-const timingChannelSize = 1000
+const timingChannelSize = 10000
 const eventChannelSize = 1000
 const telemetryChannelSize = 1000
 const locationChannelSize = 1000
