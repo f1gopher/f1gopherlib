@@ -76,7 +76,7 @@ func (f *straightThrough) IncrementLap() {}
 
 func (f *straightThrough) IncrementTime(duration time.Duration) {}
 
-func (f *straightThrough) SkipToSessionStart() {}
+func (f *straightThrough) SkipToSessionStart(start time.Time) {}
 
 func (f *straightThrough) TogglePause() {
 	f.isPaused = !f.isPaused

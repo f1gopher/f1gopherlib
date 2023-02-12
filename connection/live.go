@@ -148,3 +148,5 @@ func (l *live) Connect() (error, <-chan Payload) {
 
 // Can't do anything because this is live data
 func (l *live) IncrementTime(amount time.Duration) {}
+
+func (l *live) JumpToStart() time.Time { return time.Time{} }

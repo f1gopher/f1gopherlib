@@ -100,3 +100,5 @@ func (a *archivedLive) readEntries() {
 }
 
 func (a *archivedLive) IncrementTime(amount time.Duration) {}
+
+func (a *archivedLive) JumpToStart() time.Time { return time.Time{} }

@@ -36,7 +36,7 @@ type Flow interface {
 
 	IncrementLap()
 	IncrementTime(duration time.Duration)
-	SkipToSessionStart()
+	SkipToSessionStart(start time.Time)
 	TogglePause()
 	IsPaused() bool
 }

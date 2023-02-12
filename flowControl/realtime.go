@@ -58,11 +58,12 @@ type realtime struct {
 
 	incrementLapCount int
 	incrementTime     time.Duration
-	skipToStart       bool
 	isPaused          bool
 
-	sessionStart  time.Time
-	sessionLength time.Duration
+	skipToTime            time.Time
+	ignoreRadioMsgsBefore time.Time
+	sessionStart          time.Time
+	sessionLength         time.Duration
 
 	ctx context.Context
 	wg  *sync.WaitGroup
@@ -85,36 +86,17 @@ func (f *realtime) Run() {
 				continue
 			}
 
-			if f.skipToStart {
-				f.eventLock.Lock()
-				if len(f.event) > 0 {
-					needToStopAndStart := f.event[0].Status == Messages.Started
+			// We want to skip any radio messages when we jump forward in time
+			if !f.skipToTime.IsZero() {
+				f.currentTime = f.skipToTime
+				f.ignoreRadioMsgsBefore = f.skipToTime
+				f.skipToTime = time.Time{}
 
-					for x := range f.event {
-						if f.event[x].Timestamp.IsZero() {
-							continue
-						}
-
-						if f.event[x].Status == Messages.Started && !needToStopAndStart {
-							f.currentTime = f.event[x].Timestamp
-							// Only reset the skip if we we able to skip otherwise we are still waiting for enough data
-							f.skipToStart = false
-							break
-						}
-
-						if f.event[x].Status != Messages.Started {
-							needToStopAndStart = false
-						}
-					}
-
-					// We want to skip any radio messages when we jump forward in time
-					f.radioLock.Lock()
-					for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
-						f.radio = f.radio[1:]
-					}
-					f.radioLock.Unlock()
+				f.radioLock.Lock()
+				for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
+					f.radio = f.radio[1:]
 				}
-				f.eventLock.Unlock()
+				f.radioLock.Unlock()
 			}
 
 			if counter == 3 {
@@ -243,6 +225,12 @@ func (f *realtime) Run() {
 				f.radioLock.Lock()
 				if len(f.radio) > 0 {
 					for len(f.radio) > 0 && (f.radio[0].Timestamp.Before(f.currentTime) || f.radio[0].Timestamp.Equal(f.currentTime)) {
+						// If the radio message is before the skip to start of race time then ignore it
+						if !f.ignoreRadioMsgsBefore.IsZero() && f.radio[0].Timestamp.Before(f.ignoreRadioMsgsBefore) {
+							f.radio = f.radio[1:]
+							continue
+						}
+
 						select {
 						case f.outputRadio <- f.radio[0]:
 						default:
@@ -374,8 +362,8 @@ func (f *realtime) IncrementTime(duration time.Duration) {
 	f.incrementTime += duration
 }
 
-func (f *realtime) SkipToSessionStart() {
-	f.skipToStart = true
+func (f *realtime) SkipToSessionStart(start time.Time) {
+	f.skipToTime = start
 }
 
 func (f *realtime) TogglePause() {

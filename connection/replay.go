@@ -55,6 +55,8 @@ type replay struct {
 
 	currentTime     time.Time
 	currentTimeLock sync.Mutex
+
+	raceStartTime time.Time
 }
 
 const NotFoundResponse = "<?xml version='1.0' encoding='UTF-8'?><Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message></Error>"
@@ -114,9 +116,24 @@ func (r *replay) IncrementTime(amount time.Duration) {
 	r.currentTime = r.currentTime.Add(amount)
 }
 
+func (r *replay) JumpToStart() time.Time {
+	if r.raceStartTime.IsZero() {
+		return time.Time{}
+	}
+
+	r.currentTimeLock.Lock()
+	defer r.currentTimeLock.Unlock()
+
+	r.currentTime = r.raceStartTime
+	// Clear this so we can only do it once and not travel back in time if requested multiple times
+	r.raceStartTime = time.Time{}
+
+	return r.currentTime
+}
+
 func (r *replay) readEntries() {
 
-	sessionStartTime, err := r.findSessionStartTime()
+	dataStartTime, raceStartTime, err := r.findSessionTimes()
 	if err != nil {
 		r.dataFeed <- Payload{
 			Name: EndOfDataFile,
@@ -124,7 +141,8 @@ func (r *replay) readEntries() {
 		return
 	}
 
-	r.currentTime = sessionStartTime
+	r.currentTime = dataStartTime
+	r.raceStartTime = raceStartTime
 
 	hasData := true
 	r.wg.Add(1)
@@ -137,7 +155,7 @@ func (r *replay) readEntries() {
 			r.dataFiles[x].data.Scan()
 			line := r.dataFiles[x].data.Text()
 
-			r.dataFiles[x].nextLineTime, r.dataFiles[x].nextLine, err = r.uncompressedDataTime(line, sessionStartTime)
+			r.dataFiles[x].nextLineTime, r.dataFiles[x].nextLine, err = r.uncompressedDataTime(line, dataStartTime)
 			if err != nil {
 				continue
 			}
@@ -174,7 +192,7 @@ func (r *replay) readEntries() {
 						currentTime,
 						&r.dataFiles[x].nextLineTime,
 						&r.dataFiles[x].nextLine,
-						sessionStartTime,
+						dataStartTime,
 						r.compressedDataTime,
 						r.dataFiles[x].name) || hasData
 				} else {
@@ -183,7 +201,7 @@ func (r *replay) readEntries() {
 						currentTime,
 						&r.dataFiles[x].nextLineTime,
 						&r.dataFiles[x].nextLine,
-						sessionStartTime,
+						dataStartTime,
 						r.uncompressedDataTime,
 						r.dataFiles[x].name) || hasData
 				}
@@ -265,12 +283,12 @@ func (r *replay) sim(
 	return true
 }
 
-func (r *replay) findSessionStartTime() (time.Time, error) {
+func (r *replay) findSessionTimes() (dataStartTime time.Time, sessionStartTime time.Time, err error) {
 	dataBuffer := r.get(r.eventUrl + ExtrapolatedClockFile + ".jsonStream")
 
 	if dataBuffer == nil {
 		r.log.Errorf("Unable to find session start time because file doesn't exist")
-		return time.Time{}, errors.New("No file for session start time")
+		return time.Time{}, time.Time{}, errors.New("No file for session start time")
 	}
 
 	dataBuffer.Scan()
@@ -278,21 +296,37 @@ func (r *replay) findSessionStartTime() (time.Time, error) {
 
 	if line == NotFoundResponse {
 		r.log.Errorf("Session start time not found because %s file was not found.", ExtrapolatedClockFile)
-		return time.Time{}, errors.New("session start time not found")
+		return time.Time{}, time.Time{}, errors.New("session start time not found")
 	}
 
+	var offset time.Duration
+	dataStartTime, offset, err = r.timeFromSessionData(line)
+	if err != nil {
+		return time.Time{}, time.Time{}, err
+	}
+
+	dataBuffer.Scan()
+	line = dataBuffer.Text()
+	sessionStartTime, _, err = r.timeFromSessionData(line)
+
+	// For session start go back 10 seconds so the UI has chance to redraw before the
+	// race starts
+	return dataStartTime.Add(-offset), sessionStartTime.Add(-time.Second * 10), err
+}
+
+func (r *replay) timeFromSessionData(line string) (currentTime time.Time, offsetFromStart time.Duration, err error) {
 	timeEnd := strings.Index(line, "{")
 	data := line[timeEnd:]
 	timestamp := line[timeEnd-12 : timeEnd]
 
 	abc := fmt.Sprintf("%sh%sm%ss%sms", timestamp[:2], timestamp[3:5], timestamp[6:8], timestamp[9:12])
 
-	offsetFromStart, err := time.ParseDuration(abc)
+	offsetFromStart, err = time.ParseDuration(abc)
 
 	var dat map[string]interface{}
 	if err := json.Unmarshal([]byte(data), &dat); err != nil {
 		r.log.Errorf("Session start date file was invalid: %s", err)
-		return time.Time{}, err
+		return time.Time{}, 0, err
 	}
 
 	timestampStr := dat["Utc"].(string)
@@ -300,10 +334,10 @@ func (r *replay) findSessionStartTime() (time.Time, error) {
 	sessionUtc, err := time.Parse("2006-01-02T15:04:05.9999999Z", timestampStr)
 	if err != nil {
 		r.log.Errorf("Session start timestamp was invalid: %s", err)
-		return time.Time{}, err
+		return time.Time{}, 0, err
 	}
 
-	return sessionUtc.Add(-offsetFromStart), nil
+	return sessionUtc, offsetFromStart, nil
 }
 
 func (r *replay) uncompressedDataTime(data string, sessionStart time.Time) (timestamp time.Time, payload string, err error) {

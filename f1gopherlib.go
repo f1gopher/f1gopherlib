@@ -533,7 +533,10 @@ func (f *f1gopherlib) IncrementTime(duration time.Duration) {
 }
 
 func (f *f1gopherlib) SkipToSessionStart() {
-	f.replayTiming.SkipToSessionStart()
+	sessionStart := f.connection.JumpToStart()
+	if !sessionStart.IsZero() {
+		f.replayTiming.SkipToSessionStart(sessionStart)
+	}
 }
 
 func (f *f1gopherlib) TogglePause() {

@@ -29,4 +29,6 @@ type Connection interface {
 	Connect() (error, <-chan Payload)
 
 	IncrementTime(amount time.Duration)
+
+	JumpToStart() time.Time
 }
