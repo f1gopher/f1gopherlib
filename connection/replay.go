@@ -74,7 +74,7 @@ func CreateReplay(
 		ctx:       ctx,
 		wg:        wg,
 		log:       log,
-		dataFeed:  make(chan Payload, 100000),
+		dataFeed:  make(chan Payload, 1000),
 		eventUrl:  url,
 		session:   session,
 		eventYear: eventYear,
