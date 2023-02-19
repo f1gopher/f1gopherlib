@@ -427,7 +427,7 @@ func (p *Parser) processSectorTimes(key string, value interface{}, driver *Messa
 				segmentState, useSegmentChange = p.calcSegment(key, info, timestamp, currentSegmentIndex, driver)
 
 				if useSegmentChange {
-					p.updateLocation(driver, segmentState)
+					p.updateLocation(driver, segmentState, timestamp)
 				}
 			}
 
@@ -437,7 +437,7 @@ func (p *Parser) processSectorTimes(key string, value interface{}, driver *Messa
 				segmentState, useSegmentChange = p.calcSegment(key, info, timestamp, currentSegmentIndex, driver)
 
 				if useSegmentChange {
-					p.updateLocation(driver, segmentState)
+					p.updateLocation(driver, segmentState, timestamp)
 				}
 			}
 		}
@@ -502,15 +502,42 @@ func (p *Parser) processSectorTimes(key string, value interface{}, driver *Messa
 	}
 }
 
-func (p *Parser) updateLocation(driver *Messages.Timing, segmentState Messages.SegmentType) {
+func (p *Parser) updateLocation(driver *Messages.Timing, segmentState Messages.SegmentType, timestamp time.Time) {
 
 	// Sometimes it is none when we are on track so leave location as is
 	if segmentState == Messages.None && (driver.Location != Messages.OutLap && driver.Location != Messages.OnTrack) {
+		if driver.Location != Messages.Pitlane {
+			if p.eventState.Type == Messages.Race && p.eventState.Status == Messages.Started {
+				driver.PitStopTimes = append(driver.PitStopTimes, Messages.PitStop{
+					Lap:          driver.Lap,
+					PitlaneEntry: timestamp,
+					PitlaneExit:  time.Time{},
+				})
+			}
+		}
+
 		driver.Location = Messages.Pitlane
 	} else if segmentState == Messages.PitlaneSegment {
+		if driver.Location != Messages.Pitlane {
+			if p.eventState.Type == Messages.Race && p.eventState.Status == Messages.Started {
+				driver.PitStopTimes = append(driver.PitStopTimes, Messages.PitStop{
+					Lap:          driver.Lap,
+					PitlaneEntry: timestamp,
+					PitlaneExit:  time.Time{},
+				})
+			}
+		}
+
 		driver.Location = Messages.Pitlane
 	} else {
 		if driver.Segment[0] == Messages.PitlaneSegment || driver.Segment[1] == Messages.PitlaneSegment {
+			if driver.Location != Messages.OutLap {
+				if p.eventState.Type == Messages.Race && p.eventState.Status == Messages.Started {
+					driver.PitStopTimes[len(driver.PitStopTimes)-1].PitlaneExit = timestamp
+					driver.PitStopTimes[len(driver.PitStopTimes)-1].PitlaneTime = timestamp.Sub(driver.PitStopTimes[len(driver.PitStopTimes)-1].PitlaneEntry)
+				}
+			}
+
 			driver.Location = Messages.OutLap
 		} else {
 			driver.Location = Messages.OnTrack

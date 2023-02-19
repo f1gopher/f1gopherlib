@@ -71,6 +71,13 @@ const (
 	Mystery3 // ??? 2020 - Italy Race
 )
 
+type PitStop struct {
+	Lap          int
+	PitlaneEntry time.Time
+	PitlaneExit  time.Time
+	PitlaneTime  time.Duration
+}
+
 type Timing struct {
 	Timestamp time.Time
 
@@ -114,7 +121,8 @@ type Timing struct {
 
 	DRSOpen bool
 
-	Pitstops int
+	Pitstops     int
+	PitStopTimes []PitStop
 
 	Location CarLocation
 
