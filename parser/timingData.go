@@ -55,20 +55,11 @@ func (p *Parser) parseTimingData(dat map[string]interface{}, timestamp time.Time
 			currentDriver.Pitstops = int(intValue.(float64))
 		}
 
-		// Don't use this to update the driver position because it results in multiple drivers
-		// with the same position.
-		//
-		//value, exists = record["Position"].(string)
-		//if exists {
-		//	pos, _ := strconv.Atoi(value.(string))
-		//
-		//	//line, _ := record["Line"].(int64)
-		//	//if int(line) != pos {
-		//	//	fmt.Println(fmt.Sprintf("line %d doesn't match position %d", line, pos))
-		//	//}
-		//
-		//	currentDriver.Position = pos
-		//}
+		value, exists = record["Position"].(string)
+		if exists {
+			pos, _ := strconv.Atoi(value.(string))
+			currentDriver.Position = pos
+		}
 
 		// TODO - do we ever get both values at the same time? Should we just use the value we get as the gap?
 		value, exists = record["TimeDiffToFastest"].(string)

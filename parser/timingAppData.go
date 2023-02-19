@@ -40,10 +40,13 @@ func (p *Parser) parseTimingAppData(dat map[string]interface{}, timestamp time.T
 			currentDriver.Position = int(value)
 		}
 
-		value, exists = line.(map[string]interface{})["Line"]
-		if exists {
-			currentDriver.Position = int(value.(float64))
-		}
+		// Don't use this to update the driver position because it results in multiple drivers
+		// with the same position.
+		//
+		//value, exists = line.(map[string]interface{})["Line"]
+		//if exists {
+		//	currentDriver.Position = int(value.(float64))
+		//}
 
 		value, exists = line.(map[string]interface{})["Stints"]
 		if exists {
