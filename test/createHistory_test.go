@@ -62,7 +62,8 @@ import (
 	"time"
 )
 
-var sessionHistory = [...]RaceEvent{`)
+var sessionHistory = [...]RaceEvent{
+`)
 
 	for _, session := range data {
 		output.WriteString(fmt.Sprintf(`	{
@@ -74,6 +75,7 @@ var sessionHistory = [...]RaceEvent{`)
 		timezone:  "%s",
 		TrackName: "%s",
 		TrackYearCreated: %d,
+		TimeLostInPitlane: time.Duration(%d) * time.Millisecond,
 		urlName:   "%s",
 	},
 `,
@@ -87,7 +89,7 @@ var sessionHistory = [...]RaceEvent{`)
 			session.RaceTime.Nanosecond(),
 			session.RaceTime.Location().String(),
 
-			session.EventTime.Year(),
+			session.RaceTime.Year(),
 			session.EventTime.Month(),
 			session.EventTime.Day(),
 			session.EventTime.Hour(),
@@ -101,6 +103,7 @@ var sessionHistory = [...]RaceEvent{`)
 			session.Timezone().String(),
 			session.TrackName,
 			session.TrackYearCreated,
+			session.TimeLostInPitlane.Milliseconds(),
 			session.Url()))
 	}
 
@@ -158,6 +161,41 @@ type RaceTimetable struct {
 		URL    string `json:"url"`
 		Xmlns  string `json:"xmlns"`
 	} `json:"MRData"`
+}
+
+var pitlaneTimes = map[string]time.Duration{
+	"Yas Marina Circuit":                          time.Duration(19914) * time.Millisecond,
+	"Las Vegas Strip Street Circuit":              time.Duration(0) * time.Millisecond,
+	"Autódromo José Carlos Pace":                  time.Duration(20865) * time.Millisecond,
+	"Autódromo Hermanos Rodríguez":                time.Duration(20300) * time.Millisecond,
+	"Circuit of the Americas":                     time.Duration(21290) * time.Millisecond,
+	"Losail International Circuit":                time.Duration(22900) * time.Millisecond,
+	"Suzuka Circuit":                              time.Duration(22516) * time.Millisecond,
+	"Marina Bay Street Circuit":                   time.Duration(27315) * time.Millisecond,
+	"Autodromo Nazionale di Monza":                time.Duration(21598) * time.Millisecond,
+	"Circuit Park Zandvoort":                      time.Duration(16745) * time.Millisecond,
+	"Circuit de Spa-Francorchamps":                time.Duration(20421) * time.Millisecond,
+	"Hungaroring":                                 time.Duration(18918) * time.Millisecond,
+	"Silverstone Circuit":                         time.Duration(26303) * time.Millisecond,
+	"Red Bull Ring":                               time.Duration(29106) * time.Millisecond,
+	"Circuit Gilles Villeneuve":                   time.Duration(21150) * time.Millisecond,
+	"Circuit de Barcelona-Catalunya":              time.Duration(19564) * time.Millisecond,
+	"Circuit de Monaco":                           time.Duration(22109) * time.Millisecond,
+	"Autodromo Enzo e Dino Ferrari":               time.Duration(27800) * time.Millisecond,
+	"Miami International Autodrome":               time.Duration(16186) * time.Millisecond,
+	"Baku City Circuit":                           time.Duration(17831) * time.Millisecond,
+	"Albert Park Grand Prix Circuit":              time.Duration(15164) * time.Millisecond,
+	"Jeddah Corniche Circuit":                     time.Duration(17873) * time.Millisecond,
+	"Bahrain International Circuit":               time.Duration(22336) * time.Millisecond,
+	"Circuit Paul Ricard":                         time.Duration(32822) * time.Millisecond,
+	"Istanbul Park":                               time.Duration(20292) * time.Millisecond,
+	"Sochi Autodrom":                              time.Duration(22119) * time.Millisecond,
+	"Autódromo Internacional do Algarve":          time.Duration(20898) * time.Millisecond,
+	"Bahrain International Circuit - Outer Track": time.Duration(21974) * time.Millisecond,
+	"Nürburgring":                                 time.Duration(20206) * time.Millisecond,
+	"Autodromo Internazionale del Mugello":        time.Duration(15571) * time.Millisecond,
+	"Hockenheimring":                              time.Duration(17262) * time.Millisecond,
+	"Shanghai International Circuit":              time.Duration(20115) * time.Millisecond,
 }
 
 func buildHistory() []f1gopherlib.RaceEvent {
@@ -266,16 +304,57 @@ func buildHistory() []f1gopherlib.RaceEvent {
 
 			timezone := timezoneForCountry(race.Circuit.Location.Long, race.Circuit.Location.Lat)
 
+			pitlaneTime, exists := pitlaneTimes[race.Circuit.CircuitName]
+			if !exists {
+				pitlaneTime = 0
+			}
+
 			var sessions []f1gopherlib.RaceEvent
 
 			if (raceDate.Year() == 2021 || raceDate.Year() == 2019 || raceDate.Year() == 2018) && race.RaceName == "Monaco Grand Prix" {
-				sessions = monaco2021_2019History(country, race.Circuit.Location.Country, raceDate, raceDateTime, race.RaceName, timezone, race.Circuit.CircuitName, trackCreatedYear)
+				sessions = monaco2021_2019History(
+					country,
+					race.Circuit.Location.Country,
+					raceDate,
+					raceDateTime,
+					race.RaceName,
+					timezone,
+					race.Circuit.CircuitName,
+					trackCreatedYear,
+					pitlaneTime)
 			} else if raceDate.Year() == 2020 && race.RaceName == "Emilia Romagna Grand Prix" {
-				sessions = emiliaRomagna2020History(country, race.Circuit.Location.Country, raceDate, raceDateTime, race.RaceName, timezone, race.Circuit.CircuitName, trackCreatedYear)
+				sessions = emiliaRomagna2020History(
+					country,
+					race.Circuit.Location.Country,
+					raceDate,
+					raceDateTime,
+					race.RaceName,
+					timezone,
+					race.Circuit.CircuitName,
+					trackCreatedYear,
+					pitlaneTime)
 			} else if raceDate.Year() == 2020 && race.RaceName == "German Grand Prix" {
-				sessions = german2020History(country, race.Circuit.Location.Country, raceDate, raceDateTime, race.RaceName, timezone, race.Circuit.CircuitName, trackCreatedYear)
+				sessions = german2020History(
+					country,
+					race.Circuit.Location.Country,
+					raceDate,
+					raceDateTime,
+					race.RaceName,
+					timezone,
+					race.Circuit.CircuitName,
+					trackCreatedYear,
+					pitlaneTime)
 			} else if raceDate.Year() == 2019 && race.RaceName == "Japanese Grand Prix" {
-				sessions = japan2019History(country, race.Circuit.Location.Country, raceDate, raceDateTime, race.RaceName, timezone, race.Circuit.CircuitName, trackCreatedYear)
+				sessions = japan2019History(
+					country,
+					race.Circuit.Location.Country,
+					raceDate,
+					raceDateTime,
+					race.RaceName,
+					timezone,
+					race.Circuit.CircuitName,
+					trackCreatedYear,
+					pitlaneTime)
 			} else {
 				if len(race.Sprint.Date) != 0 {
 					sessions = sprintHistory(
@@ -289,7 +368,8 @@ func buildHistory() []f1gopherlib.RaceEvent {
 						practice1Time,
 						practice2Time,
 						qualifyingTime,
-						sprintTime)
+						sprintTime,
+						pitlaneTime)
 				} else {
 					sessions = defaultHistory(
 						country,
@@ -302,7 +382,8 @@ func buildHistory() []f1gopherlib.RaceEvent {
 						practice1Time,
 						practice2Time,
 						practice3Time,
-						qualifyingTime)
+						qualifyingTime,
+						pitlaneTime)
 				}
 			}
 
@@ -324,7 +405,8 @@ func defaultHistory(
 	practice1Time time.Time,
 	practice2Time time.Time,
 	practice3Time time.Time,
-	qualifyingTime time.Time) []f1gopherlib.RaceEvent {
+	qualifyingTime time.Time,
+	pitlaneTime time.Duration) []f1gopherlib.RaceEvent {
 	result := make([]f1gopherlib.RaceEvent, 0)
 
 	result = append(result, *f1gopherlib.CreateRaceEvent(
@@ -335,6 +417,7 @@ func defaultHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -347,6 +430,7 @@ func defaultHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -359,6 +443,7 @@ func defaultHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -371,6 +456,7 @@ func defaultHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -383,6 +469,7 @@ func defaultHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -401,7 +488,8 @@ func sprintHistory(
 	practice1Time time.Time,
 	practice2Time time.Time,
 	qualifyingTime time.Time,
-	sprintTime time.Time) []f1gopherlib.RaceEvent {
+	sprintTime time.Time,
+	pitlaneTime time.Duration) []f1gopherlib.RaceEvent {
 	result := make([]f1gopherlib.RaceEvent, 0)
 
 	result = append(result, *f1gopherlib.CreateRaceEvent(
@@ -412,6 +500,7 @@ func sprintHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -424,6 +513,7 @@ func sprintHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -436,6 +526,7 @@ func sprintHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -448,6 +539,7 @@ func sprintHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -460,6 +552,7 @@ func sprintHistory(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -475,7 +568,8 @@ func monaco2021_2019History(
 	name string,
 	timezone *time.Location,
 	circuitName string,
-	trackYearCreated int) []f1gopherlib.RaceEvent {
+	trackYearCreated int,
+	pitlaneTime time.Duration) []f1gopherlib.RaceEvent {
 
 	result := make([]f1gopherlib.RaceEvent, 0)
 
@@ -487,6 +581,7 @@ func monaco2021_2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -499,6 +594,7 @@ func monaco2021_2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -511,6 +607,7 @@ func monaco2021_2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -523,6 +620,7 @@ func monaco2021_2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -535,6 +633,7 @@ func monaco2021_2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -550,7 +649,8 @@ func emiliaRomagna2020History(
 	name string,
 	timezone *time.Location,
 	circuitName string,
-	trackYearCreated int) []f1gopherlib.RaceEvent {
+	trackYearCreated int,
+	pitlaneTime time.Duration) []f1gopherlib.RaceEvent {
 
 	result := make([]f1gopherlib.RaceEvent, 0)
 
@@ -562,6 +662,7 @@ func emiliaRomagna2020History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -574,6 +675,7 @@ func emiliaRomagna2020History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -586,6 +688,7 @@ func emiliaRomagna2020History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -601,7 +704,8 @@ func german2020History(
 	name string,
 	timezone *time.Location,
 	circuitName string,
-	trackYearCreated int) []f1gopherlib.RaceEvent {
+	trackYearCreated int,
+	pitlaneTime time.Duration) []f1gopherlib.RaceEvent {
 
 	result := make([]f1gopherlib.RaceEvent, 0)
 
@@ -613,6 +717,7 @@ func german2020History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -625,6 +730,7 @@ func german2020History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -637,6 +743,7 @@ func german2020History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -652,7 +759,8 @@ func japan2019History(
 	name string,
 	timezone *time.Location,
 	circuitName string,
-	trackYearCreated int) []f1gopherlib.RaceEvent {
+	trackYearCreated int,
+	pitlaneTime time.Duration) []f1gopherlib.RaceEvent {
 
 	result := make([]f1gopherlib.RaceEvent, 0)
 
@@ -664,6 +772,7 @@ func japan2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -676,6 +785,7 @@ func japan2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -688,6 +798,7 @@ func japan2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))
@@ -700,6 +811,7 @@ func japan2019History(
 		name,
 		circuitName,
 		trackYearCreated,
+		pitlaneTime,
 		urlCountry,
 		timezone.String(),
 	))

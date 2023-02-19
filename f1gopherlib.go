@@ -37,6 +37,7 @@ type F1GopherLib interface {
 	SessionStart() time.Time
 	Track() string
 	TrackYear() int
+	TimeLostInPitlane() time.Duration
 
 	Weather() <-chan Messages.Weather
 	RaceControlMessages() <-chan Messages.RaceControlMessage
@@ -62,12 +63,13 @@ type F1GopherLib interface {
 type f1gopherlib struct {
 	archive string
 
-	session      Messages.SessionType
-	name         string
-	timezone     *time.Location
-	sessionStart time.Time
-	track        string
-	trackYear    int
+	session           Messages.SessionType
+	name              string
+	timezone          *time.Location
+	sessionStart      time.Time
+	track             string
+	trackYear         int
+	timeLostInPitlane time.Duration
 
 	connection   connection.Connection
 	dataHandler  *parser.Parser
@@ -114,6 +116,7 @@ func CreateRaceEvent(
 	name string,
 	track string,
 	trackYearCreated int,
+	pitlaneTime time.Duration,
 	urlName string,
 	timezone string) *RaceEvent {
 
@@ -150,27 +153,29 @@ func CreateRaceEvent(
 		sessionName)
 
 	return &RaceEvent{
-		Country:          country,
-		RaceTime:         raceTime,
-		EventTime:        eventTime,
-		Type:             sessionType,
-		Name:             name,
-		timezone:         timezone,
-		TrackName:        track,
-		TrackYearCreated: trackYearCreated,
-		urlName:          urlName,
+		Country:           country,
+		RaceTime:          raceTime,
+		EventTime:         eventTime,
+		Type:              sessionType,
+		Name:              name,
+		timezone:          timezone,
+		TrackName:         track,
+		TrackYearCreated:  trackYearCreated,
+		urlName:           urlName,
+		TimeLostInPitlane: pitlaneTime,
 	}
 }
 
 type RaceEvent struct {
-	Country          string
-	RaceTime         time.Time
-	EventTime        time.Time
-	Type             Messages.SessionType
-	Name             string
-	timezone         string
-	TrackName        string
-	TrackYearCreated int
+	Country           string
+	RaceTime          time.Time
+	EventTime         time.Time
+	Type              Messages.SessionType
+	Name              string
+	timezone          string
+	TrackName         string
+	TrackYearCreated  int
+	TimeLostInPitlane time.Duration
 
 	// TODO - add duration
 
@@ -215,13 +220,14 @@ func CreateLive(requestedData parser.DataSource, archive string, cache string) (
 		radio:               make(chan Messages.Radio, radioChannelSize),
 		drivers:             make(chan Messages.Drivers, driversChannelSize),
 
-		archive:      archive,
-		session:      currentEvent.Type,
-		name:         currentEvent.Name,
-		timezone:     currentEvent.Timezone(),
-		sessionStart: currentEvent.EventTime,
-		track:        currentEvent.TrackName,
-		trackYear:    currentEvent.TrackYearCreated,
+		archive:           archive,
+		session:           currentEvent.Type,
+		name:              currentEvent.Name,
+		timezone:          currentEvent.Timezone(),
+		sessionStart:      currentEvent.EventTime,
+		track:             currentEvent.TrackName,
+		trackYear:         currentEvent.TrackYearCreated,
+		timeLostInPitlane: currentEvent.TimeLostInPitlane,
 	}
 	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
@@ -260,6 +266,7 @@ func CreateDebugReplay(
 		sessionStart:        event.EventTime,
 		track:               event.TrackName,
 		trackYear:           event.TrackYearCreated,
+		timeLostInPitlane:   event.TimeLostInPitlane,
 	}
 	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
@@ -294,6 +301,7 @@ func CreateReplay(
 		sessionStart:        event.EventTime,
 		track:               event.TrackName,
 		trackYear:           event.TrackYearCreated,
+		timeLostInPitlane:   event.TimeLostInPitlane,
 	}
 	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
@@ -478,6 +486,10 @@ func (f *f1gopherlib) Track() string {
 
 func (f *f1gopherlib) TrackYear() int {
 	return f.trackYear
+}
+
+func (f *f1gopherlib) TimeLostInPitlane() time.Duration {
+	return f.timeLostInPitlane
 }
 
 func (f *f1gopherlib) Weather() <-chan Messages.Weather {
