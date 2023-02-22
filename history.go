@@ -66,7 +66,7 @@ func HappeningSessions() (liveSession RaceEvent, nextSession RaceEvent, hasLiveS
 					// Usually 60 mins but tire tests are 90 so cover both since it won't overlap with anything else
 					duringEvent = utcNow.Before(all[x].EventTime.Add(time.Hour * 2))
 
-				case Messages.QualifyingSession, Messages.SprintSession, Messages.RaceSession:
+				case Messages.QualifyingSession, Messages.SprintSession, Messages.RaceSession, Messages.PreSeasonSession:
 					// Last events in the day so just assume it's that event
 					duringEvent = true
 
