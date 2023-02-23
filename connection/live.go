@@ -91,6 +91,12 @@ func (l *live) Connect() (error, <-chan Payload) {
 		l.log.Info("Waiting for live data...")
 
 		for {
+			select {
+			case <-ctx.Done():
+				l.log.Info("Live shutdown")
+				return nil
+			}
+
 			res := stream.ReadRaw()
 
 			if res.Args != nil {
