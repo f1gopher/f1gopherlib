@@ -345,7 +345,7 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 
 	assetStore := connection.CreateAssetStore(event.Url(), cache, f1Log)
 
-	dataHandler := parser.Create(
+	f.dataHandler = parser.Create(
 		f.ctx,
 		&f.wg,
 		requestedData,
@@ -356,7 +356,7 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 		f1Log,
 		event.Timezone())
 
-	go dataHandler.Process()
+	go f.dataHandler.Process()
 	go f.replayTiming.Run()
 
 	return nil
