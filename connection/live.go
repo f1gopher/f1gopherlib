@@ -95,6 +95,9 @@ func (l *live) Connect() (error, <-chan Payload) {
 			case <-ctx.Done():
 				l.log.Info("Live shutdown")
 				return nil
+
+			default:
+				// do nothing
 			}
 
 			res := stream.ReadRaw()
