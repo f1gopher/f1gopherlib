@@ -232,8 +232,6 @@ func CreateLive(requestedData parser.DataSource, archive string, cache string) (
 	data.ctx, data.ctxShutdown = context.WithCancel(context.Background())
 
 	err := data.connectLive(requestedData, archive, currentEvent, cache)
-	// Always start live paused
-	data.TogglePause()
 	if err != nil {
 		return nil, err
 	}
