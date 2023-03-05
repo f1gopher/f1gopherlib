@@ -268,6 +268,8 @@ func buildHistory() []f1gopherlib.RaceEvent {
 				trackCreatedYear = 2023
 			} else if race.Circuit.CircuitName == "Losail International Circuit" {
 				trackCreatedYear = 2021
+			} else if race.Circuit.CircuitName == "Circuit de Barcelona-Catalunya" && raceDate.Year() >= 2023 {
+				trackCreatedYear = 2023
 			}
 
 			// Some events only have race times
