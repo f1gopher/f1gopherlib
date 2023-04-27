@@ -520,18 +520,33 @@ func sprintHistory(
 		timezone.String(),
 	))
 
-	result = append(result, *f1gopherlib.CreateRaceEvent(
-		country,
-		raceDateTime,
-		practice2Time,
-		Messages.Practice2Session,
-		name,
-		circuitName,
-		trackYearCreated,
-		pitlaneTime,
-		urlCountry,
-		timezone.String(),
-	))
+	if raceDateTime.Year() < 2023 {
+		result = append(result, *f1gopherlib.CreateRaceEvent(
+			country,
+			raceDateTime,
+			practice2Time,
+			Messages.Practice2Session,
+			name,
+			circuitName,
+			trackYearCreated,
+			pitlaneTime,
+			urlCountry,
+			timezone.String(),
+		))
+	} else {
+		result = append(result, *f1gopherlib.CreateRaceEvent(
+			country,
+			raceDateTime,
+			practice2Time,
+			Messages.QualifyingSession,
+			name,
+			circuitName,
+			trackYearCreated,
+			pitlaneTime,
+			urlCountry,
+			timezone.String(),
+		))
+	}
 
 	result = append(result, *f1gopherlib.CreateRaceEvent(
 		country,
