@@ -103,6 +103,7 @@ func (p *Parser) readRaceControlMessage(
 	case "VIRTUAL SAFETY CAR DEPLOYED":
 		p.eventState.SafetyCar = Messages.VirtualSafetyCar
 		p.eventState.Timestamp = time
+		p.eventState.DRSEnabled = Messages.DRSDisabled
 		*eventResult = append(*eventResult, p.eventState)
 
 	case "VIRTUAL SAFETY CAR ENDING":
@@ -113,6 +114,7 @@ func (p *Parser) readRaceControlMessage(
 	case "SAFETY CAR DEPLOYED":
 		p.eventState.SafetyCar = Messages.SafetyCar
 		p.eventState.Timestamp = time
+		p.eventState.DRSEnabled = Messages.DRSDisabled
 		*eventResult = append(*eventResult, p.eventState)
 
 	case "SAFETY CAR IN THIS LAP":
