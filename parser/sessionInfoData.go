@@ -38,7 +38,7 @@ func (p *Parser) parseSessionInfoData(dat map[string]interface{}, timestamp time
 	switch dat["Name"].(string) {
 	case "Race":
 		p.eventState.Type = Messages.Race
-	case "Qualifying", "Sprint Qualifying":
+	case "Qualifying", "Sprint Qualifying", "Sprint Shootout":
 		p.eventState.Type = Messages.Qualifying1
 	case "Sprint":
 		p.eventState.Type = Messages.Sprint
@@ -49,7 +49,7 @@ func (p *Parser) parseSessionInfoData(dat map[string]interface{}, timestamp time
 	case "Practice 3":
 		p.eventState.Type = Messages.Practice3
 	default:
-		p.ParseErrorf(connection.SessionInfoFile, timestamp, "Unknown type: ", dat["Type"].(string))
+		p.ParseErrorf(connection.SessionInfoFile, timestamp, "Unknown type: %s", dat["Name"].(string))
 	}
 
 	// TODO handle: StartDate, GmtOffset, ArchiveStatus, Key, Name, EndDate, Path

@@ -1188,7 +1188,7 @@ var sessionHistory = [...]RaceEvent{
 	{
 		Country:           "Azerbaijan",
 		RaceTime:          time.Date(2023, 4, 30, 11, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 4, 29, 9, 30, 0, 0, time.UTC),
+		EventTime:         time.Date(2023, 4, 29, 8, 30, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "Azerbaijan Grand Prix",
 		timezone:          "Asia/Baku",
