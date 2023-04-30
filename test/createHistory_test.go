@@ -164,38 +164,38 @@ type RaceTimetable struct {
 }
 
 var pitlaneTimes = map[string]time.Duration{
-	"Yas Marina Circuit":                          time.Duration(19914) * time.Millisecond,
-	"Las Vegas Strip Street Circuit":              time.Duration(0) * time.Millisecond,
-	"Autódromo José Carlos Pace":                  time.Duration(20865) * time.Millisecond,
-	"Autódromo Hermanos Rodríguez":                time.Duration(20300) * time.Millisecond,
-	"Circuit of the Americas":                     time.Duration(21290) * time.Millisecond,
-	"Losail International Circuit":                time.Duration(22900) * time.Millisecond,
-	"Suzuka Circuit":                              time.Duration(22516) * time.Millisecond,
-	"Marina Bay Street Circuit":                   time.Duration(27315) * time.Millisecond,
-	"Autodromo Nazionale di Monza":                time.Duration(21598) * time.Millisecond,
-	"Circuit Park Zandvoort":                      time.Duration(16745) * time.Millisecond,
-	"Circuit de Spa-Francorchamps":                time.Duration(20421) * time.Millisecond,
-	"Hungaroring":                                 time.Duration(18918) * time.Millisecond,
-	"Silverstone Circuit":                         time.Duration(26303) * time.Millisecond,
-	"Red Bull Ring":                               time.Duration(29106) * time.Millisecond,
-	"Circuit Gilles Villeneuve":                   time.Duration(21150) * time.Millisecond,
-	"Circuit de Barcelona-Catalunya":              time.Duration(19564) * time.Millisecond,
-	"Circuit de Monaco":                           time.Duration(22109) * time.Millisecond,
-	"Autodromo Enzo e Dino Ferrari":               time.Duration(27800) * time.Millisecond,
-	"Miami International Autodrome":               time.Duration(16186) * time.Millisecond,
-	"Baku City Circuit":                           time.Duration(17831) * time.Millisecond,
-	"Albert Park Grand Prix Circuit":              time.Duration(15164) * time.Millisecond,
-	"Jeddah Corniche Circuit":                     time.Duration(17873) * time.Millisecond,
-	"Bahrain International Circuit":               time.Duration(22336) * time.Millisecond,
-	"Circuit Paul Ricard":                         time.Duration(32822) * time.Millisecond,
-	"Istanbul Park":                               time.Duration(20292) * time.Millisecond,
-	"Sochi Autodrom":                              time.Duration(22119) * time.Millisecond,
-	"Autódromo Internacional do Algarve":          time.Duration(20898) * time.Millisecond,
-	"Bahrain International Circuit - Outer Track": time.Duration(21974) * time.Millisecond,
-	"Nürburgring":                                 time.Duration(20206) * time.Millisecond,
-	"Autodromo Internazionale del Mugello":        time.Duration(15571) * time.Millisecond,
-	"Hockenheimring":                              time.Duration(17262) * time.Millisecond,
-	"Shanghai International Circuit":              time.Duration(20115) * time.Millisecond,
+	"Yas Marina Circuit":                          (time.Duration(19914) * time.Millisecond) - (15 * time.Second),
+	"Las Vegas Strip Street Circuit":              (time.Duration(0) * time.Millisecond) - (10 * time.Second), // Estimate
+	"Autódromo José Carlos Pace":                  (time.Duration(20865) * time.Millisecond) - (21 * time.Second),
+	"Autódromo Hermanos Rodríguez":                (time.Duration(20300) * time.Millisecond) - (15 * time.Second),
+	"Circuit of the Americas":                     (time.Duration(21290) * time.Millisecond) - (12 * time.Second),
+	"Losail International Circuit":                (time.Duration(22900) * time.Millisecond) - (10 * time.Second), // Estimate
+	"Suzuka Circuit":                              (time.Duration(22516) * time.Millisecond) - (10 * time.Second),
+	"Marina Bay Street Circuit":                   (time.Duration(27315) * time.Millisecond) - (10 * time.Second),
+	"Autodromo Nazionale di Monza":                (time.Duration(21598) * time.Millisecond) - (8 * time.Second),
+	"Circuit Park Zandvoort":                      (time.Duration(16745) * time.Millisecond) - (15 * time.Second),
+	"Circuit de Spa-Francorchamps":                (time.Duration(20421) * time.Millisecond) - (16 * time.Second),
+	"Hungaroring":                                 (time.Duration(18918) * time.Millisecond) - (13 * time.Second),
+	"Silverstone Circuit":                         (time.Duration(26303) * time.Millisecond) - (19 * time.Second),
+	"Red Bull Ring":                               (time.Duration(29106) * time.Millisecond) - (15 * time.Second),
+	"Circuit Gilles Villeneuve":                   (time.Duration(21150) * time.Millisecond) - (14 * time.Second),
+	"Circuit de Barcelona-Catalunya":              (time.Duration(19564) * time.Millisecond) - (13 * time.Second),
+	"Circuit de Monaco":                           (time.Duration(22109) * time.Millisecond) - (15 * time.Second),
+	"Autodromo Enzo e Dino Ferrari":               (time.Duration(27800) * time.Millisecond) - (9 * time.Second),
+	"Miami International Autodrome":               (time.Duration(16186) * time.Millisecond) - (13 * time.Second),
+	"Baku City Circuit":                           (time.Duration(17831) * time.Millisecond) - (10 * time.Second),
+	"Albert Park Grand Prix Circuit":              (time.Duration(15164) * time.Millisecond) - (14 * time.Second),
+	"Jeddah Corniche Circuit":                     (time.Duration(17873) * time.Millisecond) - (11 * time.Second),
+	"Bahrain International Circuit":               (time.Duration(22336) * time.Millisecond) - (8 * time.Second),
+	"Circuit Paul Ricard":                         (time.Duration(32822) * time.Millisecond) - (16 * time.Second),
+	"Istanbul Park":                               (time.Duration(20292) * time.Millisecond) - (15 * time.Second),
+	"Sochi Autodrom":                              (time.Duration(22119) * time.Millisecond) - (15 * time.Second),
+	"Autódromo Internacional do Algarve":          (time.Duration(20898) * time.Millisecond) - (9 * time.Second),
+	"Bahrain International Circuit - Outer Track": (time.Duration(21974) * time.Millisecond) - (10 * time.Second), // Estimate
+	"Nürburgring":                                 (time.Duration(20206) * time.Millisecond) - (10 * time.Second), // Estimate
+	"Autodromo Internazionale del Mugello":        (time.Duration(15571) * time.Millisecond) - (10 * time.Second), // Estimate
+	"Hockenheimring":                              (time.Duration(17262) * time.Millisecond) - (10 * time.Second), // Estimate
+	"Shanghai International Circuit":              (time.Duration(20115) * time.Millisecond) - (10 * time.Second), // Estimate
 }
 
 func buildHistory() []f1gopherlib.RaceEvent {
