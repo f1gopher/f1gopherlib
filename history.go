@@ -57,8 +57,8 @@ func HappeningSessions() (liveSession RaceEvent, nextSession RaceEvent, hasLiveS
 			all[x].EventTime.Month() == utcNow.Month() &&
 			all[x].EventTime.Day() == utcNow.Day() {
 
-			// Start up to 45mins before the start  of the event
-			if utcNow.After(all[x].EventTime.Add(-time.Minute * 45)) {
+			// Start up to 55 mins before the start  of the event (50 mins is when they go to grid)
+			if utcNow.After(all[x].EventTime.Add(-time.Minute * 55)) {
 
 				duringEvent := false
 				switch all[x].Type {
