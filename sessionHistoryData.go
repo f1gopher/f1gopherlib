@@ -30,7 +30,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-26_Abu_Dhabi_Grand_Prix/2023-11-26_Race/",
 	},
 	{
@@ -42,7 +42,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-26_Abu_Dhabi_Grand_Prix/2023-11-25_Qualifying/",
 	},
 	{
@@ -54,7 +54,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-26_Abu_Dhabi_Grand_Prix/2023-11-25_Practice_3/",
 	},
 	{
@@ -66,7 +66,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-26_Abu_Dhabi_Grand_Prix/2023-11-24_Practice_2/",
 	},
 	{
@@ -78,7 +78,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-26_Abu_Dhabi_Grand_Prix/2023-11-24_Practice_1/",
 	},
 	{
@@ -90,7 +90,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Los_Angeles",
 		TrackName:         "Las Vegas Strip Street Circuit",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(-10000) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-19_Race/",
 	},
 	{
@@ -102,7 +102,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Los_Angeles",
 		TrackName:         "Las Vegas Strip Street Circuit",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(-10000) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-18_Qualifying/",
 	},
 	{
@@ -114,7 +114,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Los_Angeles",
 		TrackName:         "Las Vegas Strip Street Circuit",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(-10000) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-18_Practice_3/",
 	},
 	{
@@ -126,7 +126,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Los_Angeles",
 		TrackName:         "Las Vegas Strip Street Circuit",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(-10000) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-17_Practice_2/",
 	},
 	{
@@ -138,7 +138,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Los_Angeles",
 		TrackName:         "Las Vegas Strip Street Circuit",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(-10000) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-19_Las_Vegas_Grand_Prix/2023-11-17_Practice_1/",
 	},
 	{
@@ -150,7 +150,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-05_São_Paulo_Grand_Prix/2023-11-05_Race/",
 	},
 	{
@@ -162,7 +162,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-05_São_Paulo_Grand_Prix/2023-11-04_Sprint/",
 	},
 	{
@@ -174,7 +174,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-05_São_Paulo_Grand_Prix/2023-11-04_Qualifying/",
 	},
 	{
@@ -186,7 +186,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-05_São_Paulo_Grand_Prix/2023-11-03_Qualifying/",
 	},
 	{
@@ -198,7 +198,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-11-05_São_Paulo_Grand_Prix/2023-11-03_Practice_1/",
 	},
 	{
@@ -210,7 +210,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-29_Mexico_City_Grand_Prix/2023-10-29_Race/",
 	},
 	{
@@ -222,7 +222,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-29_Mexico_City_Grand_Prix/2023-10-28_Qualifying/",
 	},
 	{
@@ -234,7 +234,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-29_Mexico_City_Grand_Prix/2023-10-28_Practice_3/",
 	},
 	{
@@ -246,7 +246,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-29_Mexico_City_Grand_Prix/2023-10-27_Practice_2/",
 	},
 	{
@@ -258,7 +258,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-29_Mexico_City_Grand_Prix/2023-10-27_Practice_1/",
 	},
 	{
@@ -270,7 +270,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-22_United_States_Grand_Prix/2023-10-22_Race/",
 	},
 	{
@@ -282,7 +282,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-22_United_States_Grand_Prix/2023-10-21_Sprint/",
 	},
 	{
@@ -294,7 +294,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-22_United_States_Grand_Prix/2023-10-21_Qualifying/",
 	},
 	{
@@ -306,7 +306,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-22_United_States_Grand_Prix/2023-10-20_Qualifying/",
 	},
 	{
@@ -318,7 +318,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-22_United_States_Grand_Prix/2023-10-20_Practice_1/",
 	},
 	{
@@ -330,7 +330,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-08_Race/",
 	},
 	{
@@ -342,7 +342,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-07_Sprint/",
 	},
 	{
@@ -354,7 +354,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-07_Qualifying/",
 	},
 	{
@@ -366,7 +366,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-06_Qualifying/",
 	},
 	{
@@ -378,7 +378,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-10-08_Qatar_Grand_Prix/2023-10-06_Practice_1/",
 	},
 	{
@@ -390,7 +390,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-24_Japanese_Grand_Prix/2023-09-24_Race/",
 	},
 	{
@@ -402,7 +402,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-24_Japanese_Grand_Prix/2023-09-23_Qualifying/",
 	},
 	{
@@ -414,7 +414,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-24_Japanese_Grand_Prix/2023-09-23_Practice_3/",
 	},
 	{
@@ -426,7 +426,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-24_Japanese_Grand_Prix/2023-09-22_Practice_2/",
 	},
 	{
@@ -438,7 +438,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-24_Japanese_Grand_Prix/2023-09-22_Practice_1/",
 	},
 	{
@@ -450,7 +450,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/",
 	},
 	{
@@ -462,7 +462,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-17_Singapore_Grand_Prix/2023-09-16_Qualifying/",
 	},
 	{
@@ -474,7 +474,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-17_Singapore_Grand_Prix/2023-09-16_Practice_3/",
 	},
 	{
@@ -486,7 +486,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-17_Singapore_Grand_Prix/2023-09-15_Practice_2/",
 	},
 	{
@@ -498,7 +498,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-17_Singapore_Grand_Prix/2023-09-15_Practice_1/",
 	},
 	{
@@ -510,7 +510,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/",
 	},
 	{
@@ -522,7 +522,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-03_Italian_Grand_Prix/2023-09-02_Qualifying/",
 	},
 	{
@@ -534,7 +534,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-03_Italian_Grand_Prix/2023-09-02_Practice_3/",
 	},
 	{
@@ -546,7 +546,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-03_Italian_Grand_Prix/2023-09-01_Practice_2/",
 	},
 	{
@@ -558,7 +558,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-09-03_Italian_Grand_Prix/2023-09-01_Practice_1/",
 	},
 	{
@@ -570,7 +570,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-27_Race/",
 	},
 	{
@@ -582,7 +582,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-26_Qualifying/",
 	},
 	{
@@ -594,7 +594,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-26_Practice_3/",
 	},
 	{
@@ -606,7 +606,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-25_Practice_2/",
 	},
 	{
@@ -618,7 +618,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-08-27_Dutch_Grand_Prix/2023-08-25_Practice_1/",
 	},
 	{
@@ -630,7 +630,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/",
 	},
 	{
@@ -642,7 +642,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-30_Belgian_Grand_Prix/2023-07-29_Sprint/",
 	},
 	{
@@ -654,7 +654,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-30_Belgian_Grand_Prix/2023-07-29_Qualifying/",
 	},
 	{
@@ -666,7 +666,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-30_Belgian_Grand_Prix/2023-07-28_Qualifying/",
 	},
 	{
@@ -678,7 +678,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-30_Belgian_Grand_Prix/2023-07-28_Practice_1/",
 	},
 	{
@@ -690,7 +690,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-23_Hungarian_Grand_Prix/2023-07-23_Race/",
 	},
 	{
@@ -702,7 +702,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-23_Hungarian_Grand_Prix/2023-07-22_Qualifying/",
 	},
 	{
@@ -714,7 +714,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-23_Hungarian_Grand_Prix/2023-07-22_Practice_3/",
 	},
 	{
@@ -726,7 +726,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-23_Hungarian_Grand_Prix/2023-07-21_Practice_2/",
 	},
 	{
@@ -738,7 +738,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-23_Hungarian_Grand_Prix/2023-07-21_Practice_1/",
 	},
 	{
@@ -750,7 +750,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/",
 	},
 	{
@@ -762,7 +762,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-09_British_Grand_Prix/2023-07-08_Qualifying/",
 	},
 	{
@@ -774,7 +774,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-09_British_Grand_Prix/2023-07-08_Practice_3/",
 	},
 	{
@@ -786,7 +786,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-09_British_Grand_Prix/2023-07-07_Practice_2/",
 	},
 	{
@@ -798,7 +798,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-09_British_Grand_Prix/2023-07-07_Practice_1/",
 	},
 	{
@@ -810,7 +810,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-02_Austrian_Grand_Prix/2023-07-02_Race/",
 	},
 	{
@@ -822,7 +822,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-02_Austrian_Grand_Prix/2023-07-01_Sprint/",
 	},
 	{
@@ -834,7 +834,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-02_Austrian_Grand_Prix/2023-07-01_Qualifying/",
 	},
 	{
@@ -846,7 +846,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-02_Austrian_Grand_Prix/2023-06-30_Qualifying/",
 	},
 	{
@@ -858,7 +858,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-07-02_Austrian_Grand_Prix/2023-06-30_Practice_1/",
 	},
 	{
@@ -870,7 +870,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-18_Canadian_Grand_Prix/2023-06-18_Race/",
 	},
 	{
@@ -882,7 +882,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-18_Canadian_Grand_Prix/2023-06-17_Qualifying/",
 	},
 	{
@@ -894,7 +894,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-18_Canadian_Grand_Prix/2023-06-17_Practice_3/",
 	},
 	{
@@ -906,7 +906,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-18_Canadian_Grand_Prix/2023-06-16_Practice_2/",
 	},
 	{
@@ -918,7 +918,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-18_Canadian_Grand_Prix/2023-06-16_Practice_1/",
 	},
 	{
@@ -930,7 +930,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-04_Spanish_Grand_Prix/2023-06-04_Race/",
 	},
 	{
@@ -942,7 +942,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-04_Spanish_Grand_Prix/2023-06-03_Qualifying/",
 	},
 	{
@@ -954,7 +954,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-04_Spanish_Grand_Prix/2023-06-03_Practice_3/",
 	},
 	{
@@ -966,7 +966,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-04_Spanish_Grand_Prix/2023-06-02_Practice_2/",
 	},
 	{
@@ -978,7 +978,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2023,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-06-04_Spanish_Grand_Prix/2023-06-02_Practice_1/",
 	},
 	{
@@ -990,7 +990,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/",
 	},
 	{
@@ -1002,7 +1002,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-28_Monaco_Grand_Prix/2023-05-27_Qualifying/",
 	},
 	{
@@ -1014,7 +1014,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-28_Monaco_Grand_Prix/2023-05-27_Practice_3/",
 	},
 	{
@@ -1026,7 +1026,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-28_Monaco_Grand_Prix/2023-05-26_Practice_2/",
 	},
 	{
@@ -1038,68 +1038,8 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-28_Monaco_Grand_Prix/2023-05-26_Practice_1/",
-	},
-	{
-		Country:           "Italy",
-		RaceTime:          time.Date(2023, 5, 21, 13, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 5, 21, 13, 0, 0, 0, time.UTC),
-		Type:              Messages.RaceSession,
-		Name:              "Emilia Romagna Grand Prix",
-		timezone:          "Europe/Rome",
-		TrackName:         "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-21_Race/",
-	},
-	{
-		Country:           "Italy",
-		RaceTime:          time.Date(2023, 5, 21, 13, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 5, 20, 14, 0, 0, 0, time.UTC),
-		Type:              Messages.QualifyingSession,
-		Name:              "Emilia Romagna Grand Prix",
-		timezone:          "Europe/Rome",
-		TrackName:         "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-20_Qualifying/",
-	},
-	{
-		Country:           "Italy",
-		RaceTime:          time.Date(2023, 5, 21, 13, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 5, 20, 10, 30, 0, 0, time.UTC),
-		Type:              Messages.Practice3Session,
-		Name:              "Emilia Romagna Grand Prix",
-		timezone:          "Europe/Rome",
-		TrackName:         "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-20_Practice_3/",
-	},
-	{
-		Country:           "Italy",
-		RaceTime:          time.Date(2023, 5, 21, 13, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 5, 19, 15, 0, 0, 0, time.UTC),
-		Type:              Messages.Practice2Session,
-		Name:              "Emilia Romagna Grand Prix",
-		timezone:          "Europe/Rome",
-		TrackName:         "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-19_Practice_2/",
-	},
-	{
-		Country:           "Italy",
-		RaceTime:          time.Date(2023, 5, 21, 13, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 5, 19, 11, 30, 0, 0, time.UTC),
-		Type:              Messages.Practice1Session,
-		Name:              "Emilia Romagna Grand Prix",
-		timezone:          "Europe/Rome",
-		TrackName:         "Autodromo Enzo e Dino Ferrari",
-		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-21_Emilia_Romagna_Grand_Prix/2023-05-19_Practice_1/",
 	},
 	{
 		Country:           "USA",
@@ -1110,7 +1050,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-07_Race/",
 	},
 	{
@@ -1122,7 +1062,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-06_Qualifying/",
 	},
 	{
@@ -1134,31 +1074,31 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-06_Practice_3/",
 	},
 	{
 		Country:           "USA",
 		RaceTime:          time.Date(2023, 5, 7, 19, 30, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 5, 5, 21, 0, 0, 0, time.UTC),
+		EventTime:         time.Date(2023, 5, 5, 21, 30, 0, 0, time.UTC),
 		Type:              Messages.Practice2Session,
 		Name:              "Miami Grand Prix",
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-05_Practice_2/",
 	},
 	{
 		Country:           "USA",
 		RaceTime:          time.Date(2023, 5, 7, 19, 30, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 5, 5, 17, 30, 0, 0, time.UTC),
+		EventTime:         time.Date(2023, 5, 5, 18, 0, 0, 0, time.UTC),
 		Type:              Messages.Practice1Session,
 		Name:              "Miami Grand Prix",
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-05-07_Miami_Grand_Prix/2023-05-05_Practice_1/",
 	},
 	{
@@ -1170,7 +1110,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-30_Azerbaijan_Grand_Prix/2023-04-30_Race/",
 	},
 	{
@@ -1182,19 +1122,19 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-30_Azerbaijan_Grand_Prix/2023-04-29_Sprint/",
 	},
 	{
 		Country:           "Azerbaijan",
 		RaceTime:          time.Date(2023, 4, 30, 11, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 4, 29, 8, 30, 0, 0, time.UTC),
+		EventTime:         time.Date(2023, 4, 29, 9, 30, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "Azerbaijan Grand Prix",
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-30_Azerbaijan_Grand_Prix/2023-04-29_Qualifying/",
 	},
 	{
@@ -1206,7 +1146,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-30_Azerbaijan_Grand_Prix/2023-04-28_Qualifying/",
 	},
 	{
@@ -1218,7 +1158,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-30_Azerbaijan_Grand_Prix/2023-04-28_Practice_1/",
 	},
 	{
@@ -1230,7 +1170,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-02_Australian_Grand_Prix/2023-04-02_Race/",
 	},
 	{
@@ -1242,7 +1182,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-02_Australian_Grand_Prix/2023-04-01_Qualifying/",
 	},
 	{
@@ -1254,7 +1194,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-02_Australian_Grand_Prix/2023-04-01_Practice_3/",
 	},
 	{
@@ -1266,7 +1206,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-02_Australian_Grand_Prix/2023-03-31_Practice_2/",
 	},
 	{
@@ -1278,7 +1218,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-04-02_Australian_Grand_Prix/2023-03-31_Practice_1/",
 	},
 	{
@@ -1290,7 +1230,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-19_Saudi_Arabian_Grand_Prix/2023-03-19_Race/",
 	},
 	{
@@ -1302,7 +1242,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-19_Saudi_Arabian_Grand_Prix/2023-03-18_Qualifying/",
 	},
 	{
@@ -1314,7 +1254,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-19_Saudi_Arabian_Grand_Prix/2023-03-18_Practice_3/",
 	},
 	{
@@ -1326,7 +1266,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-19_Saudi_Arabian_Grand_Prix/2023-03-17_Practice_2/",
 	},
 	{
@@ -1338,7 +1278,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-19_Saudi_Arabian_Grand_Prix/2023-03-17_Practice_1/",
 	},
 	{
@@ -1350,7 +1290,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-05_Race/",
 	},
 	{
@@ -1362,7 +1302,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-04_Qualifying/",
 	},
 	{
@@ -1374,7 +1314,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-04_Practice_3/",
 	},
 	{
@@ -1386,7 +1326,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-03_Practice_2/",
 	},
 	{
@@ -1398,7 +1338,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2023/2023-03-05_Bahrain_Grand_Prix/2023-03-03_Practice_1/",
 	},
 	{
@@ -1410,7 +1350,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-20_Abu_Dhabi_Grand_Prix/2022-11-20_Race/",
 	},
 	{
@@ -1422,7 +1362,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-20_Abu_Dhabi_Grand_Prix/2022-11-19_Qualifying/",
 	},
 	{
@@ -1434,7 +1374,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-20_Abu_Dhabi_Grand_Prix/2022-11-19_Practice_3/",
 	},
 	{
@@ -1446,7 +1386,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-20_Abu_Dhabi_Grand_Prix/2022-11-18_Practice_2/",
 	},
 	{
@@ -1458,7 +1398,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-20_Abu_Dhabi_Grand_Prix/2022-11-18_Practice_1/",
 	},
 	{
@@ -1470,7 +1410,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-13_São_Paulo_Grand_Prix/2022-11-13_Race/",
 	},
 	{
@@ -1482,7 +1422,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-13_São_Paulo_Grand_Prix/2022-11-12_Sprint/",
 	},
 	{
@@ -1494,7 +1434,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-13_São_Paulo_Grand_Prix/2022-11-12_Practice_2/",
 	},
 	{
@@ -1506,7 +1446,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-13_São_Paulo_Grand_Prix/2022-11-11_Qualifying/",
 	},
 	{
@@ -1518,7 +1458,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-11-13_São_Paulo_Grand_Prix/2022-11-11_Practice_1/",
 	},
 	{
@@ -1530,7 +1470,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-30_Mexico_City_Grand_Prix/2022-10-30_Race/",
 	},
 	{
@@ -1542,7 +1482,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-30_Mexico_City_Grand_Prix/2022-10-29_Qualifying/",
 	},
 	{
@@ -1554,7 +1494,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-30_Mexico_City_Grand_Prix/2022-10-29_Practice_3/",
 	},
 	{
@@ -1566,7 +1506,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-30_Mexico_City_Grand_Prix/2022-10-28_Practice_2/",
 	},
 	{
@@ -1578,7 +1518,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-30_Mexico_City_Grand_Prix/2022-10-28_Practice_1/",
 	},
 	{
@@ -1590,7 +1530,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-23_United_States_Grand_Prix/2022-10-23_Race/",
 	},
 	{
@@ -1602,7 +1542,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-23_United_States_Grand_Prix/2022-10-22_Qualifying/",
 	},
 	{
@@ -1614,7 +1554,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-23_United_States_Grand_Prix/2022-10-22_Practice_3/",
 	},
 	{
@@ -1626,7 +1566,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-23_United_States_Grand_Prix/2022-10-21_Practice_2/",
 	},
 	{
@@ -1638,7 +1578,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-23_United_States_Grand_Prix/2022-10-21_Practice_1/",
 	},
 	{
@@ -1650,7 +1590,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-09_Japanese_Grand_Prix/2022-10-09_Race/",
 	},
 	{
@@ -1662,7 +1602,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-09_Japanese_Grand_Prix/2022-10-08_Qualifying/",
 	},
 	{
@@ -1674,7 +1614,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-09_Japanese_Grand_Prix/2022-10-08_Practice_3/",
 	},
 	{
@@ -1686,7 +1626,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-09_Japanese_Grand_Prix/2022-10-07_Practice_2/",
 	},
 	{
@@ -1698,7 +1638,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-09_Japanese_Grand_Prix/2022-10-07_Practice_1/",
 	},
 	{
@@ -1710,7 +1650,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-02_Singapore_Grand_Prix/2022-10-02_Race/",
 	},
 	{
@@ -1722,7 +1662,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-02_Singapore_Grand_Prix/2022-10-01_Qualifying/",
 	},
 	{
@@ -1734,7 +1674,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-02_Singapore_Grand_Prix/2022-10-01_Practice_3/",
 	},
 	{
@@ -1746,7 +1686,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-02_Singapore_Grand_Prix/2022-09-30_Practice_2/",
 	},
 	{
@@ -1758,7 +1698,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-10-02_Singapore_Grand_Prix/2022-09-30_Practice_1/",
 	},
 	{
@@ -1770,7 +1710,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-11_Italian_Grand_Prix/2022-09-11_Race/",
 	},
 	{
@@ -1782,7 +1722,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-11_Italian_Grand_Prix/2022-09-10_Qualifying/",
 	},
 	{
@@ -1794,7 +1734,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-11_Italian_Grand_Prix/2022-09-10_Practice_3/",
 	},
 	{
@@ -1806,7 +1746,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-11_Italian_Grand_Prix/2022-09-09_Practice_2/",
 	},
 	{
@@ -1818,7 +1758,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-11_Italian_Grand_Prix/2022-09-09_Practice_1/",
 	},
 	{
@@ -1830,7 +1770,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-04_Race/",
 	},
 	{
@@ -1842,7 +1782,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-03_Qualifying/",
 	},
 	{
@@ -1854,7 +1794,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-03_Practice_3/",
 	},
 	{
@@ -1866,7 +1806,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-02_Practice_2/",
 	},
 	{
@@ -1878,7 +1818,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-09-04_Dutch_Grand_Prix/2022-09-02_Practice_1/",
 	},
 	{
@@ -1890,7 +1830,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-08-28_Belgian_Grand_Prix/2022-08-28_Race/",
 	},
 	{
@@ -1902,7 +1842,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-08-28_Belgian_Grand_Prix/2022-08-27_Qualifying/",
 	},
 	{
@@ -1914,7 +1854,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-08-28_Belgian_Grand_Prix/2022-08-27_Practice_3/",
 	},
 	{
@@ -1926,7 +1866,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-08-28_Belgian_Grand_Prix/2022-08-26_Practice_2/",
 	},
 	{
@@ -1938,7 +1878,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-08-28_Belgian_Grand_Prix/2022-08-26_Practice_1/",
 	},
 	{
@@ -1950,7 +1890,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-31_Hungarian_Grand_Prix/2022-07-31_Race/",
 	},
 	{
@@ -1962,7 +1902,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-31_Hungarian_Grand_Prix/2022-07-30_Qualifying/",
 	},
 	{
@@ -1974,7 +1914,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-31_Hungarian_Grand_Prix/2022-07-30_Practice_3/",
 	},
 	{
@@ -1986,7 +1926,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-31_Hungarian_Grand_Prix/2022-07-29_Practice_2/",
 	},
 	{
@@ -1998,7 +1938,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-31_Hungarian_Grand_Prix/2022-07-29_Practice_1/",
 	},
 	{
@@ -2010,7 +1950,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-24_French_Grand_Prix/2022-07-24_Race/",
 	},
 	{
@@ -2022,7 +1962,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-24_French_Grand_Prix/2022-07-23_Qualifying/",
 	},
 	{
@@ -2034,7 +1974,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-24_French_Grand_Prix/2022-07-23_Practice_3/",
 	},
 	{
@@ -2046,7 +1986,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-24_French_Grand_Prix/2022-07-22_Practice_2/",
 	},
 	{
@@ -2058,7 +1998,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-24_French_Grand_Prix/2022-07-22_Practice_1/",
 	},
 	{
@@ -2070,7 +2010,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-10_Austrian_Grand_Prix/2022-07-10_Race/",
 	},
 	{
@@ -2082,7 +2022,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-10_Austrian_Grand_Prix/2022-07-09_Sprint/",
 	},
 	{
@@ -2094,7 +2034,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-10_Austrian_Grand_Prix/2022-07-09_Practice_2/",
 	},
 	{
@@ -2106,7 +2046,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-10_Austrian_Grand_Prix/2022-07-08_Qualifying/",
 	},
 	{
@@ -2118,7 +2058,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-10_Austrian_Grand_Prix/2022-07-08_Practice_1/",
 	},
 	{
@@ -2130,7 +2070,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-03_British_Grand_Prix/2022-07-03_Race/",
 	},
 	{
@@ -2142,7 +2082,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-03_British_Grand_Prix/2022-07-02_Qualifying/",
 	},
 	{
@@ -2154,7 +2094,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-03_British_Grand_Prix/2022-07-02_Practice_3/",
 	},
 	{
@@ -2166,7 +2106,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-03_British_Grand_Prix/2022-07-01_Practice_2/",
 	},
 	{
@@ -2178,7 +2118,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-07-03_British_Grand_Prix/2022-07-01_Practice_1/",
 	},
 	{
@@ -2190,7 +2130,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-19_Canadian_Grand_Prix/2022-06-19_Race/",
 	},
 	{
@@ -2202,7 +2142,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-19_Canadian_Grand_Prix/2022-06-18_Qualifying/",
 	},
 	{
@@ -2214,7 +2154,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-19_Canadian_Grand_Prix/2022-06-18_Practice_3/",
 	},
 	{
@@ -2226,7 +2166,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-19_Canadian_Grand_Prix/2022-06-17_Practice_2/",
 	},
 	{
@@ -2238,7 +2178,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-19_Canadian_Grand_Prix/2022-06-17_Practice_1/",
 	},
 	{
@@ -2250,7 +2190,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-12_Azerbaijan_Grand_Prix/2022-06-12_Race/",
 	},
 	{
@@ -2262,7 +2202,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-12_Azerbaijan_Grand_Prix/2022-06-11_Qualifying/",
 	},
 	{
@@ -2274,7 +2214,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-12_Azerbaijan_Grand_Prix/2022-06-11_Practice_3/",
 	},
 	{
@@ -2286,7 +2226,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-12_Azerbaijan_Grand_Prix/2022-06-10_Practice_2/",
 	},
 	{
@@ -2298,7 +2238,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-06-12_Azerbaijan_Grand_Prix/2022-06-10_Practice_1/",
 	},
 	{
@@ -2310,7 +2250,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-29_Monaco_Grand_Prix/2022-05-29_Race/",
 	},
 	{
@@ -2322,7 +2262,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-29_Monaco_Grand_Prix/2022-05-28_Qualifying/",
 	},
 	{
@@ -2334,7 +2274,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-29_Monaco_Grand_Prix/2022-05-28_Practice_3/",
 	},
 	{
@@ -2346,7 +2286,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-29_Monaco_Grand_Prix/2022-05-27_Practice_2/",
 	},
 	{
@@ -2358,7 +2298,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-29_Monaco_Grand_Prix/2022-05-27_Practice_1/",
 	},
 	{
@@ -2370,7 +2310,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-22_Spanish_Grand_Prix/2022-05-22_Race/",
 	},
 	{
@@ -2382,7 +2322,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-22_Spanish_Grand_Prix/2022-05-21_Qualifying/",
 	},
 	{
@@ -2394,7 +2334,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-22_Spanish_Grand_Prix/2022-05-21_Practice_3/",
 	},
 	{
@@ -2406,7 +2346,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-22_Spanish_Grand_Prix/2022-05-20_Practice_2/",
 	},
 	{
@@ -2418,7 +2358,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-22_Spanish_Grand_Prix/2022-05-20_Practice_1/",
 	},
 	{
@@ -2430,7 +2370,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-08_Race/",
 	},
 	{
@@ -2442,7 +2382,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-07_Qualifying/",
 	},
 	{
@@ -2454,7 +2394,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-07_Practice_3/",
 	},
 	{
@@ -2466,7 +2406,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-06_Practice_2/",
 	},
 	{
@@ -2478,7 +2418,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/New_York",
 		TrackName:         "Miami International Autodrome",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(3186) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-05-08_Miami_Grand_Prix/2022-05-06_Practice_1/",
 	},
 	{
@@ -2490,7 +2430,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-24_Race/",
 	},
 	{
@@ -2502,7 +2442,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-23_Sprint/",
 	},
 	{
@@ -2514,7 +2454,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-23_Practice_2/",
 	},
 	{
@@ -2526,7 +2466,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-22_Qualifying/",
 	},
 	{
@@ -2538,7 +2478,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-24_Emilia_Romagna_Grand_Prix/2022-04-22_Practice_1/",
 	},
 	{
@@ -2550,7 +2490,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-10_Australian_Grand_Prix/2022-04-10_Race/",
 	},
 	{
@@ -2562,7 +2502,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-10_Australian_Grand_Prix/2022-04-09_Qualifying/",
 	},
 	{
@@ -2574,7 +2514,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-10_Australian_Grand_Prix/2022-04-09_Practice_3/",
 	},
 	{
@@ -2586,7 +2526,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-10_Australian_Grand_Prix/2022-04-08_Practice_2/",
 	},
 	{
@@ -2598,7 +2538,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-04-10_Australian_Grand_Prix/2022-04-08_Practice_1/",
 	},
 	{
@@ -2610,7 +2550,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-27_Saudi_Arabian_Grand_Prix/2022-03-27_Race/",
 	},
 	{
@@ -2622,7 +2562,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-27_Saudi_Arabian_Grand_Prix/2022-03-26_Qualifying/",
 	},
 	{
@@ -2634,7 +2574,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-27_Saudi_Arabian_Grand_Prix/2022-03-26_Practice_3/",
 	},
 	{
@@ -2646,7 +2586,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-27_Saudi_Arabian_Grand_Prix/2022-03-25_Practice_2/",
 	},
 	{
@@ -2658,7 +2598,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2022,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-27_Saudi_Arabian_Grand_Prix/2022-03-25_Practice_1/",
 	},
 	{
@@ -2670,7 +2610,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-20_Bahrain_Grand_Prix/2022-03-20_Race/",
 	},
 	{
@@ -2682,7 +2622,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-20_Bahrain_Grand_Prix/2022-03-19_Qualifying/",
 	},
 	{
@@ -2694,7 +2634,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-20_Bahrain_Grand_Prix/2022-03-19_Practice_3/",
 	},
 	{
@@ -2706,7 +2646,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-20_Bahrain_Grand_Prix/2022-03-18_Practice_2/",
 	},
 	{
@@ -2718,7 +2658,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2022/2022-03-20_Bahrain_Grand_Prix/2022-03-18_Practice_1/",
 	},
 	{
@@ -2730,7 +2670,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-12_Abu_Dhabi_Grand_Prix/2021-12-12_Race/",
 	},
 	{
@@ -2742,7 +2682,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-12_Abu_Dhabi_Grand_Prix/2021-12-11_Qualifying/",
 	},
 	{
@@ -2754,7 +2694,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-12_Abu_Dhabi_Grand_Prix/2021-12-11_Practice_3/",
 	},
 	{
@@ -2766,7 +2706,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-12_Abu_Dhabi_Grand_Prix/2021-12-10_Practice_2/",
 	},
 	{
@@ -2778,7 +2718,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-12_Abu_Dhabi_Grand_Prix/2021-12-10_Practice_1/",
 	},
 	{
@@ -2790,7 +2730,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-05_Race/",
 	},
 	{
@@ -2802,7 +2742,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-04_Qualifying/",
 	},
 	{
@@ -2814,7 +2754,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-04_Practice_3/",
 	},
 	{
@@ -2826,7 +2766,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-03_Practice_2/",
 	},
 	{
@@ -2838,7 +2778,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Riyadh",
 		TrackName:         "Jeddah Corniche Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(6873) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-12-05_Saudi_Arabian_Grand_Prix/2021-12-03_Practice_1/",
 	},
 	{
@@ -2850,7 +2790,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-21_Race/",
 	},
 	{
@@ -2862,7 +2802,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-20_Qualifying/",
 	},
 	{
@@ -2874,7 +2814,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-20_Practice_3/",
 	},
 	{
@@ -2886,7 +2826,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-19_Practice_2/",
 	},
 	{
@@ -2898,7 +2838,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Qatar",
 		TrackName:         "Losail International Circuit",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(12900) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-21_Qatar_Grand_Prix/2021-11-19_Practice_1/",
 	},
 	{
@@ -2910,7 +2850,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-14_São_Paulo_Grand_Prix/2021-11-14_Race/",
 	},
 	{
@@ -2922,7 +2862,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-14_São_Paulo_Grand_Prix/2021-11-13_Sprint/",
 	},
 	{
@@ -2934,7 +2874,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-14_São_Paulo_Grand_Prix/2021-11-13_Practice_2/",
 	},
 	{
@@ -2946,7 +2886,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-14_São_Paulo_Grand_Prix/2021-11-12_Qualifying/",
 	},
 	{
@@ -2958,7 +2898,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-14_São_Paulo_Grand_Prix/2021-11-12_Practice_1/",
 	},
 	{
@@ -2970,7 +2910,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-07_Mexico_City_Grand_Prix/2021-11-07_Race/",
 	},
 	{
@@ -2982,7 +2922,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-07_Mexico_City_Grand_Prix/2021-11-06_Qualifying/",
 	},
 	{
@@ -2994,7 +2934,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-07_Mexico_City_Grand_Prix/2021-11-06_Practice_3/",
 	},
 	{
@@ -3006,7 +2946,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-07_Mexico_City_Grand_Prix/2021-11-05_Practice_2/",
 	},
 	{
@@ -3018,7 +2958,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-11-07_Mexico_City_Grand_Prix/2021-11-05_Practice_1/",
 	},
 	{
@@ -3030,7 +2970,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-24_United_States_Grand_Prix/2021-10-24_Race/",
 	},
 	{
@@ -3042,7 +2982,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-24_United_States_Grand_Prix/2021-10-23_Qualifying/",
 	},
 	{
@@ -3054,7 +2994,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-24_United_States_Grand_Prix/2021-10-23_Practice_3/",
 	},
 	{
@@ -3066,7 +3006,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-24_United_States_Grand_Prix/2021-10-22_Practice_2/",
 	},
 	{
@@ -3078,7 +3018,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-24_United_States_Grand_Prix/2021-10-22_Practice_1/",
 	},
 	{
@@ -3090,7 +3030,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-10_Race/",
 	},
 	{
@@ -3102,7 +3042,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-09_Qualifying/",
 	},
 	{
@@ -3114,7 +3054,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-09_Practice_3/",
 	},
 	{
@@ -3126,7 +3066,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-08_Practice_2/",
 	},
 	{
@@ -3138,7 +3078,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-10-10_Turkish_Grand_Prix/2021-10-08_Practice_1/",
 	},
 	{
@@ -3150,7 +3090,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-26_Russian_Grand_Prix/2021-09-26_Race/",
 	},
 	{
@@ -3162,7 +3102,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-26_Russian_Grand_Prix/2021-09-25_Qualifying/",
 	},
 	{
@@ -3174,7 +3114,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-26_Russian_Grand_Prix/2021-09-25_Practice_3/",
 	},
 	{
@@ -3186,7 +3126,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-26_Russian_Grand_Prix/2021-09-24_Practice_2/",
 	},
 	{
@@ -3198,7 +3138,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-26_Russian_Grand_Prix/2021-09-24_Practice_1/",
 	},
 	{
@@ -3210,7 +3150,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-12_Italian_Grand_Prix/2021-09-12_Race/",
 	},
 	{
@@ -3222,7 +3162,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-12_Italian_Grand_Prix/2021-09-11_Sprint/",
 	},
 	{
@@ -3234,7 +3174,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-12_Italian_Grand_Prix/2021-09-11_Practice_2/",
 	},
 	{
@@ -3246,7 +3186,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-12_Italian_Grand_Prix/2021-09-10_Qualifying/",
 	},
 	{
@@ -3258,7 +3198,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-12_Italian_Grand_Prix/2021-09-10_Practice_1/",
 	},
 	{
@@ -3270,7 +3210,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-05_Race/",
 	},
 	{
@@ -3282,7 +3222,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-04_Qualifying/",
 	},
 	{
@@ -3294,7 +3234,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-04_Practice_3/",
 	},
 	{
@@ -3306,7 +3246,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-03_Practice_2/",
 	},
 	{
@@ -3318,7 +3258,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Amsterdam",
 		TrackName:         "Circuit Park Zandvoort",
 		TrackYearCreated:  2021,
-		TimeLostInPitlane: time.Duration(1745) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-09-05_Dutch_Grand_Prix/2021-09-03_Practice_1/",
 	},
 	{
@@ -3330,7 +3270,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-29_Belgian_Grand_Prix/2021-08-29_Race/",
 	},
 	{
@@ -3342,7 +3282,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-29_Belgian_Grand_Prix/2021-08-28_Qualifying/",
 	},
 	{
@@ -3354,7 +3294,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-29_Belgian_Grand_Prix/2021-08-28_Practice_3/",
 	},
 	{
@@ -3366,7 +3306,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-29_Belgian_Grand_Prix/2021-08-27_Practice_2/",
 	},
 	{
@@ -3378,7 +3318,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-29_Belgian_Grand_Prix/2021-08-27_Practice_1/",
 	},
 	{
@@ -3390,7 +3330,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-01_Hungarian_Grand_Prix/2021-08-01_Race/",
 	},
 	{
@@ -3402,7 +3342,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-01_Hungarian_Grand_Prix/2021-07-31_Qualifying/",
 	},
 	{
@@ -3414,7 +3354,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-01_Hungarian_Grand_Prix/2021-07-31_Practice_3/",
 	},
 	{
@@ -3426,7 +3366,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-01_Hungarian_Grand_Prix/2021-07-30_Practice_2/",
 	},
 	{
@@ -3438,7 +3378,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-08-01_Hungarian_Grand_Prix/2021-07-30_Practice_1/",
 	},
 	{
@@ -3450,7 +3390,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-18_British_Grand_Prix/2021-07-18_Race/",
 	},
 	{
@@ -3462,7 +3402,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-18_British_Grand_Prix/2021-07-17_Sprint/",
 	},
 	{
@@ -3474,7 +3414,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-18_British_Grand_Prix/2021-07-17_Practice_2/",
 	},
 	{
@@ -3486,7 +3426,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-18_British_Grand_Prix/2021-07-16_Qualifying/",
 	},
 	{
@@ -3498,7 +3438,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-18_British_Grand_Prix/2021-07-16_Practice_1/",
 	},
 	{
@@ -3510,7 +3450,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-04_Austrian_Grand_Prix/2021-07-04_Race/",
 	},
 	{
@@ -3522,7 +3462,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-04_Austrian_Grand_Prix/2021-07-03_Qualifying/",
 	},
 	{
@@ -3534,7 +3474,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-04_Austrian_Grand_Prix/2021-07-03_Practice_3/",
 	},
 	{
@@ -3546,7 +3486,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-04_Austrian_Grand_Prix/2021-07-02_Practice_2/",
 	},
 	{
@@ -3558,7 +3498,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-07-04_Austrian_Grand_Prix/2021-07-02_Practice_1/",
 	},
 	{
@@ -3570,7 +3510,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-27_Styrian_Grand_Prix/2021-06-27_Race/",
 	},
 	{
@@ -3582,7 +3522,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-27_Styrian_Grand_Prix/2021-06-26_Qualifying/",
 	},
 	{
@@ -3594,7 +3534,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-27_Styrian_Grand_Prix/2021-06-26_Practice_3/",
 	},
 	{
@@ -3606,7 +3546,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-27_Styrian_Grand_Prix/2021-06-25_Practice_2/",
 	},
 	{
@@ -3618,7 +3558,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-27_Styrian_Grand_Prix/2021-06-25_Practice_1/",
 	},
 	{
@@ -3630,7 +3570,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-20_French_Grand_Prix/2021-06-20_Race/",
 	},
 	{
@@ -3642,7 +3582,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-20_French_Grand_Prix/2021-06-19_Qualifying/",
 	},
 	{
@@ -3654,7 +3594,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-20_French_Grand_Prix/2021-06-19_Practice_3/",
 	},
 	{
@@ -3666,7 +3606,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-20_French_Grand_Prix/2021-06-18_Practice_2/",
 	},
 	{
@@ -3678,7 +3618,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-20_French_Grand_Prix/2021-06-18_Practice_1/",
 	},
 	{
@@ -3690,7 +3630,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-06_Azerbaijan_Grand_Prix/2021-06-06_Race/",
 	},
 	{
@@ -3702,7 +3642,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-06_Azerbaijan_Grand_Prix/2021-06-05_Qualifying/",
 	},
 	{
@@ -3714,7 +3654,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-06_Azerbaijan_Grand_Prix/2021-06-05_Practice_3/",
 	},
 	{
@@ -3726,7 +3666,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-06_Azerbaijan_Grand_Prix/2021-06-04_Practice_2/",
 	},
 	{
@@ -3738,7 +3678,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-06-06_Azerbaijan_Grand_Prix/2021-06-04_Practice_1/",
 	},
 	{
@@ -3750,7 +3690,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-23_Monaco_Grand_Prix/2021-05-23_Race/",
 	},
 	{
@@ -3762,7 +3702,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-23_Monaco_Grand_Prix/2021-05-22_Qualifying/",
 	},
 	{
@@ -3774,7 +3714,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-23_Monaco_Grand_Prix/2021-05-22_Practice_3/",
 	},
 	{
@@ -3786,7 +3726,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-23_Monaco_Grand_Prix/2021-05-20_Practice_2/",
 	},
 	{
@@ -3798,7 +3738,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-23_Monaco_Grand_Prix/2021-05-20_Practice_1/",
 	},
 	{
@@ -3810,7 +3750,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-09_Spanish_Grand_Prix/2021-05-09_Race/",
 	},
 	{
@@ -3822,7 +3762,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-09_Spanish_Grand_Prix/2021-05-08_Qualifying/",
 	},
 	{
@@ -3834,7 +3774,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-09_Spanish_Grand_Prix/2021-05-08_Practice_3/",
 	},
 	{
@@ -3846,7 +3786,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-09_Spanish_Grand_Prix/2021-05-07_Practice_2/",
 	},
 	{
@@ -3858,7 +3798,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-09_Spanish_Grand_Prix/2021-05-07_Practice_1/",
 	},
 	{
@@ -3870,7 +3810,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-05-02_Race/",
 	},
 	{
@@ -3882,7 +3822,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-05-01_Qualifying/",
 	},
 	{
@@ -3894,7 +3834,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-05-01_Practice_3/",
 	},
 	{
@@ -3906,7 +3846,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-04-30_Practice_2/",
 	},
 	{
@@ -3918,7 +3858,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-05-02_Portuguese_Grand_Prix/2021-04-30_Practice_1/",
 	},
 	{
@@ -3930,7 +3870,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-18_Race/",
 	},
 	{
@@ -3942,7 +3882,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-17_Qualifying/",
 	},
 	{
@@ -3954,7 +3894,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-17_Practice_3/",
 	},
 	{
@@ -3966,7 +3906,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-16_Practice_2/",
 	},
 	{
@@ -3978,7 +3918,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-04-18_Emilia_Romagna_Grand_Prix/2021-04-16_Practice_1/",
 	},
 	{
@@ -3990,7 +3930,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-03-28_Bahrain_Grand_Prix/2021-03-28_Race/",
 	},
 	{
@@ -4002,7 +3942,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-03-28_Bahrain_Grand_Prix/2021-03-27_Qualifying/",
 	},
 	{
@@ -4014,7 +3954,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-03-28_Bahrain_Grand_Prix/2021-03-27_Practice_3/",
 	},
 	{
@@ -4026,7 +3966,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-03-28_Bahrain_Grand_Prix/2021-03-26_Practice_2/",
 	},
 	{
@@ -4038,7 +3978,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2021/2021-03-28_Bahrain_Grand_Prix/2021-03-26_Practice_1/",
 	},
 	{
@@ -4050,7 +3990,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-13_Race/",
 	},
 	{
@@ -4062,7 +4002,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-12_Qualifying/",
 	},
 	{
@@ -4074,7 +4014,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-12_Practice_3/",
 	},
 	{
@@ -4086,7 +4026,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-11_Practice_2/",
 	},
 	{
@@ -4098,7 +4038,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-13_Abu_Dhabi_Grand_Prix/2020-12-11_Practice_1/",
 	},
 	{
@@ -4110,7 +4050,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit - Outer Track",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11974) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-06_Race/",
 	},
 	{
@@ -4122,7 +4062,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit - Outer Track",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11974) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-05_Qualifying/",
 	},
 	{
@@ -4134,7 +4074,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit - Outer Track",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11974) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-05_Practice_3/",
 	},
 	{
@@ -4146,7 +4086,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit - Outer Track",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11974) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-04_Practice_2/",
 	},
 	{
@@ -4158,7 +4098,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit - Outer Track",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11974) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-12-06_Sakhir_Grand_Prix/2020-12-04_Practice_1/",
 	},
 	{
@@ -4170,7 +4110,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-29_Bahrain_Grand_Prix/2020-11-29_Race/",
 	},
 	{
@@ -4182,7 +4122,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-29_Bahrain_Grand_Prix/2020-11-28_Qualifying/",
 	},
 	{
@@ -4194,7 +4134,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-29_Bahrain_Grand_Prix/2020-11-28_Practice_3/",
 	},
 	{
@@ -4206,7 +4146,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-29_Bahrain_Grand_Prix/2020-11-27_Practice_2/",
 	},
 	{
@@ -4218,7 +4158,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-29_Bahrain_Grand_Prix/2020-11-27_Practice_1/",
 	},
 	{
@@ -4230,7 +4170,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-15_Race/",
 	},
 	{
@@ -4242,7 +4182,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-14_Qualifying/",
 	},
 	{
@@ -4254,7 +4194,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-14_Practice_3/",
 	},
 	{
@@ -4266,7 +4206,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-13_Practice_2/",
 	},
 	{
@@ -4278,7 +4218,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Istanbul",
 		TrackName:         "Istanbul Park",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5292) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-15_Turkish_Grand_Prix/2020-11-13_Practice_1/",
 	},
 	{
@@ -4290,7 +4230,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-11-01_Race/",
 	},
 	{
@@ -4302,7 +4242,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-10-31_Qualifying/",
 	},
 	{
@@ -4314,7 +4254,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Enzo e Dino Ferrari",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(18800) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-11-01_Emilia_Romagna_Grand_Prix/2020-10-31_Practice_1/",
 	},
 	{
@@ -4326,7 +4266,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-25_Race/",
 	},
 	{
@@ -4338,7 +4278,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-24_Qualifying/",
 	},
 	{
@@ -4350,7 +4290,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-24_Practice_3/",
 	},
 	{
@@ -4362,7 +4302,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-23_Practice_2/",
 	},
 	{
@@ -4374,7 +4314,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Lisbon",
 		TrackName:         "Autódromo Internacional do Algarve",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(11898) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-25_Portuguese_Grand_Prix/2020-10-23_Practice_1/",
 	},
 	{
@@ -4386,7 +4326,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Nürburgring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10206) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-11_Eifel_Grand_Prix/2020-10-11_Race/",
 	},
 	{
@@ -4398,7 +4338,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Nürburgring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10206) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-11_Eifel_Grand_Prix/2020-10-10_Qualifying/",
 	},
 	{
@@ -4410,7 +4350,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Nürburgring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10206) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-11_Eifel_Grand_Prix/2020-10-10_Practice_3/",
 	},
 	{
@@ -4422,7 +4362,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Nürburgring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10206) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-11_Eifel_Grand_Prix/2020-10-09_Practice_2/",
 	},
 	{
@@ -4434,7 +4374,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Nürburgring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10206) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-10-11_Eifel_Grand_Prix/2020-10-09_Practice_1/",
 	},
 	{
@@ -4446,7 +4386,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-27_Russian_Grand_Prix/2020-09-27_Race/",
 	},
 	{
@@ -4458,7 +4398,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-27_Russian_Grand_Prix/2020-09-26_Qualifying/",
 	},
 	{
@@ -4470,7 +4410,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-27_Russian_Grand_Prix/2020-09-26_Practice_3/",
 	},
 	{
@@ -4482,7 +4422,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-27_Russian_Grand_Prix/2020-09-25_Practice_2/",
 	},
 	{
@@ -4494,7 +4434,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-27_Russian_Grand_Prix/2020-09-25_Practice_1/",
 	},
 	{
@@ -4506,7 +4446,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Internazionale del Mugello",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5571) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-13_Race/",
 	},
 	{
@@ -4518,7 +4458,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Internazionale del Mugello",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5571) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-12_Qualifying/",
 	},
 	{
@@ -4530,7 +4470,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Internazionale del Mugello",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5571) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-12_Practice_3/",
 	},
 	{
@@ -4542,7 +4482,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Internazionale del Mugello",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5571) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-11_Practice_2/",
 	},
 	{
@@ -4554,7 +4494,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Internazionale del Mugello",
 		TrackYearCreated:  2020,
-		TimeLostInPitlane: time.Duration(5571) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-13_Tuscan_Grand_Prix/2020-09-11_Practice_1/",
 	},
 	{
@@ -4566,7 +4506,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-06_Italian_Grand_Prix/2020-09-06_Race/",
 	},
 	{
@@ -4578,7 +4518,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-06_Italian_Grand_Prix/2020-09-05_Qualifying/",
 	},
 	{
@@ -4590,7 +4530,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-06_Italian_Grand_Prix/2020-09-05_Practice_3/",
 	},
 	{
@@ -4602,7 +4542,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-06_Italian_Grand_Prix/2020-09-04_Practice_2/",
 	},
 	{
@@ -4614,7 +4554,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-09-06_Italian_Grand_Prix/2020-09-04_Practice_1/",
 	},
 	{
@@ -4626,7 +4566,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-30_Belgian_Grand_Prix/2020-08-30_Race/",
 	},
 	{
@@ -4638,7 +4578,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-30_Belgian_Grand_Prix/2020-08-29_Qualifying/",
 	},
 	{
@@ -4650,7 +4590,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-30_Belgian_Grand_Prix/2020-08-29_Practice_3/",
 	},
 	{
@@ -4662,7 +4602,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-30_Belgian_Grand_Prix/2020-08-28_Practice_2/",
 	},
 	{
@@ -4674,7 +4614,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-30_Belgian_Grand_Prix/2020-08-28_Practice_1/",
 	},
 	{
@@ -4686,7 +4626,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-16_Spanish_Grand_Prix/2020-08-16_Race/",
 	},
 	{
@@ -4698,7 +4638,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-16_Spanish_Grand_Prix/2020-08-15_Qualifying/",
 	},
 	{
@@ -4710,7 +4650,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-16_Spanish_Grand_Prix/2020-08-15_Practice_3/",
 	},
 	{
@@ -4722,7 +4662,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-16_Spanish_Grand_Prix/2020-08-14_Practice_2/",
 	},
 	{
@@ -4734,7 +4674,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-16_Spanish_Grand_Prix/2020-08-14_Practice_1/",
 	},
 	{
@@ -4746,7 +4686,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-09_Race/",
 	},
 	{
@@ -4758,7 +4698,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-08_Qualifying/",
 	},
 	{
@@ -4770,7 +4710,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-08_Practice_3/",
 	},
 	{
@@ -4782,7 +4722,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-07_Practice_2/",
 	},
 	{
@@ -4794,7 +4734,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-09_70th_Anniversary_Grand_Prix/2020-08-07_Practice_1/",
 	},
 	{
@@ -4806,7 +4746,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-02_British_Grand_Prix/2020-08-02_Race/",
 	},
 	{
@@ -4818,7 +4758,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-02_British_Grand_Prix/2020-08-01_Qualifying/",
 	},
 	{
@@ -4830,7 +4770,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-02_British_Grand_Prix/2020-08-01_Practice_3/",
 	},
 	{
@@ -4842,7 +4782,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-02_British_Grand_Prix/2020-07-31_Practice_2/",
 	},
 	{
@@ -4854,7 +4794,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-08-02_British_Grand_Prix/2020-07-31_Practice_1/",
 	},
 	{
@@ -4866,7 +4806,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-19_Hungarian_Grand_Prix/2020-07-19_Race/",
 	},
 	{
@@ -4878,7 +4818,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-19_Hungarian_Grand_Prix/2020-07-18_Qualifying/",
 	},
 	{
@@ -4890,7 +4830,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-19_Hungarian_Grand_Prix/2020-07-18_Practice_3/",
 	},
 	{
@@ -4902,7 +4842,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-19_Hungarian_Grand_Prix/2020-07-17_Practice_2/",
 	},
 	{
@@ -4914,7 +4854,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-19_Hungarian_Grand_Prix/2020-07-17_Practice_1/",
 	},
 	{
@@ -4926,7 +4866,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-12_Styrian_Grand_Prix/2020-07-12_Race/",
 	},
 	{
@@ -4938,7 +4878,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-12_Styrian_Grand_Prix/2020-07-11_Qualifying/",
 	},
 	{
@@ -4950,7 +4890,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-12_Styrian_Grand_Prix/2020-07-11_Practice_3/",
 	},
 	{
@@ -4962,7 +4902,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-12_Styrian_Grand_Prix/2020-07-10_Practice_2/",
 	},
 	{
@@ -4974,7 +4914,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-12_Styrian_Grand_Prix/2020-07-10_Practice_1/",
 	},
 	{
@@ -4986,7 +4926,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-05_Austrian_Grand_Prix/2020-07-05_Race/",
 	},
 	{
@@ -4998,7 +4938,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-05_Austrian_Grand_Prix/2020-07-04_Qualifying/",
 	},
 	{
@@ -5010,7 +4950,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-05_Austrian_Grand_Prix/2020-07-04_Practice_3/",
 	},
 	{
@@ -5022,7 +4962,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-05_Austrian_Grand_Prix/2020-07-03_Practice_2/",
 	},
 	{
@@ -5034,7 +4974,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2020/2020-07-05_Austrian_Grand_Prix/2020-07-03_Practice_1/",
 	},
 	{
@@ -5046,7 +4986,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-12-01_Race/",
 	},
 	{
@@ -5058,7 +4998,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-11-30_Qualifying/",
 	},
 	{
@@ -5070,7 +5010,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-11-30_Practice_3/",
 	},
 	{
@@ -5082,7 +5022,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-11-29_Practice_2/",
 	},
 	{
@@ -5094,7 +5034,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-12-01_Abu_Dhabi_Grand_Prix/2019-11-29_Practice_1/",
 	},
 	{
@@ -5106,7 +5046,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-17_São_Paulo_Grand_Prix/2019-11-17_Race/",
 	},
 	{
@@ -5118,7 +5058,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-17_São_Paulo_Grand_Prix/2019-11-16_Qualifying/",
 	},
 	{
@@ -5130,7 +5070,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-17_São_Paulo_Grand_Prix/2019-11-16_Practice_3/",
 	},
 	{
@@ -5142,7 +5082,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-17_São_Paulo_Grand_Prix/2019-11-15_Practice_2/",
 	},
 	{
@@ -5154,7 +5094,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-17_São_Paulo_Grand_Prix/2019-11-15_Practice_1/",
 	},
 	{
@@ -5166,7 +5106,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-03_United_States_Grand_Prix/2019-11-03_Race/",
 	},
 	{
@@ -5178,7 +5118,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-03_United_States_Grand_Prix/2019-11-02_Qualifying/",
 	},
 	{
@@ -5190,7 +5130,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-03_United_States_Grand_Prix/2019-11-02_Practice_3/",
 	},
 	{
@@ -5202,7 +5142,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-03_United_States_Grand_Prix/2019-11-01_Practice_2/",
 	},
 	{
@@ -5214,7 +5154,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-11-03_United_States_Grand_Prix/2019-11-01_Practice_1/",
 	},
 	{
@@ -5226,7 +5166,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-27_Mexican_Grand_Prix/2019-10-27_Race/",
 	},
 	{
@@ -5238,7 +5178,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-27_Mexican_Grand_Prix/2019-10-26_Qualifying/",
 	},
 	{
@@ -5250,7 +5190,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-27_Mexican_Grand_Prix/2019-10-26_Practice_3/",
 	},
 	{
@@ -5262,7 +5202,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-27_Mexican_Grand_Prix/2019-10-25_Practice_2/",
 	},
 	{
@@ -5274,7 +5214,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-27_Mexican_Grand_Prix/2019-10-25_Practice_1/",
 	},
 	{
@@ -5286,7 +5226,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-13_Japanese_Grand_Prix/2019-10-13_Race/",
 	},
 	{
@@ -5298,7 +5238,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-13_Japanese_Grand_Prix/2019-10-13_Qualifying/",
 	},
 	{
@@ -5310,7 +5250,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-13_Japanese_Grand_Prix/2019-10-11_Practice_2/",
 	},
 	{
@@ -5322,7 +5262,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-10-13_Japanese_Grand_Prix/2019-10-11_Practice_1/",
 	},
 	{
@@ -5334,7 +5274,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-29_Russian_Grand_Prix/2019-09-29_Race/",
 	},
 	{
@@ -5346,7 +5286,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-29_Russian_Grand_Prix/2019-09-28_Qualifying/",
 	},
 	{
@@ -5358,7 +5298,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-29_Russian_Grand_Prix/2019-09-28_Practice_3/",
 	},
 	{
@@ -5370,7 +5310,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-29_Russian_Grand_Prix/2019-09-27_Practice_2/",
 	},
 	{
@@ -5382,7 +5322,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-29_Russian_Grand_Prix/2019-09-27_Practice_1/",
 	},
 	{
@@ -5394,7 +5334,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-22_Singapore_Grand_Prix/2019-09-22_Race/",
 	},
 	{
@@ -5406,7 +5346,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-22_Singapore_Grand_Prix/2019-09-21_Qualifying/",
 	},
 	{
@@ -5418,7 +5358,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-22_Singapore_Grand_Prix/2019-09-21_Practice_3/",
 	},
 	{
@@ -5430,7 +5370,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-22_Singapore_Grand_Prix/2019-09-20_Practice_2/",
 	},
 	{
@@ -5442,7 +5382,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-22_Singapore_Grand_Prix/2019-09-20_Practice_1/",
 	},
 	{
@@ -5454,7 +5394,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-08_Italian_Grand_Prix/2019-09-08_Race/",
 	},
 	{
@@ -5466,7 +5406,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-08_Italian_Grand_Prix/2019-09-07_Qualifying/",
 	},
 	{
@@ -5478,7 +5418,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-08_Italian_Grand_Prix/2019-09-07_Practice_3/",
 	},
 	{
@@ -5490,7 +5430,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-08_Italian_Grand_Prix/2019-09-06_Practice_2/",
 	},
 	{
@@ -5502,7 +5442,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-08_Italian_Grand_Prix/2019-09-06_Practice_1/",
 	},
 	{
@@ -5514,7 +5454,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-01_Belgian_Grand_Prix/2019-09-01_Race/",
 	},
 	{
@@ -5526,7 +5466,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-01_Belgian_Grand_Prix/2019-08-31_Qualifying/",
 	},
 	{
@@ -5538,7 +5478,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-01_Belgian_Grand_Prix/2019-08-31_Practice_3/",
 	},
 	{
@@ -5550,7 +5490,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-01_Belgian_Grand_Prix/2019-08-30_Practice_2/",
 	},
 	{
@@ -5562,7 +5502,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-09-01_Belgian_Grand_Prix/2019-08-30_Practice_1/",
 	},
 	{
@@ -5574,7 +5514,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-08-04_Hungarian_Grand_Prix/2019-08-04_Race/",
 	},
 	{
@@ -5586,7 +5526,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-08-04_Hungarian_Grand_Prix/2019-08-03_Qualifying/",
 	},
 	{
@@ -5598,7 +5538,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-08-04_Hungarian_Grand_Prix/2019-08-03_Practice_3/",
 	},
 	{
@@ -5610,7 +5550,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-08-04_Hungarian_Grand_Prix/2019-08-02_Practice_2/",
 	},
 	{
@@ -5622,7 +5562,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-08-04_Hungarian_Grand_Prix/2019-08-02_Practice_1/",
 	},
 	{
@@ -5634,7 +5574,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-28_German_Grand_Prix/2019-07-28_Race/",
 	},
 	{
@@ -5646,7 +5586,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-28_German_Grand_Prix/2019-07-27_Qualifying/",
 	},
 	{
@@ -5658,7 +5598,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-28_German_Grand_Prix/2019-07-27_Practice_3/",
 	},
 	{
@@ -5670,7 +5610,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-28_German_Grand_Prix/2019-07-26_Practice_2/",
 	},
 	{
@@ -5682,7 +5622,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-28_German_Grand_Prix/2019-07-26_Practice_1/",
 	},
 	{
@@ -5694,7 +5634,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-14_British_Grand_Prix/2019-07-14_Race/",
 	},
 	{
@@ -5706,7 +5646,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-14_British_Grand_Prix/2019-07-13_Qualifying/",
 	},
 	{
@@ -5718,7 +5658,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-14_British_Grand_Prix/2019-07-13_Practice_3/",
 	},
 	{
@@ -5730,7 +5670,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-14_British_Grand_Prix/2019-07-12_Practice_2/",
 	},
 	{
@@ -5742,7 +5682,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-07-14_British_Grand_Prix/2019-07-12_Practice_1/",
 	},
 	{
@@ -5754,7 +5694,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-30_Austrian_Grand_Prix/2019-06-30_Race/",
 	},
 	{
@@ -5766,7 +5706,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-30_Austrian_Grand_Prix/2019-06-29_Qualifying/",
 	},
 	{
@@ -5778,7 +5718,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-30_Austrian_Grand_Prix/2019-06-29_Practice_3/",
 	},
 	{
@@ -5790,7 +5730,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-30_Austrian_Grand_Prix/2019-06-28_Practice_2/",
 	},
 	{
@@ -5802,7 +5742,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-30_Austrian_Grand_Prix/2019-06-28_Practice_1/",
 	},
 	{
@@ -5814,7 +5754,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-23_French_Grand_Prix/2019-06-23_Race/",
 	},
 	{
@@ -5826,7 +5766,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-23_French_Grand_Prix/2019-06-22_Qualifying/",
 	},
 	{
@@ -5838,7 +5778,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-23_French_Grand_Prix/2019-06-22_Practice_3/",
 	},
 	{
@@ -5850,7 +5790,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-23_French_Grand_Prix/2019-06-21_Practice_2/",
 	},
 	{
@@ -5862,7 +5802,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-23_French_Grand_Prix/2019-06-21_Practice_1/",
 	},
 	{
@@ -5874,7 +5814,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-09_Canadian_Grand_Prix/2019-06-09_Race/",
 	},
 	{
@@ -5886,7 +5826,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-09_Canadian_Grand_Prix/2019-06-08_Qualifying/",
 	},
 	{
@@ -5898,7 +5838,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-09_Canadian_Grand_Prix/2019-06-08_Practice_3/",
 	},
 	{
@@ -5910,7 +5850,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-09_Canadian_Grand_Prix/2019-06-07_Practice_2/",
 	},
 	{
@@ -5922,7 +5862,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-06-09_Canadian_Grand_Prix/2019-06-07_Practice_1/",
 	},
 	{
@@ -5934,7 +5874,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-26_Monaco_Grand_Prix/2019-05-26_Race/",
 	},
 	{
@@ -5946,7 +5886,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-26_Monaco_Grand_Prix/2019-05-25_Qualifying/",
 	},
 	{
@@ -5958,7 +5898,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-26_Monaco_Grand_Prix/2019-05-25_Practice_3/",
 	},
 	{
@@ -5970,7 +5910,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-26_Monaco_Grand_Prix/2019-05-23_Practice_2/",
 	},
 	{
@@ -5982,7 +5922,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-26_Monaco_Grand_Prix/2019-05-23_Practice_1/",
 	},
 	{
@@ -5994,7 +5934,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-12_Spanish_Grand_Prix/2019-05-12_Race/",
 	},
 	{
@@ -6006,7 +5946,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-12_Spanish_Grand_Prix/2019-05-11_Qualifying/",
 	},
 	{
@@ -6018,7 +5958,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-12_Spanish_Grand_Prix/2019-05-11_Practice_3/",
 	},
 	{
@@ -6030,7 +5970,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-12_Spanish_Grand_Prix/2019-05-10_Practice_2/",
 	},
 	{
@@ -6042,7 +5982,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-05-12_Spanish_Grand_Prix/2019-05-10_Practice_1/",
 	},
 	{
@@ -6054,7 +5994,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-28_Race/",
 	},
 	{
@@ -6066,7 +6006,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-27_Qualifying/",
 	},
 	{
@@ -6078,7 +6018,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-27_Practice_3/",
 	},
 	{
@@ -6090,7 +6030,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-26_Practice_2/",
 	},
 	{
@@ -6102,7 +6042,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-28_Azerbaijan_Grand_Prix/2019-04-26_Practice_1/",
 	},
 	{
@@ -6114,7 +6054,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-14_Chinese_Grand_Prix/2019-04-14_Race/",
 	},
 	{
@@ -6126,7 +6066,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-14_Chinese_Grand_Prix/2019-04-13_Qualifying/",
 	},
 	{
@@ -6138,7 +6078,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-14_Chinese_Grand_Prix/2019-04-13_Practice_3/",
 	},
 	{
@@ -6150,7 +6090,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-14_Chinese_Grand_Prix/2019-04-12_Practice_2/",
 	},
 	{
@@ -6162,7 +6102,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-04-14_Chinese_Grand_Prix/2019-04-12_Practice_1/",
 	},
 	{
@@ -6174,7 +6114,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-31_Bahrain_Grand_Prix/2019-03-31_Race/",
 	},
 	{
@@ -6186,7 +6126,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-31_Bahrain_Grand_Prix/2019-03-30_Qualifying/",
 	},
 	{
@@ -6198,7 +6138,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-31_Bahrain_Grand_Prix/2019-03-30_Practice_3/",
 	},
 	{
@@ -6210,7 +6150,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-31_Bahrain_Grand_Prix/2019-03-29_Practice_2/",
 	},
 	{
@@ -6222,7 +6162,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-31_Bahrain_Grand_Prix/2019-03-29_Practice_1/",
 	},
 	{
@@ -6234,7 +6174,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-17_Australian_Grand_Prix/2019-03-17_Race/",
 	},
 	{
@@ -6246,7 +6186,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-17_Australian_Grand_Prix/2019-03-16_Qualifying/",
 	},
 	{
@@ -6258,7 +6198,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-17_Australian_Grand_Prix/2019-03-16_Practice_3/",
 	},
 	{
@@ -6270,7 +6210,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-17_Australian_Grand_Prix/2019-03-15_Practice_2/",
 	},
 	{
@@ -6282,7 +6222,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2019/2019-03-17_Australian_Grand_Prix/2019-03-15_Practice_1/",
 	},
 	{
@@ -6294,7 +6234,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-25_Race/",
 	},
 	{
@@ -6306,7 +6246,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-24_Qualifying/",
 	},
 	{
@@ -6318,7 +6258,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-24_Practice_3/",
 	},
 	{
@@ -6330,7 +6270,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-23_Practice_2/",
 	},
 	{
@@ -6342,7 +6282,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Dubai",
 		TrackName:         "Yas Marina Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4914) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-25_Abu_Dhabi_Grand_Prix/2018-11-23_Practice_1/",
 	},
 	{
@@ -6354,7 +6294,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-11_São_Paulo_Grand_Prix/2018-11-11_Race/",
 	},
 	{
@@ -6366,7 +6306,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-11_São_Paulo_Grand_Prix/2018-11-10_Qualifying/",
 	},
 	{
@@ -6378,7 +6318,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-11_São_Paulo_Grand_Prix/2018-11-10_Practice_3/",
 	},
 	{
@@ -6390,7 +6330,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-11_São_Paulo_Grand_Prix/2018-11-09_Practice_2/",
 	},
 	{
@@ -6402,7 +6342,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Sao_Paulo",
 		TrackName:         "Autódromo José Carlos Pace",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(-135) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-11-11_São_Paulo_Grand_Prix/2018-11-09_Practice_1/",
 	},
 	{
@@ -6414,7 +6354,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-28_Mexican_Grand_Prix/2018-10-28_Race/",
 	},
 	{
@@ -6426,7 +6366,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-28_Mexican_Grand_Prix/2018-10-27_Qualifying/",
 	},
 	{
@@ -6438,7 +6378,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-28_Mexican_Grand_Prix/2018-10-27_Practice_3/",
 	},
 	{
@@ -6450,7 +6390,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-28_Mexican_Grand_Prix/2018-10-26_Practice_2/",
 	},
 	{
@@ -6462,7 +6402,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Mexico_City",
 		TrackName:         "Autódromo Hermanos Rodríguez",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5300) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-28_Mexican_Grand_Prix/2018-10-26_Practice_1/",
 	},
 	{
@@ -6474,7 +6414,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-21_United_States_Grand_Prix/2018-10-21_Race/",
 	},
 	{
@@ -6486,7 +6426,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-21_United_States_Grand_Prix/2018-10-20_Qualifying/",
 	},
 	{
@@ -6498,7 +6438,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-21_United_States_Grand_Prix/2018-10-20_Practice_3/",
 	},
 	{
@@ -6510,7 +6450,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-21_United_States_Grand_Prix/2018-10-19_Practice_2/",
 	},
 	{
@@ -6522,7 +6462,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Chicago",
 		TrackName:         "Circuit of the Americas",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(9290) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-21_United_States_Grand_Prix/2018-10-19_Practice_1/",
 	},
 	{
@@ -6534,7 +6474,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-07_Japanese_Grand_Prix/2018-10-07_Race/",
 	},
 	{
@@ -6546,7 +6486,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-07_Japanese_Grand_Prix/2018-10-06_Qualifying/",
 	},
 	{
@@ -6558,7 +6498,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-07_Japanese_Grand_Prix/2018-10-06_Practice_3/",
 	},
 	{
@@ -6570,7 +6510,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-07_Japanese_Grand_Prix/2018-10-05_Practice_2/",
 	},
 	{
@@ -6582,7 +6522,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Tokyo",
 		TrackName:         "Suzuka Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(12516) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-10-07_Japanese_Grand_Prix/2018-10-05_Practice_1/",
 	},
 	{
@@ -6594,7 +6534,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-30_Russian_Grand_Prix/2018-09-30_Race/",
 	},
 	{
@@ -6606,7 +6546,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-30_Russian_Grand_Prix/2018-09-29_Qualifying/",
 	},
 	{
@@ -6618,7 +6558,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-30_Russian_Grand_Prix/2018-09-29_Practice_3/",
 	},
 	{
@@ -6630,7 +6570,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-30_Russian_Grand_Prix/2018-09-28_Practice_2/",
 	},
 	{
@@ -6642,7 +6582,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Moscow",
 		TrackName:         "Sochi Autodrom",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7119) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-30_Russian_Grand_Prix/2018-09-28_Practice_1/",
 	},
 	{
@@ -6654,7 +6594,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-16_Singapore_Grand_Prix/2018-09-16_Race/",
 	},
 	{
@@ -6666,7 +6606,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-16_Singapore_Grand_Prix/2018-09-15_Qualifying/",
 	},
 	{
@@ -6678,7 +6618,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-16_Singapore_Grand_Prix/2018-09-15_Practice_3/",
 	},
 	{
@@ -6690,7 +6630,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-16_Singapore_Grand_Prix/2018-09-14_Practice_2/",
 	},
 	{
@@ -6702,7 +6642,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Singapore",
 		TrackName:         "Marina Bay Street Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(17315) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-16_Singapore_Grand_Prix/2018-09-14_Practice_1/",
 	},
 	{
@@ -6714,7 +6654,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-02_Italian_Grand_Prix/2018-09-02_Race/",
 	},
 	{
@@ -6726,7 +6666,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-02_Italian_Grand_Prix/2018-09-01_Qualifying/",
 	},
 	{
@@ -6738,7 +6678,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-02_Italian_Grand_Prix/2018-09-01_Practice_3/",
 	},
 	{
@@ -6750,7 +6690,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-02_Italian_Grand_Prix/2018-08-31_Practice_2/",
 	},
 	{
@@ -6762,7 +6702,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Rome",
 		TrackName:         "Autodromo Nazionale di Monza",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(13598) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-09-02_Italian_Grand_Prix/2018-08-31_Practice_1/",
 	},
 	{
@@ -6774,7 +6714,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-08-26_Belgian_Grand_Prix/2018-08-26_Race/",
 	},
 	{
@@ -6786,7 +6726,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-08-26_Belgian_Grand_Prix/2018-08-25_Qualifying/",
 	},
 	{
@@ -6798,7 +6738,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-08-26_Belgian_Grand_Prix/2018-08-25_Practice_3/",
 	},
 	{
@@ -6810,7 +6750,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-08-26_Belgian_Grand_Prix/2018-08-24_Practice_2/",
 	},
 	{
@@ -6822,7 +6762,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Brussels",
 		TrackName:         "Circuit de Spa-Francorchamps",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(4421) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-08-26_Belgian_Grand_Prix/2018-08-24_Practice_1/",
 	},
 	{
@@ -6834,7 +6774,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-29_Hungarian_Grand_Prix/2018-07-29_Race/",
 	},
 	{
@@ -6846,7 +6786,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-29_Hungarian_Grand_Prix/2018-07-28_Qualifying/",
 	},
 	{
@@ -6858,7 +6798,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-29_Hungarian_Grand_Prix/2018-07-28_Practice_3/",
 	},
 	{
@@ -6870,7 +6810,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-29_Hungarian_Grand_Prix/2018-07-27_Practice_2/",
 	},
 	{
@@ -6882,7 +6822,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Budapest",
 		TrackName:         "Hungaroring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(5918) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-29_Hungarian_Grand_Prix/2018-07-27_Practice_1/",
 	},
 	{
@@ -6894,7 +6834,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-22_German_Grand_Prix/2018-07-22_Race/",
 	},
 	{
@@ -6906,7 +6846,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-22_German_Grand_Prix/2018-07-21_Qualifying/",
 	},
 	{
@@ -6918,7 +6858,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-22_German_Grand_Prix/2018-07-21_Practice_3/",
 	},
 	{
@@ -6930,7 +6870,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-22_German_Grand_Prix/2018-07-20_Practice_2/",
 	},
 	{
@@ -6942,7 +6882,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Berlin",
 		TrackName:         "Hockenheimring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7262) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-22_German_Grand_Prix/2018-07-20_Practice_1/",
 	},
 	{
@@ -6954,7 +6894,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-08_British_Grand_Prix/2018-07-08_Race/",
 	},
 	{
@@ -6966,7 +6906,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-08_British_Grand_Prix/2018-07-07_Qualifying/",
 	},
 	{
@@ -6978,7 +6918,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-08_British_Grand_Prix/2018-07-07_Practice_3/",
 	},
 	{
@@ -6990,7 +6930,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-08_British_Grand_Prix/2018-07-06_Practice_2/",
 	},
 	{
@@ -7002,7 +6942,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/London",
 		TrackName:         "Silverstone Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7303) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-08_British_Grand_Prix/2018-07-06_Practice_1/",
 	},
 	{
@@ -7014,7 +6954,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-01_Austrian_Grand_Prix/2018-07-01_Race/",
 	},
 	{
@@ -7026,7 +6966,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-01_Austrian_Grand_Prix/2018-06-30_Qualifying/",
 	},
 	{
@@ -7038,7 +6978,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-01_Austrian_Grand_Prix/2018-06-30_Practice_3/",
 	},
 	{
@@ -7050,7 +6990,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-01_Austrian_Grand_Prix/2018-06-29_Practice_2/",
 	},
 	{
@@ -7062,7 +7002,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Vienna",
 		TrackName:         "Red Bull Ring",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14106) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-07-01_Austrian_Grand_Prix/2018-06-29_Practice_1/",
 	},
 	{
@@ -7074,7 +7014,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-24_French_Grand_Prix/2018-06-24_Race/",
 	},
 	{
@@ -7086,7 +7026,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-24_French_Grand_Prix/2018-06-23_Qualifying/",
 	},
 	{
@@ -7098,7 +7038,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-24_French_Grand_Prix/2018-06-23_Practice_3/",
 	},
 	{
@@ -7110,7 +7050,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-24_French_Grand_Prix/2018-06-22_Practice_2/",
 	},
 	{
@@ -7122,7 +7062,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Paris",
 		TrackName:         "Circuit Paul Ricard",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(16822) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-24_French_Grand_Prix/2018-06-22_Practice_1/",
 	},
 	{
@@ -7134,7 +7074,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-10_Canadian_Grand_Prix/2018-06-10_Race/",
 	},
 	{
@@ -7146,7 +7086,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-10_Canadian_Grand_Prix/2018-06-09_Qualifying/",
 	},
 	{
@@ -7158,7 +7098,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-10_Canadian_Grand_Prix/2018-06-09_Practice_3/",
 	},
 	{
@@ -7170,7 +7110,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-10_Canadian_Grand_Prix/2018-06-08_Practice_2/",
 	},
 	{
@@ -7182,7 +7122,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "America/Toronto",
 		TrackName:         "Circuit Gilles Villeneuve",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7150) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(18500) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-06-10_Canadian_Grand_Prix/2018-06-08_Practice_1/",
 	},
 	{
@@ -7194,7 +7134,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-27_Monaco_Grand_Prix/2018-05-27_Race/",
 	},
 	{
@@ -7206,7 +7146,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-27_Monaco_Grand_Prix/2018-05-26_Qualifying/",
 	},
 	{
@@ -7218,7 +7158,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-27_Monaco_Grand_Prix/2018-05-26_Practice_3/",
 	},
 	{
@@ -7230,7 +7170,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-27_Monaco_Grand_Prix/2018-05-24_Practice_2/",
 	},
 	{
@@ -7242,7 +7182,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Monaco",
 		TrackName:         "Circuit de Monaco",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7109) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-27_Monaco_Grand_Prix/2018-05-24_Practice_1/",
 	},
 	{
@@ -7254,7 +7194,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-13_Spanish_Grand_Prix/2018-05-13_Race/",
 	},
 	{
@@ -7266,7 +7206,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-13_Spanish_Grand_Prix/2018-05-12_Qualifying/",
 	},
 	{
@@ -7278,7 +7218,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-13_Spanish_Grand_Prix/2018-05-12_Practice_3/",
 	},
 	{
@@ -7290,7 +7230,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-13_Spanish_Grand_Prix/2018-05-11_Practice_2/",
 	},
 	{
@@ -7302,7 +7242,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Europe/Madrid",
 		TrackName:         "Circuit de Barcelona-Catalunya",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(6564) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-05-13_Spanish_Grand_Prix/2018-05-11_Practice_1/",
 	},
 	{
@@ -7314,7 +7254,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-29_Race/",
 	},
 	{
@@ -7326,7 +7266,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-28_Qualifying/",
 	},
 	{
@@ -7338,7 +7278,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-28_Practice_3/",
 	},
 	{
@@ -7350,7 +7290,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-27_Practice_2/",
 	},
 	{
@@ -7362,7 +7302,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Baku",
 		TrackName:         "Baku City Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(7831) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-29_Azerbaijan_Grand_Prix/2018-04-27_Practice_1/",
 	},
 	{
@@ -7374,7 +7314,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-15_Chinese_Grand_Prix/2018-04-15_Race/",
 	},
 	{
@@ -7386,7 +7326,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-15_Chinese_Grand_Prix/2018-04-14_Qualifying/",
 	},
 	{
@@ -7398,7 +7338,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-15_Chinese_Grand_Prix/2018-04-14_Practice_3/",
 	},
 	{
@@ -7410,7 +7350,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-15_Chinese_Grand_Prix/2018-04-13_Practice_2/",
 	},
 	{
@@ -7422,7 +7362,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Shanghai",
 		TrackName:         "Shanghai International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(10115) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-15_Chinese_Grand_Prix/2018-04-13_Practice_1/",
 	},
 	{
@@ -7434,7 +7374,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-08_Bahrain_Grand_Prix/2018-04-08_Race/",
 	},
 	{
@@ -7446,7 +7386,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-08_Bahrain_Grand_Prix/2018-04-07_Qualifying/",
 	},
 	{
@@ -7458,7 +7398,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-08_Bahrain_Grand_Prix/2018-04-07_Practice_3/",
 	},
 	{
@@ -7470,7 +7410,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-08_Bahrain_Grand_Prix/2018-04-06_Practice_2/",
 	},
 	{
@@ -7482,7 +7422,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Asia/Bahrain",
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(14336) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-04-08_Bahrain_Grand_Prix/2018-04-06_Practice_1/",
 	},
 	{
@@ -7494,7 +7434,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-03-25_Australian_Grand_Prix/2018-03-25_Race/",
 	},
 	{
@@ -7506,7 +7446,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-03-25_Australian_Grand_Prix/2018-03-24_Qualifying/",
 	},
 	{
@@ -7518,7 +7458,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-03-25_Australian_Grand_Prix/2018-03-24_Practice_3/",
 	},
 	{
@@ -7530,7 +7470,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-03-25_Australian_Grand_Prix/2018-03-23_Practice_2/",
 	},
 	{
@@ -7542,7 +7482,7 @@ var sessionHistory = [...]RaceEvent{
 		timezone:          "Australia/Melbourne",
 		TrackName:         "Albert Park Grand Prix Circuit",
 		TrackYearCreated:  2018,
-		TimeLostInPitlane: time.Duration(1164) * time.Millisecond,
+		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
 		urlName:           "https://livetiming.formula1.com/static/2018/2018-03-25_Australian_Grand_Prix/2018-03-23_Practice_1/",
 	},
 }
