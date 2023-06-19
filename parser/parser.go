@@ -283,9 +283,15 @@ func (p *Parser) handleMessage(name string, dat map[string]interface{}, timestam
 
 	case connection.SessionInfoFile:
 		if p.requestedData&Event == Event {
-			outgoing, err := p.parseSessionInfoData(dat, timestamp)
+			outgoing, timingOutgoing, err := p.parseSessionInfoData(dat, timestamp)
 			if err == nil {
 				p.output.AddEvent(outgoing)
+			}
+
+			if p.requestedData&Timing == Timing {
+				for _, rcMsg := range timingOutgoing {
+					p.output.AddTiming(rcMsg)
+				}
 			}
 		}
 
@@ -323,15 +329,9 @@ func (p *Parser) handleMessage(name string, dat map[string]interface{}, timestam
 		}
 
 	case connection.SessionStatusFile:
-		outgoing, timingOutgoing, err := p.parseSessionStatusData(dat, timestamp)
+		outgoing, err := p.parseSessionStatusData(dat, timestamp)
 		if p.requestedData&Event == Event && err == nil {
 			p.output.AddEvent(outgoing)
-		}
-
-		if p.requestedData&Timing == Timing {
-			for _, rcMsg := range timingOutgoing {
-				p.output.AddTiming(rcMsg)
-			}
 		}
 
 	case connection.TeamRadioFile:
