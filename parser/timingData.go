@@ -523,7 +523,7 @@ func (p *Parser) updateLocation(driver *Messages.Timing, segmentState Messages.S
 	} else {
 		if driver.Segment[0] == Messages.PitlaneSegment || driver.Segment[1] == Messages.PitlaneSegment {
 			if driver.Location != Messages.OutLap {
-				if p.eventState.Type == Messages.Race && p.eventState.Status == Messages.Started {
+				if p.eventState.Type == Messages.Race && p.eventState.Status == Messages.Started && driver.PitStopTimes != nil {
 					driver.PitStopTimes[len(driver.PitStopTimes)-1].PitlaneExit = timestamp
 					driver.PitStopTimes[len(driver.PitStopTimes)-1].PitlaneTime = timestamp.Sub(driver.PitStopTimes[len(driver.PitStopTimes)-1].PitlaneEntry)
 				}
