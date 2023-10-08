@@ -236,7 +236,11 @@ func buildHistory() []f1gopherlib.RaceEvent {
 			} else if race.Circuit.CircuitName == "Las Vegas Strip Street Circuit" {
 				trackCreatedYear = 2023
 			} else if race.Circuit.CircuitName == "Losail International Circuit" {
-				trackCreatedYear = 2021
+				if x == 2021 {
+					trackCreatedYear = 2021
+				} else {
+					trackCreatedYear = 2023
+				}
 			} else if race.Circuit.CircuitName == "Circuit de Barcelona-Catalunya" && raceDate.Year() >= 2023 {
 				trackCreatedYear = 2023
 			}
