@@ -323,8 +323,8 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2023, 10, 8, 18, 0, 0, 0, time.UTC),
+		EventTime:         time.Date(2023, 10, 8, 18, 0, 0, 0, time.UTC),
 		Type:              Messages.RaceSession,
 		Name:              "Qatar Grand Prix",
 		timezone:          "Asia/Qatar",
@@ -335,8 +335,8 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2023, 10, 7, 14, 30, 0, 0, time.UTC),
+		RaceTime:          time.Date(2023, 10, 8, 18, 0, 0, 0, time.UTC),
+		EventTime:         time.Date(2023, 10, 7, 18, 30, 0, 0, time.UTC),
 		Type:              Messages.SprintSession,
 		Name:              "Qatar Grand Prix",
 		timezone:          "Asia/Qatar",
@@ -347,7 +347,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2023, 10, 8, 18, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2023, 10, 7, 10, 30, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "Qatar Grand Prix",
@@ -359,7 +359,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2023, 10, 8, 18, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2023, 10, 6, 14, 0, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "Qatar Grand Prix",
@@ -371,7 +371,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2023, 10, 8, 14, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2023, 10, 8, 18, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2023, 10, 6, 10, 30, 0, 0, time.UTC),
 		Type:              Messages.Practice1Session,
 		Name:              "Qatar Grand Prix",
