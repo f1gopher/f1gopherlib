@@ -243,6 +243,8 @@ func buildHistory() []f1gopherlib.RaceEvent {
 				}
 			} else if race.Circuit.CircuitName == "Circuit de Barcelona-Catalunya" && raceDate.Year() >= 2023 {
 				trackCreatedYear = 2023
+			} else if race.Circuit.CircuitName == "Autódromo José Carlos Pace" && raceDate.Year() >= 2023 {
+				trackCreatedYear = 2023
 			}
 
 			// Some events only have race times
