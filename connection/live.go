@@ -18,12 +18,13 @@ package connection
 import (
 	"context"
 	"fmt"
-	"github.com/f1gopher/f1gopherlib/f1log"
-	"github.com/f1gopher/signalr/v2"
-	"golang.org/x/sync/errgroup"
 	"os"
 	"sync"
 	"time"
+
+	"github.com/f1gopher/f1gopherlib/f1log"
+	"github.com/f1gopher/signalr/v2"
+	"golang.org/x/sync/errgroup"
 )
 
 type live struct {
@@ -47,7 +48,7 @@ func CreateLive(ctx context.Context, wg *sync.WaitGroup, log *f1log.F1GopherLibL
 	}
 }
 
-func CreateArchivingLive(ctx context.Context, archiveFile string) (*live, error) {
+func CreateArchivingLive(ctx context.Context, wg *sync.WaitGroup, log *f1log.F1GopherLibLog, archiveFile string) (*live, error) {
 	archive, err := os.Create(fmt.Sprintf("%s_%d.txt", archiveFile, time.Now().UnixMilli()))
 	if err != nil {
 		return nil, err
@@ -55,6 +56,8 @@ func CreateArchivingLive(ctx context.Context, archiveFile string) (*live, error)
 
 	return &live{
 		ctx:      ctx,
+		wg:       wg,
+		log:      log,
 		dataFeed: make(chan Payload, 1000),
 		archive:  archive,
 	}, nil

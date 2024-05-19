@@ -19,15 +19,16 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"io"
+	"path/filepath"
+	"sync"
+	"time"
+
 	"github.com/f1gopher/f1gopherlib/Messages"
 	"github.com/f1gopher/f1gopherlib/connection"
 	"github.com/f1gopher/f1gopherlib/f1log"
 	"github.com/f1gopher/f1gopherlib/flowControl"
 	"github.com/f1gopher/f1gopherlib/parser"
-	"io"
-	"path/filepath"
-	"sync"
-	"time"
 )
 
 type F1GopherLib interface {
@@ -318,7 +319,7 @@ func (f *f1gopherlib) connectLive(requestedData parser.DataSource, archiveFile s
 		f.connection = connection.CreateLive(f.ctx, &f.wg, f1Log)
 	} else {
 		var connErr error
-		f.connection, connErr = connection.CreateArchivingLive(f.ctx, archiveFile)
+		f.connection, connErr = connection.CreateArchivingLive(f.ctx, &f.wg, f1Log, archiveFile)
 		if connErr != nil {
 			return connErr
 		}
