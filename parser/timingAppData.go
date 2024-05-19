@@ -18,7 +18,6 @@ package parser
 import (
 	"github.com/f1gopher/f1gopherlib/Messages"
 	"github.com/f1gopher/f1gopherlib/connection"
-	"strconv"
 	"time"
 )
 
@@ -34,11 +33,15 @@ func (p *Parser) parseTimingAppData(dat map[string]interface{}, timestamp time.T
 		}
 		currentDriver.Timestamp = timestamp
 
-		value, exists := line.(map[string]interface{})["GridPos"]
-		if exists {
-			value, _ := strconv.ParseInt(value.(string), 10, 8)
-			currentDriver.Position = int(value)
-		}
+		// Don't use this because if you join a race part way through it overwrites
+		// the current positions with the start positions and things don't
+		// correct until there is a pit stop.
+		//
+		//value, exists := line.(map[string]interface{})["GridPos"]
+		//if exists {
+		//	value, _ := strconv.ParseInt(value.(string), 10, 8)
+		//	currentDriver.Position = int(value)
+		//}
 
 		// Don't use this to update the driver position because it results in multiple drivers
 		// with the same position.
@@ -48,7 +51,7 @@ func (p *Parser) parseTimingAppData(dat map[string]interface{}, timestamp time.T
 		//	currentDriver.Position = int(value.(float64))
 		//}
 
-		value, exists = line.(map[string]interface{})["Stints"]
+		value, exists := line.(map[string]interface{})["Stints"]
 		if exists {
 
 			switch value.(type) {
