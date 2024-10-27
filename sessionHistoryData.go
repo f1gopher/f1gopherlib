@@ -264,8 +264,8 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Mexico",
-		RaceTime:          time.Date(2024, 10, 27, 19, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2024, 10, 27, 19, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 10, 27, 20, 0, 0, 0, time.UTC),
+		EventTime:         time.Date(2024, 10, 27, 20, 0, 0, 0, time.UTC),
 		Type:              Messages.RaceSession,
 		Name:              "Mexico City Grand Prix",
 		timezone:          "America/Mexico_City",
@@ -276,7 +276,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Mexico",
-		RaceTime:          time.Date(2024, 10, 27, 19, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 10, 27, 20, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 10, 26, 21, 0, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "Mexico City Grand Prix",
@@ -288,7 +288,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Mexico",
-		RaceTime:          time.Date(2024, 10, 27, 19, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 10, 27, 20, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 10, 26, 17, 30, 0, 0, time.UTC),
 		Type:              Messages.Practice3Session,
 		Name:              "Mexico City Grand Prix",
@@ -300,7 +300,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Mexico",
-		RaceTime:          time.Date(2024, 10, 27, 19, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 10, 27, 20, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 10, 25, 22, 0, 0, 0, time.UTC),
 		Type:              Messages.Practice2Session,
 		Name:              "Mexico City Grand Prix",
@@ -312,7 +312,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Mexico",
-		RaceTime:          time.Date(2024, 10, 27, 19, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 10, 27, 20, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 10, 25, 18, 30, 0, 0, time.UTC),
 		Type:              Messages.Practice1Session,
 		Name:              "Mexico City Grand Prix",
