@@ -204,8 +204,8 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Brazil",
-		RaceTime:          time.Date(2024, 11, 3, 17, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2024, 11, 3, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 11, 3, 17, 30, 0, 0, time.UTC),
+		EventTime:         time.Date(2024, 11, 3, 17, 30, 0, 0, time.UTC),
 		Type:              Messages.RaceSession,
 		Name:              "São Paulo Grand Prix",
 		timezone:          "America/Sao_Paulo",
@@ -216,8 +216,8 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Brazil",
-		RaceTime:          time.Date(2024, 11, 3, 17, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2024, 11, 2, 18, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 11, 3, 17, 30, 0, 0, time.UTC),
+		EventTime:         time.Date(2024, 11, 3, 10, 30, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "São Paulo Grand Prix",
 		timezone:          "America/Sao_Paulo",
@@ -228,7 +228,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Brazil",
-		RaceTime:          time.Date(2024, 11, 3, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 11, 3, 17, 30, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 11, 2, 14, 0, 0, 0, time.UTC),
 		Type:              Messages.SprintSession,
 		Name:              "São Paulo Grand Prix",
@@ -240,7 +240,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Brazil",
-		RaceTime:          time.Date(2024, 11, 3, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 11, 3, 17, 30, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 11, 1, 18, 30, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "São Paulo Grand Prix",
@@ -252,7 +252,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Brazil",
-		RaceTime:          time.Date(2024, 11, 3, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 11, 3, 17, 30, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 11, 1, 14, 30, 0, 0, time.UTC),
 		Type:              Messages.Practice1Session,
 		Name:              "São Paulo Grand Prix",
