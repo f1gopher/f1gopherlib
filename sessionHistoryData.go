@@ -84,8 +84,8 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2024, 12, 1, 17, 0, 0, 0, time.UTC),
-		EventTime:         time.Date(2024, 12, 1, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 12, 1, 16, 0, 0, 0, time.UTC),
+		EventTime:         time.Date(2024, 12, 1, 16, 0, 0, 0, time.UTC),
 		Type:              Messages.RaceSession,
 		Name:              "Qatar Grand Prix",
 		timezone:          "Asia/Qatar",
@@ -96,7 +96,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2024, 12, 1, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 12, 1, 16, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 11, 30, 17, 0, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "Qatar Grand Prix",
@@ -108,7 +108,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2024, 12, 1, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 12, 1, 16, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 11, 30, 13, 0, 0, 0, time.UTC),
 		Type:              Messages.SprintSession,
 		Name:              "Qatar Grand Prix",
@@ -120,7 +120,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2024, 12, 1, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 12, 1, 16, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 11, 29, 17, 30, 0, 0, time.UTC),
 		Type:              Messages.QualifyingSession,
 		Name:              "Qatar Grand Prix",
@@ -132,7 +132,7 @@ var sessionHistory = [...]RaceEvent{
 	},
 	{
 		Country:           "Qatar",
-		RaceTime:          time.Date(2024, 12, 1, 17, 0, 0, 0, time.UTC),
+		RaceTime:          time.Date(2024, 12, 1, 16, 0, 0, 0, time.UTC),
 		EventTime:         time.Date(2024, 11, 29, 13, 30, 0, 0, time.UTC),
 		Type:              Messages.Practice1Session,
 		Name:              "Qatar Grand Prix",
