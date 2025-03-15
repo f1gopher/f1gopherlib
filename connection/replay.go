@@ -95,7 +95,12 @@ func (r *replay) Connect() (error, <-chan Payload) {
 		if name == LapCountFile && !(r.session == Messages.RaceSession || r.session == Messages.SprintSession) {
 			continue
 		}
-
+		
+		// Often don't get this data for replays
+		if name == AudioStreamsFile {
+			continue
+		}
+		
 		r.dataFiles = append(r.dataFiles, fileInfo{
 			name:         name,
 			data:         r.get(r.eventUrl + name + ".jsonStream"),
