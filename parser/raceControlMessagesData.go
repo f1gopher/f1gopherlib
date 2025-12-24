@@ -16,10 +16,12 @@
 package parser
 
 import (
+	"reflect"
+	"strconv"
+	"time"
+
 	"github.com/f1gopher/f1gopherlib/Messages"
 	"github.com/f1gopher/f1gopherlib/connection"
-	"reflect"
-	"time"
 )
 
 func (p *Parser) parseRaceControlMessagesData(dat map[string]interface{}, timestamp time.Time) ([]Messages.RaceControlMessage, []Messages.Event, []Messages.Timing, error) {
@@ -59,6 +61,7 @@ func (p *Parser) readRaceControlMessage(
 	// Lap
 	// Category
 	status := msg.(map[string]interface{})["Message"].(string)
+	category := msg.(map[string]interface{})["Category"].(string)
 
 	//status := msg.(map[string]interface{})["Message"].(string)
 
@@ -80,6 +83,45 @@ func (p *Parser) readRaceControlMessage(
 			flag = Messages.RedFlag
 		case "BLACK AND WHITE":
 			flag = Messages.BlackAndWhite
+		}
+	}
+
+	// Handle stward penalty messages messages
+	if category == "Other" {
+		// Track limit warning
+		matches := p.trackLimitsMsgMatch.FindStringSubmatch(status)
+		if len(matches) == 2 {
+			currentDriver, exists := p.driverTimes[matches[1]]
+			if exists {
+				currentDriver.TrackLimitsWarnings++
+				*timingResult = append(*timingResult, currentDriver)
+				p.driverTimes[matches[1]] = currentDriver
+			}
+		}
+
+		// Time penalty being given
+		matches = p.timePenaltyMsgMatch.FindStringSubmatch(status)
+		if len(matches) == 3 {
+			seconds, _ := strconv.Atoi(matches[1])
+
+			currentDriver, exists := p.driverTimes[matches[2]]
+			if exists {
+				currentDriver.TimePenaltySeconds += seconds
+				*timingResult = append(*timingResult, currentDriver)
+				p.driverTimes[matches[1]] = currentDriver
+			}
+		}
+
+		// Time penalty being served
+		matches = p.timePenaltyServedMsgMatch.FindStringSubmatch(status)
+		if len(matches) == 3 {
+			seconds, _ := strconv.Atoi(matches[1])
+			currentDriver, exists := p.driverTimes[matches[2]]
+			if exists {
+				currentDriver.TimePenaltySeconds -= seconds
+				*timingResult = append(*timingResult, currentDriver)
+				p.driverTimes[matches[1]] = currentDriver
+			}
 		}
 	}
 

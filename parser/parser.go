@@ -22,14 +22,16 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
+	"io"
+	"regexp"
+	"strings"
+	"sync"
+	"time"
+
 	"github.com/f1gopher/f1gopherlib/Messages"
 	"github.com/f1gopher/f1gopherlib/connection"
 	"github.com/f1gopher/f1gopherlib/f1log"
 	"github.com/f1gopher/f1gopherlib/flowControl"
-	"io"
-	"strings"
-	"sync"
-	"time"
 )
 
 type DataSource int
@@ -67,6 +69,10 @@ type Parser struct {
 
 	sendTelemetryFor  map[int]bool
 	sendTelemetryLock sync.Mutex
+
+	trackLimitsMsgMatch       *regexp.Regexp
+	timePenaltyMsgMatch       *regexp.Regexp
+	timePenaltyServedMsgMatch *regexp.Regexp
 }
 
 // Hardcoded shortcut for:
@@ -88,18 +94,25 @@ func Create(
 	log *f1log.F1GopherLibLog,
 	timezone *time.Location) *Parser {
 
+	trackLimitsMatch, _ := regexp.Compile("CAR (\\d+) .* DELETED - TRACK LIMITS AT TURN")
+	timePenaltyMatch, _ := regexp.Compile("^FIA STEWARDS: (\\d+) SECOND TIME PENALTY FOR CAR (\\d+)")
+	timePenaltyServedMatch, _ := regexp.Compile("^FIA STEWARDS: PENALTY SERVED - (\\d+) SECOND TIME PENALTY FOR CAR (\\d+)")
+
 	abc := Parser{
-		ctx:              ctx,
-		wg:               wg,
-		requestedData:    requestedData,
-		incoming:         incoming,
-		output:           output,
-		driverTimes:      make(map[string]Messages.Timing),
-		assets:           assets,
-		session:          session,
-		timezone:         timezone,
-		log:              log,
-		sendTelemetryFor: nil,
+		ctx:                       ctx,
+		wg:                        wg,
+		requestedData:             requestedData,
+		incoming:                  incoming,
+		output:                    output,
+		driverTimes:               make(map[string]Messages.Timing),
+		assets:                    assets,
+		session:                   session,
+		timezone:                  timezone,
+		log:                       log,
+		sendTelemetryFor:          nil,
+		trackLimitsMsgMatch:       trackLimitsMatch,
+		timePenaltyMsgMatch:       timePenaltyMatch,
+		timePenaltyServedMsgMatch: timePenaltyServedMatch,
 	}
 
 	return &abc

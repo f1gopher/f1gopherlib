@@ -129,4 +129,7 @@ type Timing struct {
 	SpeedTrap                int
 	SpeedTrapPersonalFastest bool
 	SpeedTrapOverallFastest  bool
+
+	TrackLimitsWarnings int
+	TimePenaltySeconds  int
 }
