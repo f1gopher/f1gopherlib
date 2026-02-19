@@ -113,6 +113,18 @@ func (d DRSState) String() string {
 	return [...]string{"Unknown", "Enabled", "Disabled"}[d]
 }
 
+type OvertakeState int
+
+const (
+	OvertakeStatweUnknown OvertakeState = iota
+	OvertakeEnabled
+	OvertakeDisabled
+)
+
+func (o OvertakeState) String() string {
+	return [...]string{"Unknown", "Enabled", "Disabled"}[o]
+}
+
 const MaxSegments = 40
 
 type Event struct {
@@ -140,5 +152,6 @@ type Event struct {
 	SessionStartTime time.Time
 	ClockStopped     bool
 
-	DRSEnabled DRSState
+	DRSEnabled      DRSState
+	OvertakeEnabled OvertakeState
 }

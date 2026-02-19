@@ -1473,7 +1473,7 @@ var sessionHistory = [...]RaceEvent{
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
 		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-20_Bahrain_Grand_Prix/2026-02-20_Practice_1/",
+		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-20_Pre-Season_Testing/2026-02-19_Day_3/",
 	},
 	{
 		Country:           "Bahrain",
@@ -1485,7 +1485,7 @@ var sessionHistory = [...]RaceEvent{
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
 		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-19_Bahrain_Grand_Prix/2026-02-19_Practice_1/",
+		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-20_Pre-Season_Testing/2026-02-19_Day_2/",
 	},
 	{
 		Country:           "Bahrain",
@@ -1497,7 +1497,7 @@ var sessionHistory = [...]RaceEvent{
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
 		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-18_Bahrain_Grand_Prix/2026-02-18_Practice_1/",
+		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-20_Pre-Season_Testing/2026-02-19_Day_1/",
 	},
 	{
 		Country:           "Bahrain",
@@ -1509,7 +1509,7 @@ var sessionHistory = [...]RaceEvent{
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
 		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-13_Bahrain_Grand_Prix/2026-02-13_Practice_1/",
+		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-13_Pre-Season_Testing/2026-02-13_Day_3/",
 	},
 	{
 		Country:           "Bahrain",
@@ -1521,7 +1521,7 @@ var sessionHistory = [...]RaceEvent{
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
 		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-12_Bahrain_Grand_Prix/2026-02-12_Practice_1/",
+		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-13_Pre-Season_Testing/2026-02-12_Day_2/",
 	},
 	{
 		Country:           "Bahrain",
@@ -1533,7 +1533,7 @@ var sessionHistory = [...]RaceEvent{
 		TrackName:         "Bahrain International Circuit",
 		TrackYearCreated:  2018,
 		TimeLostInPitlane: time.Duration(20000) * time.Millisecond,
-		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-11_Bahrain_Grand_Prix/2026-02-11_Practice_1/",
+		urlName:           "https://livetiming.formula1.com/static/2026/2026-02-13_Pre-Season_Testing/2026-02-11_Day_1/",
 	},
 	// ****************************************************** 2025 *************************************-
 	{

@@ -174,6 +174,16 @@ func (p *Parser) readRaceControlMessage(
 		p.eventState.Timestamp = time
 		*eventResult = append(*eventResult, p.eventState)
 
+	case "OVERTAKE ENABLED":
+		p.eventState.OvertakeEnabled = Messages.OvertakeEnabled
+		p.eventState.Timestamp = time
+		*eventResult = append(*eventResult, p.eventState)
+
+	case "OVERTAKE DISABLED":
+		p.eventState.OvertakeEnabled = Messages.OvertakeDisabled
+		p.eventState.Timestamp = time
+		*eventResult = append(*eventResult, p.eventState)
+
 		//default:
 		//	fmt.Println("Unhandled RC: " + status)
 	}
